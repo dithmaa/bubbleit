@@ -14,34 +14,7 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <title>Bubble It</title>
-  <?--[if gte IE 5[><script type="text/javascript">
 
-    createPopup().show(0, 0, 0, 0, 0);
-
-  </script><![endif]-->
-  <script>
-    const app = {
-      event() {
-        document.addEventListener('keydown', this.keyboard.bind(this));
-      },
-
-      keyboard(e) {
-        if (e.code == 'KeyS' && e.ctrlKey) {
-          e.preventDefault();
-
-          this.save_options();
-        }
-      },
-
-      save_options() {
-        // ...Метод вызываемый при нажатии Ctrl + S
-      }
-    }
-
-    app.event();
-
-
-  </script>
 </head>
 
 <body oncontextmenu="return false;">
