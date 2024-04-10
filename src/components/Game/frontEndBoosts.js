@@ -21,13 +21,13 @@ export const frontEndBoosts = [
   {
     id: 4,
     title: "Вселенная пузырей",
-    power: 40,
+    power: 80,
     image: "https://i.ibb.co/CwvgrWJ/icon.png",
   },
   {
     id: 5,
     title: "Мультивселенная",
-    power: 60,
+    power: 100,
     image: "https://i.ibb.co/CwvgrWJ/icon.png",
   },
 ];
