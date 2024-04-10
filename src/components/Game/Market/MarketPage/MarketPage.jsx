@@ -4,6 +4,7 @@ import boostImage2 from "../../../../assets/img/boosts/2.png";
 import boostImage3 from "../../../../assets/img/boosts/3.png";
 import boostImage4 from "../../../../assets/img/boosts/4.png";
 import boostImage5 from "../../../../assets/img/boosts/5.png";
+import boostImage6 from "../../../../assets/img/boosts/6.png";
 import boostImageLock from "../../../../assets/img/boosts/lock.png";
 
 function MarketPage({
@@ -23,6 +24,7 @@ function MarketPage({
     boostImage3,
     boostImage4,
     boostImage5,
+    boostImage6,
   ];
   return (
     <div className="container">
