@@ -30,4 +30,11 @@ export const frontEndBoosts = [
     power: 100,
     image: "https://i.ibb.co/CwvgrWJ/icon.png",
   },
+  {
+    id: 6,
+    title: "Вселенная Марвел",
+    power: 200,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/274px-Captain_America%27s_shield.svg.png",
+  },
 ];

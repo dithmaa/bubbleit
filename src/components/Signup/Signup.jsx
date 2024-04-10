@@ -30,6 +30,11 @@ function Signup() {
       price: 5000000,
       level: 0,
     },
+    {
+      id: 6,
+      price: 15000000,
+      level: 0,
+    },
   ];
 
   useEffect(() => {
