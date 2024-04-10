@@ -9,6 +9,7 @@
     transition: .25s ease opacity;
     margin-bottom: 2vh;
     font-size: 14px;
+    align-items: center;
 
     &:active {
         opacity: 0.6;
