@@ -36,9 +36,9 @@ function Signup() {
       level: 0,
     },
   ];
-  const refIdUrl = window.location.search
-    ? Number(window.location.search.replace("?", "").slice(4)) / 932
-    : 0;
+  // const refIdUrl = window.location.search
+  //   ? Number(window.location.search.replace("?", "").slice(4)) / 932
+  //   : 0;
 
   // console.log(refIdUrl);
   useEffect(() => {
@@ -55,12 +55,12 @@ function Signup() {
     const newName = "Игрок" + newUserId;
     const newUser = {
       name: newName,
-      refId: refIdUrl,
+      // refId: refIdUrl,
       clickAmount: 0,
       clickPerOne: 1,
       showBoosts: 1,
       boosts: boostsInitial,
-      scoresFromRef: [],
+      // scoresFromRef: [],
     };
 
     axios.post(
@@ -71,7 +71,7 @@ function Signup() {
     const hashedId = "y10dwpdDxwq" + newUserId * 932 + "xdeDed";
     localStorage.setItem("authId", hashedId);
     localStorage.setItem("isAuth", true);
-    localStorage.setItem("ref", refIdUrl);
+    // localStorage.setItem("ref", refIdUrl);
     setDisabled(!isDisabledNow);
 
     // console.log(newUserId);

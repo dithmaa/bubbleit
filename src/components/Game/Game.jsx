@@ -59,55 +59,55 @@ function Game({ authId }) {
   );
   // console.log(ownerRefList);
 
-  const giveGiftScore = useCallback(
-    debounce((refId, totalRef) => {
-      console.log(refId + " " + totalRef);
-      setTotalRefScore(0);
-      const refObj = {
-        id: hashedId, //unhashedID
-        giftAmount: totalRef,
-      };
-      axios
-        .get(
-          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${refId}&limit=1&page=1`
-        )
-        .then(({ data }) => {
-          // console.log("setOwnerRefList(data[0]);");
-          // setOwnerRefList(data[0]);
-          const newArr = data[0].scoresFromRef;
-          if (newArr.length <= 0) {
-            newArr.push(refObj);
-          } else {
-            newArr.filter((item) =>
-              item.id === hashedId
-                ? (item.giftAmount = item.giftAmount + totalRef)
-                : newArr.push(refObj)
-            );
-          }
+  // const giveGiftScore = useCallback(
+  //   debounce((refId, totalRef) => {
+  //     console.log(refId + " " + totalRef);
+  //     setTotalRefScore(0);
+  //     const refObj = {
+  //       id: hashedId, //unhashedID
+  //       giftAmount: totalRef,
+  //     };
+  //     axios
+  //       .get(
+  //         `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${refId}&limit=1&page=1`
+  //       )
+  //       .then(({ data }) => {
+  //         // console.log("setOwnerRefList(data[0]);");
+  //         // setOwnerRefList(data[0]);
+  //         const newArr = data[0].scoresFromRef;
+  //         if (newArr.length <= 0) {
+  //           newArr.push(refObj);
+  //         } else {
+  //           newArr.filter((item) =>
+  //             item.id === hashedId
+  //               ? (item.giftAmount = item.giftAmount + totalRef)
+  //               : newArr.push(refObj)
+  //           );
+  //         }
 
-          axios.put(
-            `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
-            {
-              scoresFromRef: newArr,
-            }
-          );
-          console.log(newArr);
-        });
-      const refIdNum = Number(refId);
+  //         axios.put(
+  //           `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
+  //           {
+  //             scoresFromRef: newArr,
+  //           }
+  //         );
+  //         console.log(newArr);
+  //       });
+  //     const refIdNum = Number(refId);
 
-      // const refList =
-      //   ownerRefList.scoresFromRef.length == 0
-      //     ? []
-      //     : ownerRefList.scoresFromRef;
-      // axios.put(
-      //   `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
-      //   {
-      //     scoresFromRef: newArr,
-      //   }
-      // );
-    }, 1400),
-    []
-  );
+  //     // const refList =
+  //     //   ownerRefList.scoresFromRef.length == 0
+  //     //     ? []
+  //     //     : ownerRefList.scoresFromRef;
+  //     // axios.put(
+  //     //   `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
+  //     //   {
+  //     //     scoresFromRef: newArr,
+  //     //   }
+  //     // );
+  //   }, 1400),
+  //   []
+  // );
   // console.log(ownerRefList);
   const buyBoost = useCallback(
     debounce((newBoostVal, newBoostLists, newScore, newShowBoosts) => {
@@ -157,7 +157,7 @@ function Game({ authId }) {
         prevScore = Number(clickPerOne) + Number(prevScore);
         const refGiftCount = Math.round(clickPerOne * 0.15);
         setTotalRefScore((prev) => prev + refGiftCount);
-        giveGiftScore(refId, totalRefScore);
+        // giveGiftScore(refId, totalRefScore);
         increaseCount(prevScore);
         setShown(prevScore);
         return prevScore;
