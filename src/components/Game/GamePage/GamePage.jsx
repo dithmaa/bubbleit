@@ -22,6 +22,7 @@ function GamePage({
   handlePercent,
   clickPerOne,
   setShownRating,
+  currentScore,
 }) {
   const sFunc = () => {
     // console.log("percent", percent);
@@ -71,7 +72,10 @@ function GamePage({
           </div>
           <div
             className="popit"
-            style={{ backgroundImage: `url(${popitImg})` }}
+            style={{
+              backgroundImage: `url(${popitImg})`,
+              filter: currentScore >= 1000000 ? "invert(1)" : "",
+            }}
           >
             <div className="grid">
               {bubbleStates.map((row, rowIndex) => (

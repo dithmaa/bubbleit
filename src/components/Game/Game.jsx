@@ -279,6 +279,7 @@ function Game({ authId }) {
           percent={percent}
           energyWait={energyWait}
           setShownRating={setShownRating}
+          currentScore={currentScore}
         />
       ) : (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
