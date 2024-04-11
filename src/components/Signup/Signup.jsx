@@ -37,7 +37,7 @@ function Signup() {
     },
   ];
   const refIdUrl = window.location.search
-    ? Number(window.location.search.replace("?", "").slice(4))
+    ? Number(window.location.search.replace("?", "").slice(4)) / 932
     : 0;
 
   // console.log(refIdUrl);
@@ -60,6 +60,7 @@ function Signup() {
       clickPerOne: 1,
       showBoosts: 1,
       boosts: boostsInitial,
+      scoresFromRef: [],
     };
 
     axios.post(
