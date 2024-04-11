@@ -4,6 +4,14 @@ import marketBig from "../../../assets/img/market_icon_big.png";
 import BoostPage from "./BoostPage/BoostPage";
 import MarketPage from "./MarketPage/MarketPage";
 
+import boostImage1 from "../../../assets/img/boosts/1.png";
+import boostImage2 from "../../../assets/img/boosts/2.png";
+import boostImage3 from "../../../assets/img/boosts/3.png";
+import boostImage4 from "../../../assets/img/boosts/4.png";
+import boostImage5 from "../../../assets/img/boosts/5.png";
+import boostImage6 from "../../../assets/img/boosts/6.png";
+import boostImage7 from "../../../assets/img/boosts/7.png";
+
 function Market({
   toShort,
   handleBoosting,
@@ -34,6 +42,16 @@ function Market({
   const handleBackBoost = () => {
     setShowBoostPage(false);
   };
+
+  const images = [
+    boostImage1,
+    boostImage2,
+    boostImage3,
+    boostImage4,
+    boostImage5,
+    boostImage6,
+    boostImage7,
+  ];
   return (
     <div className="market">
       {isShowBoostPage ? (
@@ -48,6 +66,7 @@ function Market({
           shownScore={shownScore}
           toShort={toShort}
           isNowBoosting={isNowBoosting}
+          images={images}
         />
       ) : (
         ""
@@ -68,6 +87,7 @@ function Market({
           handleShowBoostPage={handleShowBoostPage}
           frontEndBoosts={frontEndBoosts}
           currentScore={currentScore}
+          images={images}
         />
       ) : (
         ""

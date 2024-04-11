@@ -37,4 +37,11 @@ export const frontEndBoosts = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/274px-Captain_America%27s_shield.svg.png",
   },
+  {
+    id: 7,
+    title: "Галактика поп-итов",
+    power: 1000,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Captain_America%27s_shield.svg/274px-Captain_America%27s_shield.svg.png",
+  },
 ];

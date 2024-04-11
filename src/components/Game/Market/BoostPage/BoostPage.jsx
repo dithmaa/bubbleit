@@ -11,6 +11,7 @@ function BoostPage({
   shownScore,
   toShort,
   isNowBoosting,
+  images,
 }) {
   return (
     <div className="boost-page">
@@ -21,10 +22,7 @@ function BoostPage({
       </div>
 
       <div className="container">
-        <img
-          src={frontEndBoosts[currentOpenedBoost].image}
-          className="boost-picture"
-        />
+        <img src={images[currentOpenedBoost]} className="boost-picture" />
         <h3 className="h3">{boostsLists[currentOpenedBoost].title}</h3>
         <span className="boost-info">
           +{frontEndBoosts[currentOpenedBoost].power} за клик при увеличении
