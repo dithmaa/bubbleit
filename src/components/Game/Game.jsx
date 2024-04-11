@@ -26,6 +26,13 @@ function Game({ authId }) {
   const [isShowMenu, setShowMenu] = useState(1);
   const [isShowMarket, setShownMarket] = useState(false);
   const [isShowRating, setShownRating] = useState(false);
+  const [refId, setRefId] = useState(
+    localStorage.getItem("ref") ? localStorage.getItem("ref") : 0
+  );
+  const [totalRefScore, setTotalRefScore] = useState(0);
+  const [ownerRefList, setOwnerRefList] = useState([]);
+
+  // console.log("totalRefScore", totalRefScore);
 
   const [bubbleStates, setBubbleStates] = useState(
     Array.from({ length: 6 }, () => Array(6).fill(false))
@@ -50,6 +57,58 @@ function Game({ authId }) {
     }, 1400),
     []
   );
+  // console.log(ownerRefList);
+
+  const giveGiftScore = useCallback(
+    debounce((refId, totalRef) => {
+      console.log(refId + " " + totalRef);
+      setTotalRefScore(0);
+      const refObj = {
+        id: hashedId, //unhashedID
+        giftAmount: totalRef,
+      };
+      axios
+        .get(
+          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${refId}&limit=1&page=1`
+        )
+        .then(({ data }) => {
+          // console.log("setOwnerRefList(data[0]);");
+          // setOwnerRefList(data[0]);
+          const newArr = data[0].scoresFromRef;
+          if (newArr.length <= 0) {
+            newArr.push(refObj);
+          } else {
+            newArr.filter((item) =>
+              item.id === hashedId
+                ? (item.giftAmount = item.giftAmount + totalRef)
+                : newArr.push(refObj)
+            );
+          }
+
+          axios.put(
+            `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
+            {
+              scoresFromRef: newArr,
+            }
+          );
+          console.log(newArr);
+        });
+      const refIdNum = Number(refId);
+
+      // const refList =
+      //   ownerRefList.scoresFromRef.length == 0
+      //     ? []
+      //     : ownerRefList.scoresFromRef;
+      // axios.put(
+      //   `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
+      //   {
+      //     scoresFromRef: newArr,
+      //   }
+      // );
+    }, 1400),
+    []
+  );
+  // console.log(ownerRefList);
   const buyBoost = useCallback(
     debounce((newBoostVal, newBoostLists, newScore, newShowBoosts) => {
       console.log(newScore);
@@ -96,6 +155,9 @@ function Game({ authId }) {
 
       setScore((prevScore) => {
         prevScore = Number(clickPerOne) + Number(prevScore);
+        const refGiftCount = Math.round(clickPerOne * 0.15);
+        setTotalRefScore((prev) => prev + refGiftCount);
+        giveGiftScore(refId, totalRefScore);
         increaseCount(prevScore);
         setShown(prevScore);
         return prevScore;
