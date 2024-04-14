@@ -36,6 +36,7 @@ function Market({
     // setShownMarket(false);
   };
   const handleBackMarket = () => {
+    document.querySelector("body").classList.add("green");
     setShownMarket(false);
     setShowMenu(true);
   };

@@ -126,6 +126,7 @@ function Game({ authId }) {
     []
   );
   const handleShowMarket = () => {
+    document.querySelector("body").classList.remove("green");
     setShownMarket(true);
     setShowMenu(false);
   };
