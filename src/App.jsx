@@ -24,8 +24,6 @@ function App() {
       .then(({ data }) => {
         if (Number(data[0].clickAmount) >= 1000000) {
           document.querySelector("body").classList.add("green");
-        } else {
-          alert("меньше");
         }
       });
   }, []);
