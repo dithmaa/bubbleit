@@ -4,6 +4,7 @@ import { NavLink, Route, Router, Routes } from "react-router-dom";
 import Game from "./components/Game/Game";
 import Signup from "./pages/Signup/Signup";
 import Signin from "./pages/Signin/Signin";
+import axios from "axios";
 
 function App() {
   const [isAuth, setAuth] = useState(
@@ -12,6 +13,22 @@ function App() {
   const [authId, setAuthId] = useState(
     localStorage.getItem("authId") ? localStorage.getItem("authId") : 0
   );
+  const hashedId = authId.slice(3).replace(/\D/g, "") / 932;
+  console.log(hashedId);
+  const [userScore, setUserScore] = useState();
+  useEffect(() => {
+    axios
+      .get(
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${hashedId}`
+      )
+      .then(({ data }) => {
+        if (Number(data[0].clickAmount) >= 1000000) {
+          document.querySelector("body").classList.add("green");
+        } else {
+          alert("меньше");
+        }
+      });
+  }, []);
 
   return (
     <div className="App">

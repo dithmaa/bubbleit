@@ -57,6 +57,7 @@ function Game({ authId }) {
     }, 1400),
     []
   );
+
   // console.log(ownerRefList);
 
   // const giveGiftScore = useCallback(
