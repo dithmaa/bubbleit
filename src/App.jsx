@@ -13,7 +13,7 @@ function App() {
   const [authId, setAuthId] = useState(
     localStorage.getItem("authId") ? localStorage.getItem("authId") : 0
   );
-  const hashedId = authId.slice(3).replace(/\D/g, "") / 932;
+  const hashedId = authId ? authId.slice(3).replace(/\D/g, "") / 932 : 0;
   console.log(hashedId);
   const [userScore, setUserScore] = useState();
   useEffect(() => {
