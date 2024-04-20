@@ -36,8 +36,9 @@ function Market({
     // setShownMarket(false);
   };
   const handleBackMarket = () => {
-    document.querySelector("body").classList.add("green");
-    console.log("s");
+    if (Number(currentScore) >= 1000000) {
+      document.querySelector("body").classList.add("green");
+    }
     setShownMarket(false);
     setShowMenu(true);
   };
