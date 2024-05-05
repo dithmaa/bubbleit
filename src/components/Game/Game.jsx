@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import boostImg1 from "../../assets/img/icon-boost-1.png";
 import popitImg from "../../assets/img/popi.png";
 import marketIcon from "../../assets/img/market_icon.png";
+import friendIcon from "../../assets/img/friend_icon.png";
+import copyIcon from "../../assets/img/copy.png";
 
 import preloaderImg from "../../assets/img/loading.gif";
 import axios from "axios";
@@ -17,6 +19,7 @@ import RatingPage from "./RatingBar/RatingPage/RatingPage";
 
 function Game({ authId }) {
   const [showBoosts, setShowBoosts] = useState(1);
+  const [friendsList, setFriendsList] = useState(1);
   const [currentScore, setScore] = useState(0);
   const [clickPerOne, setClickPerOne] = useState(1);
   const [boostsLists, setBoostsLists] = useState([]);
@@ -26,13 +29,15 @@ function Game({ authId }) {
   const [isShowMenu, setShowMenu] = useState(1);
   const [isShowMarket, setShownMarket] = useState(false);
   const [isShowRating, setShownRating] = useState(false);
-  const [refId, setRefId] = useState(
-    localStorage.getItem("ref") ? localStorage.getItem("ref") : 0
-  );
+  const [isShowFriends, setShowFriends] = useState(false);
+  const [inviterId, setInviterId] = useState(0);
+  const [hasInviter, setHasInviter] = useState(false);
+
+  const [inviterFriendsList, setInviterFriendsList] = useState(0);
   const [totalRefScore, setTotalRefScore] = useState(0);
-  const [ownerRefList, setOwnerRefList] = useState([]);
 
   // console.log("totalRefScore", totalRefScore);
+  // console.log("HAHA", friendsList);
 
   const [bubbleStates, setBubbleStates] = useState(
     Array.from({ length: 6 }, () => Array(6).fill(false))
@@ -57,59 +62,30 @@ function Game({ authId }) {
     }, 1400),
     []
   );
+  // const increase
 
-  // console.log(ownerRefList);
+  const harvestRef = (id, score) => {
+    // console.log(id);
+    const newV = currentScore + score;
+    console.log(newV);
+    setScore(newV);
+    setShown(newV);
+    // console.log(friendsList);
+    const itemToUpdate = friendsList.find((item) => item.id == id);
+    if (itemToUpdate) {
+      itemToUpdate.score = 0;
+    }
+    // console.log("NEWNEWNEW", friendsList);
+    axios.put(
+      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${hashedId}`,
+      {
+        clickAmount: newV,
+        scoresFromRef: friendsList,
+      }
+    );
+    //clear from friends list
+  };
 
-  // const giveGiftScore = useCallback(
-  //   debounce((refId, totalRef) => {
-  //     console.log(refId + " " + totalRef);
-  //     setTotalRefScore(0);
-  //     const refObj = {
-  //       id: hashedId, //unhashedID
-  //       giftAmount: totalRef,
-  //     };
-  //     axios
-  //       .get(
-  //         `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${refId}&limit=1&page=1`
-  //       )
-  //       .then(({ data }) => {
-  //         // console.log("setOwnerRefList(data[0]);");
-  //         // setOwnerRefList(data[0]);
-  //         const newArr = data[0].scoresFromRef;
-  //         if (newArr.length <= 0) {
-  //           newArr.push(refObj);
-  //         } else {
-  //           newArr.filter((item) =>
-  //             item.id === hashedId
-  //               ? (item.giftAmount = item.giftAmount + totalRef)
-  //               : newArr.push(refObj)
-  //           );
-  //         }
-
-  //         axios.put(
-  //           `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
-  //           {
-  //             scoresFromRef: newArr,
-  //           }
-  //         );
-  //         console.log(newArr);
-  //       });
-  //     const refIdNum = Number(refId);
-
-  //     // const refList =
-  //     //   ownerRefList.scoresFromRef.length == 0
-  //     //     ? []
-  //     //     : ownerRefList.scoresFromRef;
-  //     // axios.put(
-  //     //   `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdNum}`,
-  //     //   {
-  //     //     scoresFromRef: newArr,
-  //     //   }
-  //     // );
-  //   }, 1400),
-  //   []
-  // );
-  // console.log(ownerRefList);
   const buyBoost = useCallback(
     debounce((newBoostVal, newBoostLists, newScore, newShowBoosts) => {
       console.log(newScore);
@@ -130,6 +106,11 @@ function Game({ authId }) {
     setShownMarket(true);
     setShowMenu(false);
   };
+  const handleShowFriends = () => {
+    document.querySelector("body").classList.remove("green");
+    setShowFriends(true);
+    setShowMenu(false);
+  };
   const handlePercent = (value) => {
     // console.log(value);
     setPercent(value);
@@ -141,7 +122,65 @@ function Game({ authId }) {
     }, 800),
     []
   );
+  // console.log(inviterFriendsList);
+  // console.log("inviterId", inviterId);
+
+  const getFriends = async () => {
+    // console.log("blyaaaaaaaaaaa", inviterId);
+    await axios
+      .get(
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${inviterId}`
+      )
+      .then(({ data }) => {
+        setInviterFriendsList(data.scoresFromRef);
+        // console.log("inviterFriendsList", inviterFriendsList);
+      });
+  };
+  useEffect(() => {
+    if (hasInviter) {
+      getFriends();
+    }
+  }, [hasInviter]);
+
+  const updateFriendsListDebounced = useCallback(
+    debounce((inviterFriendsList, newRefScore = 39, inviterId) => {
+      const updateFriendsList = async () => {
+        const itemToUpdate = inviterFriendsList.find(
+          (item) => item.id === hashedId
+        );
+
+        if (itemToUpdate) {
+          itemToUpdate.score = itemToUpdate.score + newRefScore;
+          setTimeout(() => {
+            setTotalRefScore(0); //сброс нажатых реф очков для нового подсчета
+          }, 0);
+        }
+
+        // console.log(inviterFriendsList);
+        console.log("dd", inviterId);
+        await axios.put(
+          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${inviterId}`,
+          {
+            scoresFromRef: inviterFriendsList,
+          }
+        );
+      };
+
+      updateFriendsList();
+    }, 300),
+    []
+  );
+
   const handleBubbleClick = (rowIndex, colIndex, setBubbleStates) => {
+    if (hasInviter) {
+      setTimeout(() => {
+        updateFriendsListDebounced(
+          inviterFriendsList,
+          totalRefScore,
+          inviterId
+        );
+      }, 0);
+    }
     if (percent > 0) {
       let newPercent = percent;
       newPercent -= 3;
@@ -157,11 +196,12 @@ function Game({ authId }) {
 
       setScore((prevScore) => {
         prevScore = Number(clickPerOne) + Number(prevScore);
-        const refGiftCount = Math.round(clickPerOne * 0.15);
+        const refGiftCount = Math.ceil(clickPerOne * 0.15);
         setTotalRefScore((prev) => prev + refGiftCount);
         // giveGiftScore(refId, totalRefScore);
         increaseCount(prevScore);
         setShown(prevScore);
+        // console.log("refGiftCount", refGiftCount);
         return prevScore;
       });
     } else {
@@ -171,6 +211,10 @@ function Game({ authId }) {
   };
   const closeRating = () => {
     setShownRating(false);
+  };
+  const closeFriends = () => {
+    setShowFriends(false);
+    setShowMenu(true);
   };
   // console.log("clickPerOne ", clickPerOne);
   const handleBoosting = () => {
@@ -223,6 +267,11 @@ function Game({ authId }) {
         setClickPerOne(data[0].clickPerOne);
         setBoostsLists(data[0].boosts);
         setShowBoosts(data[0].showBoosts);
+        setFriendsList(data[0].scoresFromRef);
+        if (data[0].refId != 0 && data[0].refId) {
+          setHasInviter(true);
+          setInviterId(data[0].refId);
+        }
         setTimeout(() => {
           setLoaded(true);
         }, 500);
@@ -282,6 +331,15 @@ function Game({ authId }) {
           energyWait={energyWait}
           setShownRating={setShownRating}
           currentScore={currentScore}
+          friendIcon={friendIcon}
+          handleShowFriends={handleShowFriends}
+          friendsList={friendsList}
+          isShowFriends={isShowFriends}
+          setShowFriends={setShowFriends}
+          closeFriends={closeFriends}
+          harvestRef={harvestRef}
+          authId={authId}
+          copyIcon={copyIcon}
         />
       ) : (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />

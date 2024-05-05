@@ -419,6 +419,16 @@ body {
     transform: scale(0.85);
   }
 }
+
+.menu {
+  display: flex;
+  &__item {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 @media screen and (max-width: 425px) {
   .res {
     font-size: 47px;

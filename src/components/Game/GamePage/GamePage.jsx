@@ -3,6 +3,7 @@ import EnergyBar from "../EnergyBar/EnergyBar";
 import { useCallback } from "react";
 import debounce from "lodash.debounce";
 import RatingBar from "../RatingBar/RatingBar";
+import Friends from "../Friends/Friends";
 
 function GamePage({
   isShowMarket,
@@ -23,6 +24,14 @@ function GamePage({
   clickPerOne,
   setShownRating,
   currentScore,
+  handleShowFriends,
+  friendIcon,
+  friendsList,
+  isShowFriends,
+  closeFriends,
+  harvestRef,
+  authId,
+  copyIcon,
 }) {
   const sFunc = () => {
     // console.log("percent", percent);
@@ -51,6 +60,19 @@ function GamePage({
       {!isShowMarket ? (
         <div className="game-page">
           <RatingBar onClick={() => setShownRating(true)} />
+          {isShowFriends ? (
+            <Friends
+              currentScore={currentScore}
+              closeFriends={closeFriends}
+              friendsList={friendsList}
+              harvestRef={harvestRef}
+              authId={authId}
+              copyIcon={copyIcon}
+            />
+          ) : (
+            ""
+          )}
+
           <div
             className="res"
             style={{ display: "flex", flexDirection: "column" }}
@@ -101,6 +123,10 @@ function GamePage({
           <EnergyBar setPercent={setPercent} percent={percent} />
           {isShowMenu ? (
             <nav className="menu">
+              <button className="menu__item" onClick={handleShowFriends}>
+                <img src={friendIcon} alt="Friend Icon" />
+                <span>Друзья</span>
+              </button>
               <button className="menu__item" onClick={handleShowMarket}>
                 <img src={marketIcon} alt="Market Icon" />
                 <span>Бусты</span>

@@ -36,11 +36,13 @@ function Signup() {
       level: 0,
     },
   ];
-  // const refIdUrl = window.location.search
-  //   ? Number(window.location.search.replace("?", "").slice(4)) / 932
-  //   : 0;
+  const refIdUrl = window.location.search
+    ? isNaN(Number(window.location.search.replace("?", "").slice(4)))
+      ? 0
+      : Number(window.location.search.replace("?", "").slice(4)) / 932
+    : 0;
 
-  // console.log(refIdUrl);
+  console.log("refIdUrl", refIdUrl);
   useEffect(() => {
     axios
       .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
@@ -48,6 +50,40 @@ function Signup() {
         setLastId(data[data.length - 1].id);
       });
   }, []);
+
+  useEffect(() => {
+    notifyIfRefLink();
+  }, []);
+
+  const [prevScoresFromRef, setPrevScoresFromRef] = useState([]);
+
+  console.log("prevScoresFromRef ", prevScoresFromRef);
+
+  const notifyInviter = (e) => {
+    console.log("s", prevScoresFromRef);
+    const newUserId = Number(lastId) + 1;
+
+    prevScoresFromRef.push({ id: newUserId, score: 0 });
+    console.log(prevScoresFromRef);
+    axios.put(
+      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`,
+      {
+        scoresFromRef: prevScoresFromRef,
+      }
+    );
+  };
+
+  const notifyIfRefLink = () => {
+    refIdUrl == 0
+      ? console.log("Не реферальная ссылка")
+      : axios
+          .get(
+            `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`
+          )
+          .then(({ data }) => {
+            setPrevScoresFromRef(data.scoresFromRef);
+          });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     const newUserId = Number(lastId) + 1;
@@ -55,18 +91,13 @@ function Signup() {
     const newName = "Игрок" + newUserId;
     const newUser = {
       name: newName,
-      // refId: refIdUrl,
+      refId: refIdUrl, // тот кто пригласил
       clickAmount: 0,
       clickPerOne: 1,
       showBoosts: 1,
       boosts: boostsInitial,
-      // scoresFromRef: [],
+      scoresFromRef: [],
     };
-
-    axios.post(
-      "https://65eafaa243ce16418932f611.mockapi.io/popit/popit/",
-      newUser
-    );
 
     const hashedId = "y10dwpdDxwq" + newUserId * 932 + "xdeDed";
     localStorage.setItem("authId", hashedId);
@@ -75,6 +106,18 @@ function Signup() {
     setDisabled(!isDisabledNow);
 
     // console.log(newUserId);
+    setTimeout(() => {
+      axios
+        .post(
+          "https://65eafaa243ce16418932f611.mockapi.io/popit/popit/",
+          newUser
+        )
+        .then(() => {
+          if (refIdUrl != 0 || refIdUrl) {
+            notifyInviter();
+          }
+        });
+    }, 0);
     setTimeout(() => {
       window.location.reload();
     }, 5000);
