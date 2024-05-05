@@ -92,6 +92,16 @@ function Friends({
               onClick={copyRef}
             />
           </div>
+          <span
+            style={{
+              textAlign: "center",
+              display: "inline-block",
+              fontSize: "13px",
+              margin: "16px 0",
+            }}
+          >
+            Каждый приведённый друг будет приносить 15% от каждого клика
+          </span>
         </div>
         <div className={styles.friends}>
           {friendsList.length <= 0 ? "Нет приглашенных друзей" : ""}
