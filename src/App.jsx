@@ -18,15 +18,17 @@ function App() {
   console.log(hashedId);
   const [userScore, setUserScore] = useState();
   useEffect(() => {
-    axios
-      .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${hashedId}`
-      )
-      .then(({ data }) => {
-        if (Number(data[0].clickAmount) >= 1000000) {
-          document.querySelector("body").classList.add("green");
-        }
-      });
+    if (hashedId != 0) {
+      axios
+        .get(
+          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${hashedId}`
+        )
+        .then(({ data }) => {
+          if (Number(data[0].clickAmount) >= 1000000) {
+            document.querySelector("body").classList.add("green");
+          }
+        });
+    }
   }, []);
 
   useEffect(() => {

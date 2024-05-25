@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Signup.module.scss";
 import axios from "axios";
+const tg = window.Telegram.WebApp;
+
 function Signup() {
   const [lastId, setLastId] = useState(0);
   const [isDisabledNow, setDisabled] = useState(false);
@@ -123,13 +125,7 @@ function Signup() {
     }, 5000);
   };
 
-  return (
-    <div className={styles.root}>
-      <button disabled={isDisabledNow} onClick={handleSubmit}>
-        Создать аккаунт
-      </button>
-    </div>
-  );
+  return <div className={styles.root}>{tg.initDataUnsafe?.user?.id}</div>;
 }
 
 export default Signup;

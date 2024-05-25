@@ -274,9 +274,7 @@ function Game({ authId }) {
 
   useEffect(() => {
     axios
-      .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${hashedId}`
-      )
+      .get(`https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${0}`)
       .then(({ data }) => {
         setScore(data[0].clickAmount);
         setClickPerOne(data[0].clickPerOne);
