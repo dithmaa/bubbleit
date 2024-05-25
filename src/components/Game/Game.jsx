@@ -4,6 +4,7 @@ import popitImg from "../../assets/img/popi.png";
 import marketIcon from "../../assets/img/market_icon.png";
 import friendIcon from "../../assets/img/friend_icon.png";
 import copyIcon from "../../assets/img/copy.png";
+import presentIcon from "../../assets/img/present.png";
 
 import preloaderImg from "../../assets/img/loading.gif";
 import axios from "axios";
@@ -16,6 +17,7 @@ import Preloader from "./Preloader/Preloader";
 import { animateScore, toShort } from "./handleCount";
 import EnergyBar from "./EnergyBar/EnergyBar";
 import RatingPage from "./RatingBar/RatingPage/RatingPage";
+import Challenges from "./Challenges/Challenges";
 
 function Game({ authId }) {
   const [showBoosts, setShowBoosts] = useState(1);
@@ -30,6 +32,7 @@ function Game({ authId }) {
   const [isShowMarket, setShownMarket] = useState(false);
   const [isShowRating, setShownRating] = useState(false);
   const [isShowFriends, setShowFriends] = useState(false);
+  const [isShowPresent, setShowPresent] = useState(false);
   const [inviterId, setInviterId] = useState(0);
   const [hasInviter, setHasInviter] = useState(false);
 
@@ -84,6 +87,14 @@ function Game({ authId }) {
       }
     );
     //clear from friends list
+  };
+
+  const handleShowPresent = () => {
+    setShowPresent(!isShowPresent);
+    console.log("handleShowPresent");
+  };
+  const closePresent = () => {
+    setShowPresent(!isShowPresent);
   };
 
   const buyBoost = useCallback(
@@ -287,6 +298,11 @@ function Game({ authId }) {
   useEffect(() => animateScore(currentScore, setShown), [isLoadedApp]);
   return (
     <>
+      {isShowPresent ? (
+        <Challenges hashedId={hashedId} closePresent={closePresent} />
+      ) : (
+        ""
+      )}
       {isShowRating ? <RatingPage closeRating={closeRating} /> : ""}
       {isShowMarket ? (
         <Market
@@ -311,6 +327,8 @@ function Game({ authId }) {
       )}
       {isLoadedApp ? (
         <GamePage
+          isShowPresent={isShowPresent}
+          handleShowPresent={handleShowPresent}
           isShowMarket={isShowMarket}
           boostImg1={boostImg1}
           shownScore={shownScore}
@@ -339,6 +357,7 @@ function Game({ authId }) {
           closeFriends={closeFriends}
           harvestRef={harvestRef}
           authId={authId}
+          presentIcon={presentIcon}
           copyIcon={copyIcon}
         />
       ) : (

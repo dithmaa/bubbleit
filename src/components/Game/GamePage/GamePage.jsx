@@ -32,6 +32,9 @@ function GamePage({
   harvestRef,
   authId,
   copyIcon,
+  isShowPresent,
+  presentIcon,
+  handleShowPresent,
 }) {
   const sFunc = () => {
     // console.log("percent", percent);
@@ -60,6 +63,7 @@ function GamePage({
       {!isShowMarket ? (
         <div className="game-page">
           <RatingBar onClick={() => setShownRating(true)} />
+
           {isShowFriends ? (
             <Friends
               currentScore={currentScore}
@@ -130,6 +134,10 @@ function GamePage({
               <button className="menu__item" onClick={handleShowMarket}>
                 <img src={marketIcon} alt="Market Icon" />
                 <span>Бусты</span>
+              </button>
+              <button className="menu__item" onClick={handleShowPresent}>
+                <img src={presentIcon} alt="Present Icon" />
+                <span>Задания</span>
               </button>
             </nav>
           ) : (
