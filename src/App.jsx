@@ -37,7 +37,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {tg.initDataUnsafe?.user?.username}
+      {tg.initDataUnsafe?.id?.id}
       <button onClick={onClose}>Закрыть</button>
       <Routes>
         <Route
