@@ -5,6 +5,7 @@ import Game from "./components/Game/Game";
 import Signup from "./pages/Signup/Signup";
 import Signin from "./pages/Signin/Signin";
 import axios from "axios";
+const tg = window.Telegram.WebApp;
 
 function App() {
   const [isAuth, setAuth] = useState(
@@ -28,8 +29,15 @@ function App() {
       });
   }, []);
 
+  const onClose = () => {
+    tg.close();
+  };
+  useEffect(() => {
+    tg.ready();
+  }, []);
   return (
     <div className="App">
+      <button onClick={onClose}>Закрыть</button>
       <Routes>
         <Route
           path="/"
