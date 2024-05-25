@@ -36,7 +36,6 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <div style={{ color: "#fff" }}>TEST: {tg.initDataUnsafe?.user?.id}</div>
       <Routes>
         <Route
           path="/"

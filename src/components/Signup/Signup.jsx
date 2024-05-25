@@ -7,6 +7,7 @@ function Signup() {
   const [lastId, setLastId] = useState(0);
   const [tgID, setTgID] = useState(0);
   const [isDisabledNow, setDisabled] = useState(false);
+  const [curva, setCurva] = useState(0);
   const boostsInitial = [
     {
       id: 1,
@@ -46,6 +47,21 @@ function Signup() {
     : 0;
 
   console.log("refIdUrl", refIdUrl);
+  useEffect(() => {
+    if (curva != 0) {
+      axios
+        .get(
+          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?tg_id=${tgID}`
+        )
+        .then(({ data }) => {
+          if (data) {
+            setCurva(data.tg_id);
+          } else {
+            setCurva(9999);
+          }
+        });
+    }
+  }, [tgID]); //Проверка есть ли такой пользователь тг
   useEffect(() => {
     setTgID(tg.initDataUnsafe?.user?.id);
     axios
@@ -130,7 +146,7 @@ function Signup() {
 
   return (
     <div className={styles.root}>
-      <div style={{ color: "#fff" }}>{tgID}</div>
+      <div style={{ color: "#fff" }}>Curva: {curva}</div>
       <button onClick={handleSubmit}>Регистрация</button>
     </div>
   );
