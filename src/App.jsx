@@ -29,16 +29,12 @@ function App() {
       });
   }, []);
 
-  const onClose = () => {
-    tg.close();
-  };
   useEffect(() => {
     tg.ready();
   }, []);
   return (
     <div className="App">
       <div style={{ color: "#fff" }}>TEST: {tg.initDataUnsafe?.user?.id}</div>
-      <button onClick={onClose}>Закрыть</button>
       <Routes>
         <Route
           path="/"

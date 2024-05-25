@@ -1,0 +1,2989 @@
+[
+  {
+    "id": "1",
+    "name": "Лаки",
+    "refId": 3,
+    "clickAmount": 21344859,
+    "clickPerOne": 1288,
+    "showBoosts": 7,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 12502,
+        "level": 51
+      },
+      {
+        "id": 2,
+        "price": 59185,
+        "level": 21
+      },
+      {
+        "id": 3,
+        "price": 595876,
+        "level": 26
+      },
+      {
+        "id": 4,
+        "price": 1331000,
+        "level": 3
+      },
+      {
+        "id": 5,
+        "price": 5500000,
+        "level": 1
+      },
+      {
+        "id": 6,
+        "price": 16500000,
+        "level": 1
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 35,
+    "id": "2",
+    "name": "Игрок2",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 47227,
+    "id": "3",
+    "name": "name9999",
+    "clickPerOne": 11267,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 6418,
+        "level": 44
+      },
+      {
+        "id": 2,
+        "price": 17146,
+        "level": 8
+      },
+      {
+        "id": 3,
+        "price": 73205,
+        "level": 4
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": [
+      {
+        "id": 53,
+        "score": 0
+      },
+      {
+        "id": 54,
+        "score": 0
+      },
+      {
+        "id": 55,
+        "score": 0
+      },
+      {
+        "id": 57,
+        "score": 31
+      },
+      {
+        "id": 59,
+        "score": 11
+      },
+      {
+        "id": 60,
+        "score": 108
+      }
+    ]
+  },
+  {
+    "clickAmount": 3484668,
+    "id": "4",
+    "name": ".",
+    "clickPerOne": 2102,
+    "showBoosts": 7,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 69492,
+        "level": 69
+      },
+      {
+        "id": 2,
+        "price": 126864,
+        "level": 29
+      },
+      {
+        "id": 3,
+        "price": 959660,
+        "level": 31
+      },
+      {
+        "id": 4,
+        "price": 2853114,
+        "level": 11
+      },
+      {
+        "id": 5,
+        "price": 5500000,
+        "level": 1
+      },
+      {
+        "id": 6,
+        "price": 16500000,
+        "level": 1
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1000039,
+    "id": "5",
+    "name": "Игрок5",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": [
+      {
+        "id": 58,
+        "score": 0
+      }
+    ]
+  },
+  {
+    "clickAmount": 1000039,
+    "id": "6",
+    "name": "Игрок6",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 47687,
+    "id": "7",
+    "name": "lavachik",
+    "clickPerOne": 100,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 2725,
+        "level": 35
+      },
+      {
+        "id": 2,
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "id": 3,
+        "price": 60500,
+        "level": 2
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "8",
+    "name": "Игрок8",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 403821,
+    "id": "9",
+    "name": "🤫🧏‍♀️",
+    "clickPerOne": 191,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1694,
+        "level": 30
+      },
+      {
+        "id": 2,
+        "price": 12883,
+        "level": 5
+      },
+      {
+        "id": 3,
+        "price": 88577,
+        "level": 6
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "10",
+    "name": "Игрок1",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 47659506,
+    "id": "11",
+    "name": "Паша техни",
+    "clickPerOne": 8102,
+    "showBoosts": 8,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1467153,
+        "level": 101
+      },
+      {
+        "id": 2,
+        "price": 938802,
+        "level": 50
+      },
+      {
+        "id": 3,
+        "price": 1700092,
+        "level": 37
+      },
+      {
+        "id": 4,
+        "price": 6727487,
+        "level": 20
+      },
+      {
+        "id": 5,
+        "price": 11789737,
+        "level": 9
+      },
+      {
+        "id": 6,
+        "price": 29230756,
+        "level": 7
+      },
+      {
+        "id": 7,
+        "price": 133100000,
+        "level": 3
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "12",
+    "name": "Игрок12",
+    "clickPerOne": 6,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 160,
+        "level": 5
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 67,
+    "id": "13",
+    "name": "Z4CKAPRO",
+    "clickPerOne": 6,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 160,
+        "level": 5
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1708153,
+    "id": "14",
+    "name": "Влад",
+    "clickPerOne": 477,
+    "showBoosts": 5,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 43150,
+        "level": 64
+      },
+      {
+        "id": 2,
+        "price": 78774,
+        "level": 24
+      },
+      {
+        "id": 3,
+        "price": 97434,
+        "level": 7
+      },
+      {
+        "id": 4,
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 11353380,
+    "id": "15",
+    "name": "nn  не лоз",
+    "clickPerOne": 4201,
+    "showBoosts": 8,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1333776,
+        "level": 100
+      },
+      {
+        "id": 2,
+        "price": 938802,
+        "level": 50
+      },
+      {
+        "id": 3,
+        "price": 1405036,
+        "level": 35
+      },
+      {
+        "id": 4,
+        "price": 2593740,
+        "level": 10
+      },
+      {
+        "id": 5,
+        "price": 12968710,
+        "level": 10
+      },
+      {
+        "id": 6,
+        "price": 16500000,
+        "level": 1
+      },
+      {
+        "id": 7,
+        "price": 110000000,
+        "level": 1
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 93,
+    "id": "16",
+    "name": "Игрок16",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "17",
+    "name": "Игрок17",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 12099459,
+    "id": "18",
+    "name": "Игрок18",
+    "clickPerOne": 483,
+    "showBoosts": 5,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1694,
+        "level": 30
+      },
+      {
+        "id": 2,
+        "price": 48914,
+        "level": 19
+      },
+      {
+        "id": 3,
+        "price": 97434,
+        "level": 7
+      },
+      {
+        "id": 4,
+        "price": 1210000,
+        "level": 2
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": [
+      {
+        "id": 62,
+        "score": 233
+      }
+    ]
+  },
+  {
+    "clickAmount": 1172,
+    "id": "19",
+    "name": "Игрок19",
+    "clickPerOne": 28,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1273,
+        "level": 27
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 2620,
+    "id": "20",
+    "name": "Азиз",
+    "clickPerOne": 14,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 339,
+        "level": 13
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 3766,
+    "id": "21",
+    "name": "nn не лоз2",
+    "clickPerOne": 411,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 11366,
+        "level": 50
+      },
+      {
+        "id": 2,
+        "price": 86651,
+        "level": 25
+      },
+      {
+        "id": 3,
+        "price": 107177,
+        "level": 8
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 8,
+    "id": "22",
+    "name": "Игрок22",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 80,
+    "id": "23",
+    "name": "Лаки",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "24",
+    "name": "Игрок24",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "25",
+    "name": "dithmaa",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 117,
+    "id": "26",
+    "name": "Игрок26",
+    "clickPerOne": 3,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 121,
+        "level": 2
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      },
+      {
+        "id": 7,
+        "price": 100000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 9211,
+    "id": "27",
+    "name": "Игрок27",
+    "refId": 1,
+    "clickPerOne": 128,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 110,
+        "level": 1
+      },
+      {
+        "id": 2,
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "id": 3,
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 103,
+    "id": "28",
+    "name": "Игрок28",
+    "refId": 1,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 23,
+    "id": "29",
+    "name": "Игрок29",
+    "refId": 1,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 2,
+    "id": "30",
+    "name": "Игрок30",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "31",
+    "name": "Игрок31",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "32",
+    "name": "Игрок32",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "33",
+    "name": "Игрок33",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "34",
+    "name": "Игрок34",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 52,
+    "id": "35",
+    "name": "Игрок35",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "36",
+    "name": "Игрок1",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "37",
+    "name": "Игрок37",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 56,
+    "id": "38",
+    "name": "Игрок38",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 234,
+    "id": "39",
+    "name": "Игрок39",
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 110,
+        "level": 1
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 58830,
+    "id": "40",
+    "name": "Z4CKAPRO",
+    "clickPerOne": 231,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1694,
+        "level": 30
+      },
+      {
+        "id": 2,
+        "price": 20746,
+        "level": 10
+      },
+      {
+        "id": 3,
+        "price": 88577,
+        "level": 6
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 111,
+    "id": "41",
+    "name": "Игрок41",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 8,
+    "id": "42",
+    "name": "Игрок42",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 2932,
+    "id": "43",
+    "name": "Игрок43",
+    "clickPerOne": 90,
+    "showBoosts": 3,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 2253,
+        "level": 33
+      },
+      {
+        "id": 2,
+        "price": 15588,
+        "level": 7
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1356,
+    "id": "44",
+    "name": "Игрок44",
+    "clickPerOne": 48,
+    "showBoosts": 3,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 1863,
+        "level": 31
+      },
+      {
+        "id": 2,
+        "price": 9680,
+        "level": 2
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 135,
+    "id": "45",
+    "name": "Игрок45",
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 110,
+        "level": 1
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 17,
+    "id": "46",
+    "name": "Игрок46",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 25,
+    "id": "47",
+    "name": "Игрок47",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 112,
+    "id": "48",
+    "name": "Игрок48",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 3036,
+    "id": "49",
+    "name": "...",
+    "clickPerOne": 11,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 256,
+        "level": 10
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "50",
+    "name": "Z4CKAPRO",
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "51",
+    "name": "Игрок51",
+    "refId": 1,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "52",
+    "name": "Игрок52",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "53",
+    "name": "Игрок53",
+    "refId": 3,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "54",
+    "name": "Игрок54",
+    "refId": 3,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 11281,
+    "id": "55",
+    "name": "Игрок55",
+    "refId": 3,
+    "clickPerOne": 3,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 121,
+        "level": 2
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 165201,
+    "id": "56",
+    "name": "ПАШКА ТЕХН",
+    "clickPerOne": 1127,
+    "showBoosts": 6,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 24359,
+        "level": 58
+      },
+      {
+        "id": 2,
+        "price": 95316,
+        "level": 26
+      },
+      {
+        "id": 3,
+        "price": 406992,
+        "level": 22
+      },
+      {
+        "id": 4,
+        "price": 1464100,
+        "level": 4
+      },
+      {
+        "id": 5,
+        "price": 5500000,
+        "level": 1
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ]
+  },
+  {
+    "clickAmount": 133,
+    "id": "57",
+    "name": "Игрок57",
+    "refId": 3,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 29,
+    "id": "58",
+    "name": "Игрок58",
+    "refId": 5,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 12,
+    "id": "59",
+    "name": "Игрок59",
+    "refId": 3,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 128,
+    "id": "60",
+    "name": "Игрок60",
+    "refId": 3,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 259,
+    "id": "61",
+    "name": "Игрок61",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 249,
+    "id": "62",
+    "name": "Игрок62",
+    "refId": 18,
+    "clickPerOne": 3,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 121,
+        "level": 2
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 2247725,
+    "id": "63",
+    "name": "Игрок63",
+    "refId": 0,
+    "clickPerOne": 600,
+    "showBoosts": 7,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 596,
+        "level": 19
+      },
+      {
+        "id": 2,
+        "price": 20746,
+        "level": 10
+      },
+      {
+        "id": 3,
+        "price": 88577,
+        "level": 6
+      },
+      {
+        "id": 4,
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "id": 5,
+        "price": 5500000,
+        "level": 1
+      },
+      {
+        "id": 6,
+        "price": 16500000,
+        "level": 1
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1752215,
+    "id": "64",
+    "name": "Игрок64",
+    "refId": 0,
+    "clickPerOne": 112,
+    "showBoosts": 4,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 193,
+        "level": 7
+      },
+      {
+        "id": 2,
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "id": 3,
+        "price": 73205,
+        "level": 4
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1000004,
+    "id": "65",
+    "name": "Игрок65",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 77,
+    "id": "66",
+    "name": "Игрок66",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "id": "67",
+    "name": "Игрок67",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 565,
+    "id": "68",
+    "name": "Sergei",
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 110,
+        "level": 1
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 92,
+    "id": "69",
+    "name": "Игрок69",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 5,
+    "id": "70",
+    "name": "Игрок70",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "boosts": [
+      {
+        "id": 1,
+        "price": 100,
+        "level": 0
+      },
+      {
+        "id": 2,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "id": 3,
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "id": 4,
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "id": 5,
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  }
+]
