@@ -5,6 +5,7 @@ const tg = window.Telegram.WebApp;
 
 function Signup() {
   const [lastId, setLastId] = useState(0);
+  const [tgID, setTgID] = useState(0);
   const [isDisabledNow, setDisabled] = useState(false);
   const boostsInitial = [
     {
@@ -46,6 +47,7 @@ function Signup() {
 
   console.log("refIdUrl", refIdUrl);
   useEffect(() => {
+    setTgID(tg.initDataUnsafe?.user?.id);
     axios
       .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
       .then(({ data }) => {
@@ -93,6 +95,7 @@ function Signup() {
     const newName = "Игрок" + newUserId;
     const newUser = {
       name: newName,
+      tg_id: tgID,
       refId: refIdUrl, // тот кто пригласил
       clickAmount: 0,
       clickPerOne: 1,
@@ -125,7 +128,12 @@ function Signup() {
     }, 5000);
   };
 
-  return <div className={styles.root}>{tg.initDataUnsafe?.user?.id}</div>;
+  return (
+    <div className={styles.root}>
+      <div style={{ color: "#fff" }}>{tgID}</div>
+      <button onClick={handleSubmit}>Регистрация</button>
+    </div>
+  );
 }
 
 export default Signup;
