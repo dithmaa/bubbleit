@@ -37,7 +37,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {tg.initDataUnsafe?.id?.id}
+      <div style={{ color: "#fff" }}>TEST: {tg.initDataUnsafe?.user?.id}</div>
       <button onClick={onClose}>Закрыть</button>
       <Routes>
         <Route
