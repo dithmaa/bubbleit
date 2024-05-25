@@ -42,9 +42,9 @@
     }
   }
   .copy {
-    transition: 0.25s ease opacity;
+    transition: 0.1s ease opacity;
     &:active {
-      opacity: 0.5;
+      opacity: 0.2;
     }
   }
 }

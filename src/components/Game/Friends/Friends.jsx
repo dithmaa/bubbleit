@@ -10,6 +10,7 @@ function Friends({
   copyIcon,
 }) {
   const [isDisabled, setDisabled] = useState(false);
+  const [showMessage, setShowMessage] = useState(0);
   const handleHarvest = (id, score) => {
     harvestRef(id, score);
     setDisabled(true);
@@ -26,6 +27,12 @@ function Friends({
     navigator.clipboard
       .writeText(refLink)
       .then(() => {
+        setTimeout(() => {
+          setShowMessage(!showMessage);
+          setTimeout(() => {
+            setShowMessage(false);
+          }, 1200);
+        }, 150);
         // Получилось!
       })
       .catch((err) => {
@@ -35,6 +42,9 @@ function Friends({
 
   return (
     <div className={styles.root}>
+      <div className={showMessage ? "message show" : "message"}>
+        Ссылка скопирована
+      </div>
       <div className="container" style={{ alignItems: "start" }}>
         <button onClick={closeFriends} className="back">
           Назад

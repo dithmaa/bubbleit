@@ -420,6 +420,28 @@ body {
   }
 }
 
+.message {
+  color: #fff;
+  font-size: 16px;
+  background-color: #303030c3;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  opacity: 0;
+  transition: 0.35s ease opacity;
+  &.show {
+    opacity: 1;
+  }
+}
 .menu {
   display: flex;
   &__item {

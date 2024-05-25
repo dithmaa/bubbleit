@@ -224,6 +224,10 @@ function Game({ authId }) {
     setShownRating(false);
   };
   const closeFriends = () => {
+    if (Number(currentScore) >= 1000000) {
+      document.querySelector("body").classList.add("green");
+    }
+
     setShowFriends(false);
     setShowMenu(true);
   };
