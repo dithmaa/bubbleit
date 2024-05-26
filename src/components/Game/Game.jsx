@@ -6,7 +6,6 @@ import friendIcon from "../../assets/img/friend_icon.png";
 import copyIcon from "../../assets/img/copy.png";
 import presentIcon from "../../assets/img/present.png";
 
-import preloaderImg from "../../assets/img/loading.gif";
 import axios from "axios";
 import debounce from "lodash.debounce";
 
@@ -19,7 +18,7 @@ import EnergyBar from "./EnergyBar/EnergyBar";
 import RatingPage from "./RatingBar/RatingPage/RatingPage";
 import Challenges from "./Challenges/Challenges";
 
-function Game({ authId }) {
+function Game({ authId, currentID = 1 }) {
   const [showBoosts, setShowBoosts] = useState(1);
   const [friendsList, setFriendsList] = useState(1);
   const [currentScore, setScore] = useState(0);
@@ -39,14 +38,17 @@ function Game({ authId }) {
   const [inviterFriendsList, setInviterFriendsList] = useState(0);
   const [totalRefScore, setTotalRefScore] = useState(0);
 
+  // console.log("Naranaa", currentID);
+  // const [usID, setUsID] = useState(0);
+
   // console.log("totalRefScore", totalRefScore);
   // console.log("HAHA", friendsList);
 
   const [bubbleStates, setBubbleStates] = useState(
     Array.from({ length: 6 }, () => Array(6).fill(false))
   );
-  //unhashedID
-  const hashedId = authId.slice(3).replace(/\D/g, "") / 932;
+  //unuserID
+  const userID = currentID;
 
   const [percent, setPercent] = useState(100);
   const [energyWait, setEnergyWait] = useState(true);
@@ -57,7 +59,7 @@ function Game({ authId }) {
     //click increase on backend
     debounce((num) => {
       axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${hashedId}`,
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`,
         {
           clickAmount: num,
         }
@@ -70,17 +72,16 @@ function Game({ authId }) {
   const harvestRef = (id, score) => {
     // console.log(id);
     const newV = currentScore + score;
-    console.log(newV);
+    // console.log(newV);
     setScore(newV);
     setShown(newV);
-    // console.log(friendsList);
     const itemToUpdate = friendsList.find((item) => item.id == id);
     if (itemToUpdate) {
       itemToUpdate.score = 0;
     }
     // console.log("NEWNEWNEW", friendsList);
     axios.put(
-      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${hashedId}`,
+      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`,
       {
         clickAmount: newV,
         scoresFromRef: friendsList,
@@ -91,7 +92,7 @@ function Game({ authId }) {
 
   const handleShowPresent = () => {
     setShowPresent(!isShowPresent);
-    console.log("handleShowPresent");
+    // console.log("handleShowPresent");
   };
   const closePresent = () => {
     setShowPresent(!isShowPresent);
@@ -99,9 +100,9 @@ function Game({ authId }) {
 
   const buyBoost = useCallback(
     debounce((newBoostVal, newBoostLists, newScore, newShowBoosts) => {
-      console.log(newScore);
+      // console.log(newScore);
       axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${hashedId}`,
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`,
         {
           clickPerOne: newBoostVal,
           clickAmount: newScore,
@@ -137,14 +138,13 @@ function Game({ authId }) {
   // console.log("inviterId", inviterId);
 
   const getFriends = async () => {
-    // console.log("blyaaaaaaaaaaa", inviterId);
+    // console.log("INVITER-ID / Хозяин / Тот кто пригласил", inviterId);
     await axios
       .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${inviterId}`
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${inviterId}`
       )
       .then(({ data }) => {
-        setInviterFriendsList(data.scoresFromRef);
-        // console.log("inviterFriendsList", inviterFriendsList);
+        setInviterFriendsList(data[0].scoresFromRef);
       });
   };
   useEffect(() => {
@@ -157,7 +157,7 @@ function Game({ authId }) {
     debounce((inviterFriendsList, newRefScore = 39, inviterId) => {
       const updateFriendsList = async () => {
         const itemToUpdate = inviterFriendsList.find(
-          (item) => item.id === hashedId
+          (item) => item.id === Number(userID)
         );
 
         if (itemToUpdate) {
@@ -168,7 +168,7 @@ function Game({ authId }) {
         }
 
         // console.log(inviterFriendsList);
-        console.log("dd", inviterId);
+        // console.log("dd", inviterId);
         await axios.put(
           `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${inviterId}`,
           {
@@ -216,7 +216,7 @@ function Game({ authId }) {
         return prevScore;
       });
     } else {
-      console.log("Ваша энергия на исходе");
+      // console.log("Ваша энергия на исходе");
       setPercent(0);
     }
   };
@@ -274,34 +274,33 @@ function Game({ authId }) {
 
   useEffect(() => {
     axios
-      .get(`https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${0}`)
+      .get(`https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`)
       .then(({ data }) => {
-        setScore(data[0].clickAmount);
-        setClickPerOne(data[0].clickPerOne);
-        setBoostsLists(data[0].boosts);
-        setShowBoosts(data[0].showBoosts);
-        setFriendsList(data[0].scoresFromRef);
-        if (data[0].refId != 0 && data[0].refId) {
+        setScore(data.clickAmount);
+        setClickPerOne(data.clickPerOne);
+        setBoostsLists(data.boosts);
+        setShowBoosts(data.showBoosts);
+        setFriendsList(data.scoresFromRef);
+        if (data.refId != 0 && data.refId) {
           setHasInviter(true);
-          setInviterId(data[0].refId);
+          setInviterId(data.refId);
         }
         setTimeout(() => {
           setLoaded(true);
-        }, 500);
+        }, 10);
       })
       .catch((err) => {
-        localStorage.removeItem("isAuth");
-        localStorage.removeItem("authId");
-        localStorage.removeItem("isChangedName");
-        window.location.reload();
+        // console.log("Ошибочка");
+        // window.location.reload();
       });
   }, []);
+  // console.log("isLoadedApp", isLoadedApp);
 
   useEffect(() => animateScore(currentScore, setShown), [isLoadedApp]);
   return (
     <>
       {isShowPresent ? (
-        <Challenges hashedId={hashedId} closePresent={closePresent} />
+        <Challenges userID={userID} closePresent={closePresent} />
       ) : (
         ""
       )}
@@ -358,12 +357,11 @@ function Game({ authId }) {
           setShowFriends={setShowFriends}
           closeFriends={closeFriends}
           harvestRef={harvestRef}
-          authId={authId}
           presentIcon={presentIcon}
           copyIcon={copyIcon}
         />
       ) : (
-        <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
+        "Не загружено"
       )}
     </>
   );

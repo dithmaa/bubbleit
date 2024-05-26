@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Signup.module.scss";
 import axios from "axios";
+
 const tg = window.Telegram.WebApp;
 
 function Signup() {
   const [lastId, setLastId] = useState(0);
-  const [tgID, setTgID] = useState(0);
+  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id);
   const [isDisabledNow, setDisabled] = useState(false);
-  const [curva, setCurva] = useState(0);
   const boostsInitial = [
     {
       id: 1,
@@ -46,24 +46,9 @@ function Signup() {
       : Number(window.location.search.replace("?", "").slice(4)) / 932
     : 0;
 
-  console.log("refIdUrl", refIdUrl);
+  // console.log("refIdUrl", refIdUrl);
+
   useEffect(() => {
-    if (curva != 0) {
-      axios
-        .get(
-          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?tg_id=${tgID}`
-        )
-        .then(({ data }) => {
-          if (data) {
-            setCurva(data.tg_id);
-          } else {
-            setCurva(9999);
-          }
-        });
-    }
-  }, [tgID]); //Проверка есть ли такой пользователь тг
-  useEffect(() => {
-    setTgID(tg.initDataUnsafe?.user?.id);
     axios
       .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
       .then(({ data }) => {
@@ -77,14 +62,14 @@ function Signup() {
 
   const [prevScoresFromRef, setPrevScoresFromRef] = useState([]);
 
-  console.log("prevScoresFromRef ", prevScoresFromRef);
+  // console.log("prevScoresFromRef ", prevScoresFromRef);
 
   const notifyInviter = (e) => {
-    console.log("s", prevScoresFromRef);
+    // console.log("s", prevScoresFromRef);
     const newUserId = Number(lastId) + 1;
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
-    console.log(prevScoresFromRef);
+    // console.log(prevScoresFromRef);
     axios.put(
       `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`,
       {
@@ -95,7 +80,7 @@ function Signup() {
 
   const notifyIfRefLink = () => {
     refIdUrl == 0
-      ? console.log("Не реферальная ссылка")
+      ? console.log() // no ref link
       : axios
           .get(
             `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`
@@ -119,11 +104,6 @@ function Signup() {
       boosts: boostsInitial,
       scoresFromRef: [],
     };
-
-    const hashedId = "y10dwpdDxwq" + newUserId * 932 + "xdeDed";
-    localStorage.setItem("authId", hashedId);
-    localStorage.setItem("isAuth", true);
-    // localStorage.setItem("ref", refIdUrl);
     setDisabled(!isDisabledNow);
 
     // console.log(newUserId);
@@ -146,7 +126,6 @@ function Signup() {
 
   return (
     <div className={styles.root}>
-      <div style={{ color: "#fff" }}>Curva: {curva}</div>
       <button onClick={handleSubmit}>Регистрация</button>
     </div>
   );
