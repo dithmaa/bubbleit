@@ -2,11 +2,10 @@ import React from "react";
 import SignupComponent from "../../components/Signup/Signup";
 import Header from "../../components/Header/Header";
 
-function Signup() {
+function Signup({ isLoaded }) {
   return (
     <>
-      <Header />
-      <SignupComponent />
+      <SignupComponent isLoaded={isLoaded} />
     </>
   );
 }

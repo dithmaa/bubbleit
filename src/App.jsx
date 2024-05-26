@@ -29,7 +29,9 @@ function App() {
           }
           setTimeout(() => {
             setCurrentID(data[0].id);
-            setLoaded(1);
+            setTimeout(() => {
+              setLoaded(1);
+            }, 1200);
 
             // console.log("Прелоадер скрыт");
           }, 0);
@@ -40,7 +42,9 @@ function App() {
           //   "Ваш ID не был найден в базе. Но вы можете зарегистрироваться"
           // );
           // setIsAuth(false);
-          setLoaded(1);
+          setTimeout(() => {
+            setLoaded(1);
+          }, 1200);
         });
     }
   }, [authId]);
@@ -65,7 +69,7 @@ function App() {
               isAuth ? (
                 <Game currentID={currentID} authId={authId} />
               ) : (
-                <Signup />
+                <Signup isLoaded={isLoaded} />
               )
             }
           />

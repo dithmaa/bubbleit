@@ -6,6 +6,8 @@ import friendIcon from "../../assets/img/friend_icon.png";
 import copyIcon from "../../assets/img/copy.png";
 import presentIcon from "../../assets/img/present.png";
 
+import preloaderImg from "../../assets/img/loading.gif";
+
 import axios from "axios";
 import debounce from "lodash.debounce";
 
@@ -287,7 +289,7 @@ function Game({ authId, currentID = 1 }) {
         }
         setTimeout(() => {
           setLoaded(true);
-        }, 10);
+        }, 500);
       })
       .catch((err) => {
         // console.log("Ошибочка");
@@ -361,7 +363,7 @@ function Game({ authId, currentID = 1 }) {
           copyIcon={copyIcon}
         />
       ) : (
-        "Не загружено"
+        <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       )}
     </>
   );

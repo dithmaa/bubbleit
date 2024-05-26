@@ -1,10 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Signup.module.scss";
 import axios from "axios";
+import Preloader from "../Game/Preloader/Preloader";
+
+import preloaderImg from "../../assets/img/loading.gif";
+import popitImg from "../../assets/img/popi.png";
 
 const tg = window.Telegram.WebApp;
 
-function Signup() {
+function Signup({ isLoadeds }) {
   const [lastId, setLastId] = useState(0);
   const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [isDisabledNow, setDisabled] = useState(false);
@@ -123,10 +127,14 @@ function Signup() {
     }, 0);
     setTimeout(() => {
       window.location.reload();
-    }, 5000);
+    }, 2500);
   };
 
-  return <div className={styles.root}></div>;
+  return (
+    <div className={styles.root}>
+      <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
+    </div>
+  );
 }
 
 export default Signup;
