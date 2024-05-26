@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import styles from "./Friends.module.scss";
+const tg = window.Telegram.WebApp;
 
 function Friends({
   friendsList,
   closeFriends,
   currentScore,
   harvestRef,
-  authId,
   copyIcon,
 }) {
   const [isDisabled, setDisabled] = useState(false);
   const [showMessage, setShowMessage] = useState(0);
+
+  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
+
   const handleHarvest = (id, score) => {
     harvestRef(id, score);
     setDisabled(true);
@@ -19,7 +22,7 @@ function Friends({
     }, 500);
   };
 
-  const linkID = authId ? authId.slice(3).replace(/\D/g, "") : 0;
+  const linkID = authId ? authId : 0;
   const refLink = window.location.origin + `?ref=${linkID}`;
 
   console.log("refLink", refLink);
