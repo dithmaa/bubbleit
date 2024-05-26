@@ -302,11 +302,15 @@ function Game({ authId, currentID = 1 }) {
   return (
     <>
       {isShowPresent ? (
-        <Challenges userID={userID} closePresent={closePresent} />
+        <Challenges currentID={currentID} closePresent={closePresent} />
       ) : (
         ""
       )}
-      {isShowRating ? <RatingPage closeRating={closeRating} /> : ""}
+      {isShowRating ? (
+        <RatingPage currentID={currentID} closeRating={closeRating} />
+      ) : (
+        ""
+      )}
       {isShowMarket ? (
         <Market
           currentScore={currentScore}
@@ -330,6 +334,7 @@ function Game({ authId, currentID = 1 }) {
       )}
       {isLoadedApp ? (
         <GamePage
+          currentID={currentID}
           isShowPresent={isShowPresent}
           handleShowPresent={handleShowPresent}
           isShowMarket={isShowMarket}

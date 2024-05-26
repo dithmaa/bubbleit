@@ -5,14 +5,14 @@ import loadGif from "../../../assets/img/loading.gif";
 import { useState } from "react";
 import axios from "axios";
 
-export default function Challenges({ closePresent, hashedId }) {
+export default function Challenges({ closePresent, currentID }) {
   const [isShowBtnLoad, setShowBtnLoad] = useState(0);
   const [isCompleted, setCompleted] = useState(0);
   const [clickAmountUser, setClickAmountUser] = useState(0);
   useEffect(() => {
     axios
       .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${hashedId}`
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`
       )
       .then(({ data }) => {
         setClickAmountUser(data.clickAmount);
@@ -28,7 +28,7 @@ export default function Challenges({ closePresent, hashedId }) {
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
       axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${hashedId}`,
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
         {
           clickAmount: newClickAmount,
         }

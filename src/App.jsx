@@ -14,7 +14,7 @@ function App() {
   const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
-
+  console.log("currentID", currentID);
   useEffect(() => {
     if (authId != 0) {
       axios

@@ -8,11 +8,10 @@ function Friends({
   currentScore,
   harvestRef,
   copyIcon,
+  currentID,
 }) {
   const [isDisabled, setDisabled] = useState(false);
   const [showMessage, setShowMessage] = useState(0);
-
-  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
 
   const handleHarvest = (id, score) => {
     harvestRef(id, score);
@@ -22,7 +21,7 @@ function Friends({
     }, 500);
   };
 
-  const linkID = authId ? authId : 0;
+  const linkID = currentID ? currentID : 0;
   const refLink = window.location.origin + `?ref=${linkID}`;
 
   console.log("refLink", refLink);
@@ -89,6 +88,7 @@ function Friends({
               margin: "10px",
               display: "flex",
               alignItems: "center",
+              justifyContent: "center",
             }}
           >
             <span style={{ opacity: "0.4" }}>{refLink}</span>

@@ -35,6 +35,7 @@ function GamePage({
   isShowPresent,
   presentIcon,
   handleShowPresent,
+  currentID,
 }) {
   const sFunc = () => {
     // console.log("percent", percent);
@@ -72,6 +73,7 @@ function GamePage({
               harvestRef={harvestRef}
               authId={authId}
               copyIcon={copyIcon}
+              currentID={currentID}
             />
           ) : (
             ""

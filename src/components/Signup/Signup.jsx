@@ -44,22 +44,28 @@ function Signup({ isLoadeds }) {
       level: 0,
     },
   ];
-  const refIdUrl = window.location.search
-    ? isNaN(Number(window.location.search.replace("?", "").slice(4)))
-      ? 0
-      : Number(window.location.search.replace("?", "").slice(4)) / 932
-    : 0;
-
+  const refIdUrl = Number(window.location.search.replace("?", "").slice(4));
   // console.log("refIdUrl", refIdUrl);
 
-  useEffect(() => {
-    axios
-      .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
-      .then(({ data }) => {
-        setLastId(data[data.length - 1].id);
+  console.log("lastId", lastId);
 
-        handleSubmit();
-      });
+  const auth = async () => {
+    try {
+      const authFunc = await axios
+        .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
+        .then(({ data }) => {
+          setLastId(data[data.length - 1].id);
+          setTimeout(() => {
+            handleSubmit(data[data.length - 1].id);
+          }, 300);
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  console.log("lastID", lastId);
+  useEffect(() => {
+    auth();
   }, []);
 
   useEffect(() => {
@@ -70,9 +76,9 @@ function Signup({ isLoadeds }) {
 
   // console.log("prevScoresFromRef ", prevScoresFromRef);
 
-  const notifyInviter = (e) => {
+  const notifyInviter = (narana) => {
     // console.log("s", prevScoresFromRef);
-    const newUserId = Number(lastId) + 1;
+    const newUserId = Number(narana) + 1;
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
     // console.log(prevScoresFromRef);
@@ -95,9 +101,9 @@ function Signup({ isLoadeds }) {
             setPrevScoresFromRef(data.scoresFromRef);
           });
   };
-  const handleSubmit = () => {
+  const handleSubmit = (narana) => {
     // e.preventDefault();
-    const newUserId = Number(lastId) + 1;
+    const newUserId = Number(narana) + 1;
 
     const newName = "Игрок" + newUserId;
     const newUser = {
@@ -121,13 +127,13 @@ function Signup({ isLoadeds }) {
         )
         .then(() => {
           if (refIdUrl != 0 || refIdUrl) {
-            notifyInviter();
+            notifyInviter(narana);
           }
         });
     }, 0);
     setTimeout(() => {
-      window.location.reload();
-    }, 2500);
+      // window.location.reload();
+    }, 2800);
   };
 
   return (
