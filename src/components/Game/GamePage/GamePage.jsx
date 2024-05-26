@@ -129,10 +129,10 @@ function GamePage({
           <EnergyBar setPercent={setPercent} percent={percent} />
           {isShowMenu ? (
             <nav className="menu">
-              <button className="menu__item" onClick={handleShowFriends}>
+              {/* <button className="menu__item" onClick={handleShowFriends}>
                 <img src={friendIcon} alt="Friend Icon" />
                 <span>Друзья</span>
-              </button>
+              </button> */}
               <button className="menu__item" onClick={handleShowMarket}>
                 <img src={marketIcon} alt="Market Icon" />
                 <span>Бусты</span>

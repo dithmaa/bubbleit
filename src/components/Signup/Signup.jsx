@@ -109,7 +109,7 @@ function Signup({ isLoadeds }) {
     const newUser = {
       name: newName,
       tg_id: tgID,
-      // refId: refIdUrl, // тот кто пригласил
+      refId: refIdUrl, // тот кто пригласил
       clickAmount: 0,
       clickPerOne: 1,
       showBoosts: 1,
@@ -127,7 +127,7 @@ function Signup({ isLoadeds }) {
         )
         .then(() => {
           if (refIdUrl != 0 || refIdUrl) {
-            // notifyInviter(narana);
+            notifyInviter(narana);
           }
         });
     }, 0);
