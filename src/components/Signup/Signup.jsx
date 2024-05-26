@@ -132,7 +132,7 @@ function Signup({ isLoadeds }) {
         });
     }, 0);
     setTimeout(() => {
-      // window.location.reload();
+      window.location.reload();
     }, 2800);
   };
 
