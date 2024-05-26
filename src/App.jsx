@@ -58,7 +58,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <div style={{ color: "#fff" }}>{tg.initDataUnsafe?.user?.id}</div>
+      {/* <div style={{ color: "#fff" }}>{tg.initDataUnsafe?.user?.id}</div> */}
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
