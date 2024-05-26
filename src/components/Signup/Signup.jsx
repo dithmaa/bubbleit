@@ -113,6 +113,7 @@ function Signup({ isLoadeds }) {
       clickAmount: 0,
       clickPerOne: 1,
       showBoosts: 1,
+      isCompletedMission: false,
       boosts: boostsInitial,
       scoresFromRef: [],
     };

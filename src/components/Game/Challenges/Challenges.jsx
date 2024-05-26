@@ -8,6 +8,7 @@ import axios from "axios";
 export default function Challenges({ closePresent, currentID }) {
   const [isShowBtnLoad, setShowBtnLoad] = useState(0);
   const [isCompleted, setCompleted] = useState(0);
+  const [alreadyCompleted, setAlreadyCompleted] = useState(0);
   const [clickAmountUser, setClickAmountUser] = useState(0);
   useEffect(() => {
     axios
@@ -15,10 +16,11 @@ export default function Challenges({ closePresent, currentID }) {
         `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`
       )
       .then(({ data }) => {
+        setAlreadyCompleted(data.isCompletedMission);
         setClickAmountUser(data.clickAmount);
       });
   }, []);
-  console.log(clickAmountUser);
+  console.log("alreadyCompleted", alreadyCompleted);
   const handleCheckSub = (e) => {
     e.preventDefault();
     window.open("https://t.me/cryptopoonn");
@@ -30,6 +32,7 @@ export default function Challenges({ closePresent, currentID }) {
       axios.put(
         `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
         {
+          isCompletedMission: true,
           clickAmount: newClickAmount,
         }
       );
@@ -61,18 +64,24 @@ export default function Challenges({ closePresent, currentID }) {
               <span>Крипто Пон</span>
               <span>Награда: 1 млн пузырей</span>
             </div>
-            <button
-              disabled={isCompleted}
-              onClick={handleCheckSub}
-              href="#"
-              className={styles.getBtn}
-            >
-              {isShowBtnLoad ? (
-                <img className={styles.getBtnLoad} src={loadGif} alt="load" />
-              ) : (
-                <span>{isCompleted ? "Выполнено" : "Подписаться"}</span>
-              )}
-            </button>
+            {!alreadyCompleted ? (
+              <button
+                disabled={isCompleted}
+                onClick={handleCheckSub}
+                href="#"
+                className={styles.getBtn}
+              >
+                {isShowBtnLoad ? (
+                  <img className={styles.getBtnLoad} src={loadGif} alt="load" />
+                ) : (
+                  <span>{isCompleted ? "Выполнено" : "Подписаться"}</span>
+                )}
+              </button>
+            ) : (
+              <button className={styles.getBtn} disabled={true}>
+                <span>Выполнено</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
