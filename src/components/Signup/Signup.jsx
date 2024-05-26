@@ -6,7 +6,7 @@ const tg = window.Telegram.WebApp;
 
 function Signup() {
   const [lastId, setLastId] = useState(0);
-  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id);
+  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [isDisabledNow, setDisabled] = useState(false);
   const boostsInitial = [
     {
@@ -53,6 +53,8 @@ function Signup() {
       .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
       .then(({ data }) => {
         setLastId(data[data.length - 1].id);
+
+        handleSubmit();
       });
   }, []);
 
@@ -89,8 +91,8 @@ function Signup() {
             setPrevScoresFromRef(data.scoresFromRef);
           });
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+    // e.preventDefault();
     const newUserId = Number(lastId) + 1;
 
     const newName = "Игрок" + newUserId;
@@ -124,11 +126,7 @@ function Signup() {
     }, 5000);
   };
 
-  return (
-    <div className={styles.root}>
-      <button onClick={handleSubmit}>Регистрация</button>
-    </div>
-  );
+  return <div className={styles.root}></div>;
 }
 
 export default Signup;

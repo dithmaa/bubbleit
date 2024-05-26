@@ -11,7 +11,7 @@ const tg = window.Telegram.WebApp;
 
 function App() {
   const [isAuth, setIsAuth] = useState();
-  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id);
+  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
 
