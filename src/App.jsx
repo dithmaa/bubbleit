@@ -55,6 +55,9 @@ function App() {
 
   useEffect(() => {
     tg.ready();
+    setTimeout(() => {
+      tg.expand();
+    }, 200);
   }, []);
   return (
     <div className="App">
