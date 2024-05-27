@@ -76,13 +76,7 @@ function RatingPage({ closeRating, currentID }) {
           </div>
         </form>
         <h3>Рейтинг</h3>
-        <div style={{ color: "#fff" }}>
-          {tg.initDataUnsafe?.user?.username} :
-        </div>
-        <img
-          alt=""
-          href={`https://t.me/i/userpic/320/${tg.initDataUnsafe?.user?.username}.jpg`}
-        />
+
         <ul>
           {users.map((user, key) => {
             return (
