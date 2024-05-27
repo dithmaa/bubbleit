@@ -65,8 +65,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      link: {tg.initData?.user?.photo_url}
-      id: {tg.initDataUnsafe?.user?.id}
+      <div style={{ color: "#fff" }}>
+        link: {tg.initData?.user?.photo_url}
+        id: {tg.initDataUnsafe?.user?.id}
+      </div>
       <div style={{ display: "flex" }}>
         <img
           src={userAvatar}
