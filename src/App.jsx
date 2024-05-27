@@ -66,11 +66,11 @@ function App() {
   return (
     <div className="App">
       <div style={{ color: "#fff" }}>
-        link: {tg.initDataUnsafe?.photo_url}
-        id: {tg.initDataUnsafe?.user?.id}
-        firstname: {tg.initDataUnsafe?.user?.first_name}
-        last_name: {tg.initDataUnsafe?.user?.last_name}
-        username: {tg.initDataUnsafe?.user?.username}
+        link: {tg.initDataUnsafe?.photo_url} <br /> <hr />
+        id: {tg.initDataUnsafe?.user?.id} <br /> <hr />
+        firstname: {tg.initDataUnsafe?.user?.first_name} <br /> <hr />
+        last_name: {tg.initDataUnsafe?.user?.last_name} <br /> <hr />
+        username: {tg.initDataUnsafe?.user?.username} <br /> <hr />
       </div>
       <div style={{ display: "flex" }}>
         <img
