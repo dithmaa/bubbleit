@@ -97,18 +97,36 @@ function RatingPage({ closeRating, currentID }) {
                 </span>
                 <div className={styles.avatarArea}>
                   {user.tg_username != "none" ? (
-                    <img
-                      alt={"o"}
-                      className={styles.avatar}
-                      src={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
-                      width="40px"
-                      height="40px"
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "100px",
-                      }}
-                    />
+                    user.tg_username != "Sara_na03" &&
+                    user.tg_username != "Auyrzana" ? (
+                      <img
+                        alt={"o"}
+                        className={styles.avatar}
+                        src={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
+                        width="40px"
+                        height="40px"
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "100px",
+                        }}
+                      />
+                    ) : (
+                      <img
+                        alt={"o"}
+                        className={styles.avatar}
+                        src={
+                          "https://i.ibb.co/wzGcss3/photo-2024-05-26-23-29-30.jpg"
+                        }
+                        width="40px"
+                        height="40px"
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          borderRadius: "100px",
+                        }}
+                      />
+                    )
                   ) : (
                     <img
                       alt={"o"}
