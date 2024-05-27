@@ -12,7 +12,7 @@ function Signup({ isLoadeds }) {
   const [lastId, setLastId] = useState(0);
   const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [tgUsername, setTgUsername] = useState(
-    tg.initDataUnsafe?.user?.username || "durov"
+    tg.initDataUnsafe?.user?.username || "none"
   );
   const [isDisabledNow, setDisabled] = useState(false);
   const boostsInitial = [
