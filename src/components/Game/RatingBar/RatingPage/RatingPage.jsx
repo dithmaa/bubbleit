@@ -96,18 +96,35 @@ function RatingPage({ closeRating, currentID }) {
                   )}
                 </span>
                 <div className={styles.avatarArea}>
-                  <img
-                    alt={"o"}
-                    className={styles.avatar}
-                    src={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
-                    width="40px"
-                    height="40px"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "100px",
-                    }}
-                  />
+                  {user.tg_username != "none" ? (
+                    <img
+                      alt={"o"}
+                      className={styles.avatar}
+                      src={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
+                      width="40px"
+                      height="40px"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "100px",
+                      }}
+                    />
+                  ) : (
+                    <img
+                      alt={"o"}
+                      className={styles.avatar}
+                      src={
+                        "https://bubbleit.vercel.app/static/media/icon-boost-1.4bcfcc1e3a733fb1b398.png"
+                      }
+                      width="40px"
+                      height="40px"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "100px",
+                      }}
+                    />
+                  )}
                 </div>
 
                 {/* <span>{user.tg_username.slice(0, 1).toUpperCase()}</span> */}
