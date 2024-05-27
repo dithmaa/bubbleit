@@ -13,7 +13,7 @@ function App() {
   const [isAuth, setIsAuth] = useState();
   const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [userAvatar, setUserAvatar] = useState(
-    tg.initDataUnsafe?.user?.photo_url ||
+    `https://t.me/i/userpic/320/${tg.initDataUnsafe?.user?.username}.jpg` ||
       "https://i0.wp.com/endoftheroll.com/wp-content/uploads/2022/12/dt_0782SQU44MT.jpg?fit=1800%2C1800&ssl=1"
   );
   const [isLoaded, setLoaded] = useState(0);
@@ -65,21 +65,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <div style={{ color: "#fff" }}>
-        link:{tg.initData.user}
-        <br /> <hr />
-        id: {tg.initDataUnsafe?.user?.id} <br /> <hr />
-        firstname: {tg.initDataUnsafe?.user?.first_name} <br /> <hr />
-        last_name: {tg.initDataUnsafe?.user?.last_name} <br /> <hr />
-        username: {tg.initDataUnsafe?.user?.username} <br /> <hr />
-      </div>
       <div style={{ display: "flex" }}>
         <img
           src={userAvatar}
-          style={{ width: "40px", height: "40px", borderRadius: "100px" }}
-        />
-        <img
-          src={tg.initData?.user?.photo_url}
           style={{ width: "40px", height: "40px", borderRadius: "100px" }}
         />
       </div>
