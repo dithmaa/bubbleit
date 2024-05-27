@@ -65,10 +65,16 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <img
-        src={userAvatar}
-        style={{ width: "40px", height: "40px", borderRadius: "100px" }}
-      />
+      <div style={{ display: "flex" }}>
+        <img
+          src={userAvatar}
+          style={{ width: "40px", height: "40px", borderRadius: "100px" }}
+        />
+        <img
+          src={tg.initDataUnsafe?.user?.photo_url}
+          style={{ width: "40px", height: "40px", borderRadius: "100px" }}
+        />
+      </div>
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
