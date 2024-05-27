@@ -62,6 +62,10 @@ function App() {
   }, []);
   return (
     <div className="App">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+      voluptatibus. Unde sapiente corrupti ipsum illo libero dolorem praesentium
+      cumque assumenda ipsa adipisci in tenetur alias officia, ipsam eaque iste
+      vel?
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (

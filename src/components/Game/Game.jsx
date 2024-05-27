@@ -185,8 +185,6 @@ function Game({ authId, currentID = 1 }) {
   );
 
   const handleBubbleClick = (rowIndex, colIndex, setBubbleStates) => {
-    navigator.vibrate(1000);
-
     if (hasInviter) {
       setTimeout(() => {
         updateFriendsListDebounced(
@@ -208,7 +206,7 @@ function Game({ authId, currentID = 1 }) {
       setEnergyWait(true);
 
       energyDebounce();
-
+      navigator.vibrate(1000);
       setScore((prevScore) => {
         prevScore = Number(clickPerOne) + Number(prevScore);
         const refGiftCount = Math.ceil(clickPerOne * 0.15);
