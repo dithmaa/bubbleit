@@ -68,6 +68,9 @@ function App() {
       <div style={{ color: "#fff" }}>
         link: {tg.initDataUnsafe?.user?.photo_url}
         id: {tg.initDataUnsafe?.user?.id}
+        firstname: {tg.initDataUnsafe?.user?.first_name}
+        last_name: {tg.initDataUnsafe?.user?.last_name}
+        username: {tg.initDataUnsafe?.user?.username}
       </div>
       <div style={{ display: "flex" }}>
         <img
