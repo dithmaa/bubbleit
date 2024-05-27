@@ -60,14 +60,25 @@ function App() {
       tg.expand();
     }, 200);
   }, []);
-  const onBtnFunc = () => {
+  const softClick = () => {
     tg.HapticFeedback.impactOccurred("soft");
+  };
+  const rigidClick = () => {
+    tg.HapticFeedback.impactOccurred("rigid");
+  };
+  const heavyClick = () => {
+    tg.HapticFeedback.impactOccurred("heavy");
   };
   return (
     <div className="App">
-      soft
-      <button onClick={onBtnFunc} style={{ fontSize: "30px" }}>
-        Click
+      <button onClick={softClick} style={{ fontSize: "30px" }}>
+        Soft
+      </button>
+      <button onClick={rigidClick} style={{ fontSize: "30px" }}>
+        Rigid
+      </button>
+      <button onClick={heavyClick} style={{ fontSize: "30px" }}>
+        Heavy
       </button>
       {/* Далеко-далеко за словесными горами в стране. */}
       {!isLoaded ? (
