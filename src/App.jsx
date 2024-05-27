@@ -12,6 +12,10 @@ const tg = window.Telegram.WebApp;
 function App() {
   const [isAuth, setIsAuth] = useState();
   const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
+  const [userAvatar, setUserAvatar] = useState(
+    tg.initDataUnsafe?.user?.photo_url ||
+      "https://i0.wp.com/endoftheroll.com/wp-content/uploads/2022/12/dt_0782SQU44MT.jpg?fit=1800%2C1800&ssl=1"
+  );
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
   console.log("currentID", currentID);
@@ -61,7 +65,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* <div style={{ color: "#fff" }}>{tg.initDataUnsafe?.user?.id}</div> */}
+      <div style={{ width: "40px", height: "40px", borderRadius: "100px" }}>
+        {userAvatar}
+      </div>
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
