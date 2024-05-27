@@ -5,6 +5,8 @@ import goldCup from "../../../../assets/img/gold.png";
 import silverCup from "../../../../assets/img/silver.png";
 import bronzeCup from "../../../../assets/img/bronze.png";
 
+const tg = window.Telegram.WebApp;
+
 function RatingPage({ closeRating, currentID }) {
   const [users, setUsers] = useState([]);
   const [newName, setNewName] = useState("");
@@ -92,6 +94,22 @@ function RatingPage({ closeRating, currentID }) {
                     key + 1
                   )}
                 </span>
+                <div className={styles.avatarArea}>
+                  {/* <span>N</span> */}
+
+                  <img
+                    className={styles.avatar}
+                    src={`https://t.me/i/userpic/320/${tg.initDataUnsafe?.user?.username}.jpg`}
+                    alt="avatar"
+                    width="40px"
+                    height="40px"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "100px",
+                    }}
+                  />
+                </div>
                 <span className={styles.rate}>{user.clickAmount}</span>
                 <span className={styles.userName}>{user.name}</span>
               </li>
