@@ -71,16 +71,6 @@ function App() {
   };
   return (
     <div className="App">
-      <button onClick={softClick} style={{ fontSize: "30px" }}>
-        Soft
-      </button>
-      <button onClick={rigidClick} style={{ fontSize: "30px" }}>
-        Rigid
-      </button>
-      <button onClick={heavyClick} style={{ fontSize: "30px" }}>
-        Heavy
-      </button>
-      {/* Далеко-далеко за словесными горами в стране. */}
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (

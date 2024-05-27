@@ -20,6 +20,8 @@ import EnergyBar from "./EnergyBar/EnergyBar";
 import RatingPage from "./RatingBar/RatingPage/RatingPage";
 import Challenges from "./Challenges/Challenges";
 
+const tg = window.Telegram.WebApp;
+
 function Game({ authId, currentID = 1 }) {
   const [showBoosts, setShowBoosts] = useState(1);
   const [friendsList, setFriendsList] = useState(1);
@@ -204,6 +206,8 @@ function Game({ authId, currentID = 1 }) {
       let newPercent = percent;
       newPercent -= 3;
       handlePercent(newPercent);
+
+      tg.HapticFeedback.impactOccurred("rigid");
 
       const newBubbleStates = [...bubbleStates];
       newBubbleStates[rowIndex][colIndex] =
