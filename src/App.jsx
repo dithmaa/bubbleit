@@ -62,7 +62,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      Далеко-далеко за словесными горами в стране.
+      {/* Далеко-далеко за словесными горами в стране. */}
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
