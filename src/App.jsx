@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="App">
       link: {tg.initData?.user?.photo_url}
-      id: {tg.initData?.user?.id}
+      id: {tg.initDataUnsafe?.user?.id}
       <div style={{ display: "flex" }}>
         <img
           src={userAvatar}
