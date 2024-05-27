@@ -11,6 +11,9 @@ const tg = window.Telegram.WebApp;
 function Signup({ isLoadeds }) {
   const [lastId, setLastId] = useState(0);
   const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
+  const [tgUsername, setTgUsername] = useState(
+    tg.initDataUnsafe?.user?.username || "durov"
+  );
   const [isDisabledNow, setDisabled] = useState(false);
   const boostsInitial = [
     {
@@ -108,6 +111,7 @@ function Signup({ isLoadeds }) {
     const newName = "Игрок" + newUserId;
     const newUser = {
       name: newName,
+      tg_username: tgUsername,
       tg_id: tgID,
       refId: refIdUrl, // тот кто пригласил
       clickAmount: 0,

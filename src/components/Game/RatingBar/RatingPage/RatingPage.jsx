@@ -77,6 +77,9 @@ function RatingPage({ closeRating, currentID }) {
         </form>
         <h3>Рейтинг</h3>
         <ul>
+          {users.map((user) => {
+            console.log(user);
+          })}
           {users.map((user, key) => {
             return (
               <li
