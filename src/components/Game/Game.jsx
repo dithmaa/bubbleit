@@ -195,7 +195,7 @@ function Game({ authId, currentID = 1 }) {
       }, 0);
     }
     if (percent > 0) {
-      if ("vibrate" in navigator) {
+      if ("vibrate" in window.navigator) {
         window.navigator.vibrate(200); // Продолжительность вибрации в миллисекундах
       } else {
         alert("API для вибрации не поддерживается в вашем браузере.");
