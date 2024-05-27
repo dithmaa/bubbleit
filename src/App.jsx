@@ -60,8 +60,15 @@ function App() {
       tg.expand();
     }, 200);
   }, []);
+  const onBtnFunc = () => {
+    tg.HapticFeedback.impactOccurred("soft");
+  };
   return (
     <div className="App">
+      soft
+      <button onClick={onBtnFunc} style={{ fontSize: "30px" }}>
+        Click
+      </button>
       {/* Далеко-далеко за словесными горами в стране. */}
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
