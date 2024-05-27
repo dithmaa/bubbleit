@@ -76,10 +76,11 @@ function RatingPage({ closeRating, currentID }) {
           </div>
         </form>
         <h3>Рейтинг</h3>
+        <img
+          alt={tg.initDataUnsafe?.user?.username}
+          href={`https://t.me/i/userpic/320/${tg.initDataUnsafe?.user?.username}.jpg`}
+        />
         <ul>
-          {users.map((user) => {
-            console.log(user);
-          })}
           {users.map((user, key) => {
             return (
               <li
@@ -98,21 +99,30 @@ function RatingPage({ closeRating, currentID }) {
                   )}
                 </span>
                 <div className={styles.avatarArea}>
-                  {/* <span>N</span> */}
-
                   <img
-                    className={styles.avatar}
-                    src={`https://t.me/i/userpic/320/${tg.initDataUnsafe?.user?.username}.jpg`}
-                    alt="avatar"
-                    width="40px"
-                    height="40px"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "100px",
-                    }}
+                    alt={user.tg_username}
+                    href={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
                   />
+                  {/* <span>N</span> */}
+                  {tg.initDataUnsafe?.user?.username ? (
+                    <img
+                      className={styles.avatar}
+                      src={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
+                      alt="avatar"
+                      width="40px"
+                      height="40px"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "100px",
+                      }}
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
+
+                {/* <span>{user.tg_username.slice(0, 1).toUpperCase()}</span> */}
                 <span className={styles.rate}>{user.clickAmount}</span>
                 <span className={styles.userName}>{user.name}</span>
               </li>
