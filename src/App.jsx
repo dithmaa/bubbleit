@@ -65,9 +65,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <div style={{ width: "40px", height: "40px", borderRadius: "100px" }}>
-        {userAvatar}
-      </div>
+      <img
+        src={userAvatar}
+        style={{ width: "40px", height: "40px", borderRadius: "100px" }}
+      />
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
