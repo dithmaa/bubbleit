@@ -67,9 +67,9 @@ function App() {
     <div className="App">
       <div style={{ color: "#fff" }}>
         link:{" "}
-        {tg.initData?.user?.photo_url == null
-          ? "пусто"
-          : tg.initData?.user?.photo_url}{" "}
+        {tg.initDataUnsafe.user.photo_url == null
+          ? tg.initDataUnsafe.user
+          : tg.initDataUnsafe.user.photo_url}{" "}
         <br /> <hr />
         id: {tg.initDataUnsafe?.user?.id} <br /> <hr />
         firstname: {tg.initDataUnsafe?.user?.first_name} <br /> <hr />
