@@ -65,6 +65,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+      {tg.initDataUnsafe?.user?.photo_url}
       <div style={{ display: "flex" }}>
         <img
           src={userAvatar}
