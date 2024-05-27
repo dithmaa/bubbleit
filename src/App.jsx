@@ -66,7 +66,11 @@ function App() {
   return (
     <div className="App">
       <div style={{ color: "#fff" }}>
-        link: {tg.initDataUnsafe?.photo_url} <br /> <hr />
+        link:{" "}
+        {tg.initDataUnsafe?.photo_url == null
+          ? "null"
+          : tg.initDataUnsafe?.photo_url}{" "}
+        <br /> <hr />
         id: {tg.initDataUnsafe?.user?.id} <br /> <hr />
         firstname: {tg.initDataUnsafe?.user?.first_name} <br /> <hr />
         last_name: {tg.initDataUnsafe?.user?.last_name} <br /> <hr />
