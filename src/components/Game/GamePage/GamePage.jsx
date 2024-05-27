@@ -133,13 +133,13 @@ function GamePage({
                 <img src={friendIcon} alt="Friend Icon" />
                 <span>Друзья</span>
               </button> */}
-              <button className="menu__item" onClick={handleShowMarket}>
-                <img src={marketIcon} alt="Market Icon" />
-                <span>Бусты</span>
-              </button>
               <button className="menu__item" onClick={handleShowPresent}>
                 <img src={presentIcon} alt="Present Icon" />
                 <span>Задания</span>
+              </button>
+              <button className="menu__item" onClick={handleShowMarket}>
+                <img src={marketIcon} alt="Market Icon" />
+                <span>Бусты</span>
               </button>
             </nav>
           ) : (

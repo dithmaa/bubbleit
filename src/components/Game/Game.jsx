@@ -185,6 +185,8 @@ function Game({ authId, currentID = 1 }) {
   );
 
   const handleBubbleClick = (rowIndex, colIndex, setBubbleStates) => {
+    navigator.vibrate(1000);
+
     if (hasInviter) {
       setTimeout(() => {
         updateFriendsListDebounced(
