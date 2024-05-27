@@ -68,7 +68,7 @@ function App() {
       <div style={{ color: "#fff" }}>
         link:{" "}
         {tg.initDataUnsafe?.user?.photo_url == null
-          ? tg.initDataUnsafe?.user
+          ? "없음"
           : tg.initDataUnsafe?.user?.photo_url}{" "}
         <br /> <hr />
         id: {tg.initDataUnsafe?.user?.id} <br /> <hr />
