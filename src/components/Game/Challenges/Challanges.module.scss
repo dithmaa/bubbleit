@@ -31,13 +31,17 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 13px 20px;
+    margin: 5px 0;
+
+    background-color: #ffffff45;
+
+    border-radius: 6px;
   }
   .present {
     display: flex;
-    background-color: #ffffff45;
-    border-radius: 6px;
     margin: 0 auto;
+    flex-direction: column;
   }
   .present__title {
     display: flex;

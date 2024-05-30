@@ -413,6 +413,10 @@ body {
     width: 60px;
   }
 }
+.market-options__wrapper svg {
+  width: 100%;
+  opacity: 0.4;
+}
 .popit {
   transition: 0.2s ease transform;
   &:active {

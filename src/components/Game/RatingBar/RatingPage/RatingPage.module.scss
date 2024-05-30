@@ -12,6 +12,11 @@
   bottom: 0;
   z-index: 99;
   overflow-y: scroll;
+
+  svg {
+    width: 100%;
+    opacity: 0.4;
+  }
   .avatar {
     // margin: 0 7px;
   }
