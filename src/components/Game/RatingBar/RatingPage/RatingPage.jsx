@@ -4,22 +4,15 @@ import axios from "axios";
 import goldCup from "../../../../assets/img/gold.png";
 import silverCup from "../../../../assets/img/silver.png";
 import bronzeCup from "../../../../assets/img/bronze.png";
+import RatingItem from "./RatingItem/RatingItem";
+import RatingSkeletton from "./RatingSkeletton/RatingSkeletton";
 
 const tg = window.Telegram.WebApp;
 
 function RatingPage({ closeRating, currentID }) {
   const [users, setUsers] = useState([]);
   const [newName, setNewName] = useState("");
-  // const [isHideForm, setHideForm] = useState(
-  //   localStorage.getItem("isChangedName")
-  //     ? localStorage.getItem("isChangedName")
-  //     : false
-  // );
-  // const [currentUserId, setCurrentUserId] = useState(
-  //   localStorage.getItem("authId")
-  // );
-
-  // const hashedId = currentUserId.slice(3).replace(/\D/g, "") / 932;
+  const [isUsersLoaded, setUsersLoad] = useState(false);
 
   const handleTyping = (e) => {
     setNewName(e.target.value);
@@ -49,6 +42,9 @@ function RatingPage({ closeRating, currentID }) {
       )
       .then(({ data }) => {
         setUsers(data);
+        setTimeout(() => {
+          setUsersLoad(true);
+        }, 1000);
       });
   }, []);
   return (
@@ -77,80 +73,30 @@ function RatingPage({ closeRating, currentID }) {
         </form>
         <h3>Рейтинг</h3>
 
-        <ul>
-          {users.map((user, key) => {
-            return (
-              <li
-                key={key + "d832"}
-                className={currentID == user.id ? styles.you : ""}
-              >
-                <span className={key >= 3 ? styles.num : styles.win}>
-                  {key == 0 ? (
-                    <img style={{ width: "24px" }} src={goldCup} />
-                  ) : key == 1 ? (
-                    <img style={{ width: "24px" }} src={silverCup} />
-                  ) : key == 2 ? (
-                    <img style={{ width: "24px" }} src={bronzeCup} />
-                  ) : (
-                    key + 1
-                  )}
-                </span>
-                <div className={styles.avatarArea}>
-                  {user.tg_username != "none" ? (
-                    user.tg_username != "Sara_na03" &&
-                    user.tg_username != "Auyrzana" ? (
-                      <img
-                        alt={"o"}
-                        className={styles.avatar}
-                        src={`https://t.me/i/userpic/320/${user.tg_username}.jpg`}
-                        width="40px"
-                        height="40px"
-                        style={{
-                          width: "40px",
-                          height: "40px",
-                          borderRadius: "100px",
-                        }}
-                      />
-                    ) : (
-                      <img
-                        alt={"o"}
-                        className={styles.avatar}
-                        src={
-                          "https://i.ibb.co/wzGcss3/photo-2024-05-26-23-29-30.jpg"
-                        }
-                        width="40px"
-                        height="40px"
-                        style={{
-                          width: "40px",
-                          height: "40px",
-                          borderRadius: "100px",
-                        }}
-                      />
-                    )
-                  ) : (
-                    <img
-                      alt={"o"}
-                      className={styles.avatar}
-                      src={
-                        "https://bubbleit.vercel.app/static/media/icon-boost-1.4bcfcc1e3a733fb1b398.png"
-                      }
-                      width="40px"
-                      height="40px"
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "100px",
-                      }}
-                    />
-                  )}
-                </div>
-
-                {/* <span>{user.tg_username.slice(0, 1).toUpperCase()}</span> */}
-                <span className={styles.rate}>{user.clickAmount}</span>
-                <span className={styles.userName}>{user.name}</span>
-              </li>
-            );
-          })}
+        <ul style={{ display: "flex", flexDirection: "column" }}>
+          {isUsersLoaded
+            ? users.map((user, key) => {
+                return (
+                  <RatingItem
+                    ukey={key}
+                    goldCup={goldCup}
+                    silverCup={silverCup}
+                    bronzeCup={bronzeCup}
+                    currentID={currentID}
+                    user={user}
+                    styles={styles}
+                  />
+                );
+              })
+            : Array(10)
+                .fill(5)
+                .map((item) => {
+                  return (
+                    <div style={{ margin: "1px 0" }}>
+                      <RatingSkeletton styles={styles} />
+                    </div>
+                  );
+                })}
         </ul>
       </div>
     </div>

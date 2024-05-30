@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 import boostImageLock from "../../../../assets/img/boosts/lock.png";
+import BoostItem from "./BoostItem/BoostItem";
+import BoostSkeletton from "./BoostSkeletton/BoostSkeletton";
 
 function MarketPage({
   frontEndBoosts,
@@ -14,6 +16,12 @@ function MarketPage({
   currentScore,
   images,
 }) {
+  const [isBoostLoaded, setBoostLoad] = useState(false);
+  useState(() => {
+    setTimeout(() => {
+      setBoostLoad(1);
+    }, 1000);
+  }, []);
   return (
     <div className="container">
       <div className="market-offer">
@@ -30,51 +38,32 @@ function MarketPage({
       <div className="market-options">
         <h4 className="market-options__title">Мощность клика</h4>
         <div className="market-options__wrapper">
-          {boostsLists
-            ? boostsLists.map((boost, index) => {
-                return (
-                  <div
-                    className={
-                      index >= showBoosts ? "option disabled" : "option"
-                    }
-                    key={index + "d8dew"}
-                    onClick={() => handleShowBoostPage(index)}
-                  >
-                    <div className="option-img">
-                      <img
-                        src={
-                          index >= showBoosts ? boostImageLock : images[index]
-                        }
-                        alt="option-img"
-                      />
+          {isBoostLoaded
+            ? boostsLists
+              ? boostsLists.map((boost, index) => {
+                  return (
+                    <BoostItem
+                      boost={boost}
+                      showBoosts={showBoosts}
+                      index={index}
+                      handleShowBoostPage={handleShowBoostPage}
+                      boostImageLock={boostImageLock}
+                      images={images}
+                      frontEndBoosts={frontEndBoosts}
+                      currentScore={currentScore}
+                    />
+                  );
+                })
+              : ""
+            : Array(10)
+                .fill(5)
+                .map((item) => {
+                  return (
+                    <div style={{ margin: "5px 0" }}>
+                      <BoostSkeletton />
                     </div>
-                    <div className="option-info">
-                      <h5>
-                        {index >= showBoosts
-                          ? "???????"
-                          : frontEndBoosts[index].title}
-                      </h5>
-                      <div className="option-info__params">
-                        <span
-                          className="option-price"
-                          style={{
-                            color:
-                              currentScore < boost.price
-                                ? "rgb(199 62 62)"
-                                : "#5ecf52",
-                          }}
-                        >
-                          {index >= showBoosts ? "??????" : boost.price}
-                        </span>
-                        <span className="option-level">
-                          <span>{boost.level}</span> ур.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })
-            : ""}
+                  );
+                })}
         </div>
       </div>
     </div>

@@ -43,14 +43,14 @@ function GamePage({
       setTimeout(() => {
         // console.log("handle percent");
         handlePercent(100);
-      }, 4000);
+      }, 3000);
     } else if (percent < 50.1) {
       setTimeout(() => {
         handlePercent(50);
         setTimeout(() => {
           handlePercent(100);
-        }, 30000);
-      }, 3000);
+        }, 7000);
+      }, 1000);
     }
   };
   useEffect(() => {
