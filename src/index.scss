@@ -457,16 +457,16 @@ body {
 }
 @media screen and (max-width: 425px) {
   .res {
-    font-size: 60px;
-    // margin-top: 40px;
+    font-size: 58px;
     padding-top: 20px;
+    color: red;
   }
   .game-page {
     padding-top: 2vh;
   }
   .popit {
     margin-top: 2vh;
-    // transform: scale(0.85);
+    transform: scale(0.85);
     &:active {
       transform: scale(0.82);
     }
@@ -482,7 +482,7 @@ body {
     }
   }
   .popit {
-    // margin-top: 4vh;
+    margin-top: -1vh;
   }
   .menu {
     bottom: 70px;
@@ -508,5 +508,6 @@ body {
   }
   .res {
     font-size: 44px;
+    color: #fff;
   }
 }
