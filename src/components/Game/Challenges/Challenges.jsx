@@ -5,6 +5,7 @@ import avatar2 from "../../../assets/img/avatar2.jpg";
 import loadGif from "../../../assets/img/loading.gif";
 import { useState } from "react";
 import axios from "axios";
+const tg = window.Telegram.WebApp;
 
 export default function Challenges({ closePresent, currentID }) {
   const [isShowBtnLoad, setShowBtnLoad] = useState(0);
@@ -28,6 +29,8 @@ export default function Challenges({ closePresent, currentID }) {
   console.log("alreadyCompleted2", alreadyCompleted2);
   const handleCheckSub = (e) => {
     e.preventDefault();
+    tg.HapticFeedback.impactOccurred("rigid");
+
     window.open("https://t.me/cryptopoonn");
     setTimeout(() => {
       setShowBtnLoad(1);
@@ -52,6 +55,8 @@ export default function Challenges({ closePresent, currentID }) {
   };
   const handleCheckSub2 = (e) => {
     e.preventDefault();
+    tg.HapticFeedback.impactOccurred("rigid");
+
     window.open("https://t.me/bubbleit_group");
     setTimeout(() => {
       setShowBtnLoad2(1);
