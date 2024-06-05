@@ -41,6 +41,7 @@ function Game({ authId, currentID = 1 }) {
 
   const [inviterFriendsList, setInviterFriendsList] = useState(0);
   const [totalRefScore, setTotalRefScore] = useState(0);
+  const [isShowNUM, setShowNUM] = useState(false);
 
   // console.log("Naranaa", currentID);
   // const [usID, setUsID] = useState(0);
@@ -203,6 +204,7 @@ function Game({ authId, currentID = 1 }) {
       //   alert("API для вибрации не поддерживается в вашем браузере.");
       // }
 
+      setShowNUM(true);
       let newPercent = percent;
       newPercent -= 3;
       handlePercent(newPercent);
@@ -375,6 +377,8 @@ function Game({ authId, currentID = 1 }) {
           harvestRef={harvestRef}
           presentIcon={presentIcon}
           copyIcon={copyIcon}
+          isShowNUM={isShowNUM}
+          setShowNUM={setShowNUM}
         />
       ) : (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />

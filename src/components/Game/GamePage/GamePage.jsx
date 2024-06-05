@@ -4,6 +4,8 @@ import { useCallback } from "react";
 import debounce from "lodash.debounce";
 import RatingBar from "../RatingBar/RatingBar";
 import Friends from "../Friends/Friends";
+import ClickPlace from "../../ClickPlace/ClickPlace";
+import Popit from "../../Popit/Popit";
 
 function GamePage({
   isShowMarket,
@@ -36,6 +38,8 @@ function GamePage({
   presentIcon,
   handleShowPresent,
   currentID,
+  isShowNUM,
+  setShowNUM,
 }) {
   const sFunc = () => {
     // console.log("percent", percent);
@@ -98,34 +102,21 @@ function GamePage({
               {shownScore < 1000000 ? shownScore : toShort(shownScore)}
             </div>
           </div>
-          <div
-            className="popit"
-            style={{
-              backgroundImage: `url(${popitImg})`,
-              filter: currentScore >= 1000000 ? "invert(1)" : "",
-            }}
-          >
-            <div className="grid">
-              {bubbleStates.map((row, rowIndex) => (
-                <div key={rowIndex} className="popit-row">
-                  {row.map((active, colIndex) => (
-                    <div
-                      key={colIndex}
-                      className={`cell ${active ? "active" : ""}`}
-                      onClick={(event) =>
-                        handleBubbleClick(
-                          rowIndex,
-                          colIndex,
-                          setBubbleStates,
-                          event
-                        )
-                      }
-                    ></div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
+          <>
+            {}
+            <ClickPlace
+              setShowNUM={setShowNUM}
+              isShowNUM={isShowNUM}
+              clickPerOne={clickPerOne}
+            />
+            <Popit
+              popitImg={popitImg}
+              currentScore={currentScore}
+              bubbleStates={bubbleStates}
+              handleBubbleClick={handleBubbleClick}
+              setBubbleStates={setBubbleStates}
+            />
+          </>
           <EnergyBar setPercent={setPercent} percent={percent} />
           {isShowMenu ? (
             <nav className="menu">
