@@ -246,6 +246,8 @@ function Game({ authId, currentID = 1 }) {
   };
   // console.log("clickPerOne ", clickPerOne);
   const handleBoosting = () => {
+    tg.HapticFeedback.impactOccurred("rigid");
+
     const boostELem = boostsLists[currentOpenedBoost];
     const pricePercent = boostELem.price * 0.1;
 
