@@ -9,10 +9,12 @@ function ClickPlace({ clickPerOne, isShowNUM, setShowNUM }) {
       setClickPosition({ x: e.pageX, y: e.pageY });
     };
 
-    document.querySelector(".game-page").addEventListener("click", handleClick);
+    document
+      .querySelector(".App .container")
+      .addEventListener("click", handleClick);
     return () => {
       document
-        .querySelector(".game-page")
+        .querySelector(".App .container")
         .removeEventListener("click", handleClick);
     };
   }, []);
