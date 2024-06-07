@@ -58,6 +58,9 @@ function App() {
     tg.ready();
     setTimeout(() => {
       tg.expand();
+      setTimeout(() => {
+        alert(tg.tgWebAppStartParam);
+      }, 700);
     }, 200);
   }, []);
   const softClick = () => {
@@ -71,6 +74,7 @@ function App() {
   };
   return (
     <div className="App">
+      <div style={{ color: "white" }}>{tg.tgWebAppStartParam}</div>
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
