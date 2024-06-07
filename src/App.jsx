@@ -59,7 +59,7 @@ function App() {
     setTimeout(() => {
       tg.expand();
       setTimeout(() => {
-        alert(tg.tgWebAppStartParam);
+        alert(tg.initDataUnsafe.start_param);
       }, 700);
     }, 200);
   }, []);
@@ -74,7 +74,7 @@ function App() {
   };
   return (
     <div className="App">
-      <div style={{ color: "white" }}>{tg.tgWebAppStartParam}</div>
+      <div style={{ color: "white" }}>{tg.initDataUnsafe.start_param}</div>
       {!isLoaded ? (
         <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
       ) : (
