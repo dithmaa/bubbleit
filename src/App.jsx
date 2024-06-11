@@ -59,7 +59,7 @@ function App() {
     setTimeout(() => {
       tg.expand();
       setTimeout(() => {
-        alert(tg.initDataUnsafe.start_param);
+        // alert(tg.initDataUnsafe.start_param);
       }, 700);
     }, 200);
   }, []);

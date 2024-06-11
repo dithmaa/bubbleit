@@ -1,2493 +1,82 @@
 [
   {
-    "id": "1",
     "name": "Лаки",
-    "refId": 3,
-    "clickAmount": 21344859,
+    "tg_id": 4042,
+    "refId": 0,
+    "tg_username": "none",
+    "clickAmount": 28717,
     "clickPerOne": 1288,
     "showBoosts": 7,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
     "boosts": [
       {
-        "id": 1,
         "price": 12502,
         "level": 51
       },
       {
-        "id": 2,
         "price": 59185,
         "level": 21
       },
       {
-        "id": 3,
         "price": 595876,
         "level": 26
       },
       {
-        "id": 4,
         "price": 1331000,
         "level": 3
       },
       {
-        "id": 5,
         "price": 5500000,
         "level": 1
       },
       {
-        "id": 6,
         "price": 16500000,
         "level": 1
       },
       {
-        "id": 7,
         "price": 100000000,
         "level": 0
       }
     ],
-    "scoresFromRef": []
+    "scoresFromRef": [
+      {
+        "score": 0
+      }
+    ]
   },
   {
-    "clickAmount": 35,
-    "id": "2",
+    "clickAmount": 320,
     "name": "Игрок2",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 47227,
-    "id": "3",
-    "name": "name9999",
-    "clickPerOne": 11267,
-    "showBoosts": 4,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 6418,
-        "level": 44
-      },
-      {
-        "id": 2,
-        "price": 17146,
-        "level": 8
-      },
-      {
-        "id": 3,
-        "price": 73205,
-        "level": 4
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": [
-      {
-        "id": 53,
-        "score": 0
-      },
-      {
-        "id": 54,
-        "score": 0
-      },
-      {
-        "id": 55,
-        "score": 0
-      },
-      {
-        "id": 57,
-        "score": 31
-      },
-      {
-        "id": 59,
-        "score": 11
-      },
-      {
-        "id": 60,
-        "score": 108
-      }
-    ]
-  },
-  {
-    "clickAmount": 3484668,
-    "id": "4",
-    "name": ".",
-    "clickPerOne": 2102,
-    "showBoosts": 7,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 69492,
-        "level": 69
-      },
-      {
-        "id": 2,
-        "price": 126864,
-        "level": 29
-      },
-      {
-        "id": 3,
-        "price": 959660,
-        "level": 31
-      },
-      {
-        "id": 4,
-        "price": 2853114,
-        "level": 11
-      },
-      {
-        "id": 5,
-        "price": 5500000,
-        "level": 1
-      },
-      {
-        "id": 6,
-        "price": 16500000,
-        "level": 1
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 1000039,
-    "id": "5",
-    "name": "Игрок5",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": [
-      {
-        "id": 58,
-        "score": 0
-      }
-    ]
-  },
-  {
-    "clickAmount": 1000039,
-    "id": "6",
-    "name": "Игрок6",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 47687,
-    "id": "7",
-    "name": "lavachik",
-    "clickPerOne": 100,
-    "showBoosts": 4,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 2725,
-        "level": 35
-      },
-      {
-        "id": 2,
-        "price": 10648,
-        "level": 3
-      },
-      {
-        "id": 3,
-        "price": 60500,
-        "level": 2
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "8",
-    "name": "Игрок8",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 403821,
-    "id": "9",
-    "name": "🤫🧏‍♀️",
-    "clickPerOne": 191,
-    "showBoosts": 4,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1694,
-        "level": 30
-      },
-      {
-        "id": 2,
-        "price": 12883,
-        "level": 5
-      },
-      {
-        "id": 3,
-        "price": 88577,
-        "level": 6
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "10",
-    "name": "Игрок1",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 47659506,
-    "id": "11",
-    "name": "Паша техни",
-    "clickPerOne": 8102,
-    "showBoosts": 8,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1467153,
-        "level": 101
-      },
-      {
-        "id": 2,
-        "price": 938802,
-        "level": 50
-      },
-      {
-        "id": 3,
-        "price": 1700092,
-        "level": 37
-      },
-      {
-        "id": 4,
-        "price": 6727487,
-        "level": 20
-      },
-      {
-        "id": 5,
-        "price": 11789737,
-        "level": 9
-      },
-      {
-        "id": 6,
-        "price": 29230756,
-        "level": 7
-      },
-      {
-        "id": 7,
-        "price": 133100000,
-        "level": 3
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "12",
-    "name": "Игрок12",
-    "clickPerOne": 6,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 160,
-        "level": 5
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 67,
-    "id": "13",
-    "name": "Z4CKAPRO",
-    "clickPerOne": 6,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 160,
-        "level": 5
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 1708153,
-    "id": "14",
-    "name": "Влад",
-    "clickPerOne": 477,
-    "showBoosts": 5,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 43150,
-        "level": 64
-      },
-      {
-        "id": 2,
-        "price": 78774,
-        "level": 24
-      },
-      {
-        "id": 3,
-        "price": 97434,
-        "level": 7
-      },
-      {
-        "id": 4,
-        "price": 1100000,
-        "level": 1
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 11353380,
-    "id": "15",
-    "name": "nn  не лоз",
-    "clickPerOne": 4201,
-    "showBoosts": 8,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1333776,
-        "level": 100
-      },
-      {
-        "id": 2,
-        "price": 938802,
-        "level": 50
-      },
-      {
-        "id": 3,
-        "price": 1405036,
-        "level": 35
-      },
-      {
-        "id": 4,
-        "price": 2593740,
-        "level": 10
-      },
-      {
-        "id": 5,
-        "price": 12968710,
-        "level": 10
-      },
-      {
-        "id": 6,
-        "price": 16500000,
-        "level": 1
-      },
-      {
-        "id": 7,
-        "price": 110000000,
-        "level": 1
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 93,
-    "id": "16",
-    "name": "Игрок16",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "17",
-    "name": "Игрок17",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 12099459,
-    "id": "18",
-    "name": "Игрок18",
-    "clickPerOne": 483,
-    "showBoosts": 5,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1694,
-        "level": 30
-      },
-      {
-        "id": 2,
-        "price": 48914,
-        "level": 19
-      },
-      {
-        "id": 3,
-        "price": 97434,
-        "level": 7
-      },
-      {
-        "id": 4,
-        "price": 1210000,
-        "level": 2
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": [
-      {
-        "id": 62,
-        "score": 233
-      }
-    ]
-  },
-  {
-    "clickAmount": 1172,
-    "id": "19",
-    "name": "Игрок19",
-    "clickPerOne": 28,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1273,
-        "level": 27
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 2620,
-    "id": "20",
-    "name": "Азиз",
-    "clickPerOne": 14,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 339,
-        "level": 13
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 3766,
-    "id": "21",
-    "name": "nn не лоз2",
-    "clickPerOne": 411,
-    "showBoosts": 4,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 11366,
-        "level": 50
-      },
-      {
-        "id": 2,
-        "price": 86651,
-        "level": 25
-      },
-      {
-        "id": 3,
-        "price": 107177,
-        "level": 8
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 8,
-    "id": "22",
-    "name": "Игрок22",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 80,
-    "id": "23",
-    "name": "Лаки",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "24",
-    "name": "Игрок24",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "25",
-    "name": "dithmaa",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 117,
-    "id": "26",
-    "name": "Игрок26",
-    "clickPerOne": 3,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 121,
-        "level": 2
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      },
-      {
-        "id": 7,
-        "price": 100000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 9211,
-    "id": "27",
-    "name": "Игрок27",
-    "refId": 1,
-    "clickPerOne": 128,
-    "showBoosts": 4,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 110,
-        "level": 1
-      },
-      {
-        "id": 2,
-        "price": 10648,
-        "level": 3
-      },
-      {
-        "id": 3,
-        "price": 55000,
-        "level": 1
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 103,
-    "id": "28",
-    "name": "Игрок28",
+    "tg_id": 4043,
+    "tg_username": "none",
     "refId": 1,
     "clickPerOne": 1,
     "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
     "boosts": [
       {
-        "id": 1,
         "price": 100,
         "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 23,
-    "id": "29",
-    "name": "Игрок29",
-    "refId": 1,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 2,
-    "id": "30",
-    "name": "Игрок30",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "31",
-    "name": "Игрок31",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "32",
-    "name": "Игрок32",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "33",
-    "name": "Игрок33",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "34",
-    "name": "Игрок34",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 52,
-    "id": "35",
-    "name": "Игрок35",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "36",
-    "name": "Игрок1",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "37",
-    "name": "Игрок37",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 56,
-    "id": "38",
-    "name": "Игрок38",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 234,
-    "id": "39",
-    "name": "Игрок39",
-    "clickPerOne": 2,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 110,
-        "level": 1
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 58830,
-    "id": "40",
-    "name": "Z4CKAPRO",
-    "clickPerOne": 231,
-    "showBoosts": 4,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1694,
-        "level": 30
-      },
-      {
-        "id": 2,
-        "price": 20746,
-        "level": 10
-      },
-      {
-        "id": 3,
-        "price": 88577,
-        "level": 6
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 111,
-    "id": "41",
-    "name": "Игрок41",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 8,
-    "id": "42",
-    "name": "Игрок42",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 2932,
-    "id": "43",
-    "name": "Игрок43",
-    "clickPerOne": 90,
-    "showBoosts": 3,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 2253,
-        "level": 33
-      },
-      {
-        "id": 2,
-        "price": 15588,
-        "level": 7
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 1356,
-    "id": "44",
-    "name": "Игрок44",
-    "clickPerOne": 48,
-    "showBoosts": 3,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 1863,
-        "level": 31
-      },
-      {
-        "id": 2,
-        "price": 9680,
-        "level": 2
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 135,
-    "id": "45",
-    "name": "Игрок45",
-    "clickPerOne": 2,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 110,
-        "level": 1
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 17,
-    "id": "46",
-    "name": "Игрок46",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 25,
-    "id": "47",
-    "name": "Игрок47",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 112,
-    "id": "48",
-    "name": "Игрок48",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 3036,
-    "id": "49",
-    "name": "...",
-    "clickPerOne": 11,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 256,
-        "level": 10
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "50",
-    "name": "Z4CKAPRO",
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "51",
-    "name": "Игрок51",
-    "refId": 1,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "52",
-    "name": "Игрок52",
-    "refId": 0,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "53",
-    "name": "Игрок53",
-    "refId": 3,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 0,
-    "id": "54",
-    "name": "Игрок54",
-    "refId": 3,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 11281,
-    "id": "55",
-    "name": "Игрок55",
-    "refId": 3,
-    "clickPerOne": 3,
-    "showBoosts": 2,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 121,
-        "level": 2
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 165201,
-    "id": "56",
-    "name": "ПАШКА ТЕХН",
-    "clickPerOne": 1127,
-    "showBoosts": 6,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 24359,
-        "level": 58
-      },
-      {
-        "id": 2,
-        "price": 95316,
-        "level": 26
-      },
-      {
-        "id": 3,
-        "price": 406992,
-        "level": 22
-      },
-      {
-        "id": 4,
-        "price": 1464100,
-        "level": 4
-      },
-      {
-        "id": 5,
-        "price": 5500000,
-        "level": 1
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ]
-  },
-  {
-    "clickAmount": 133,
-    "id": "57",
-    "name": "Игрок57",
-    "refId": 3,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 29,
-    "id": "58",
-    "name": "Игрок58",
-    "refId": 5,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
         "price": 15000000,
         "level": 0
       }
@@ -2496,121 +85,36 @@
   },
   {
     "clickAmount": 12,
-    "id": "59",
-    "name": "Игрок59",
-    "refId": 3,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 128,
-    "id": "60",
-    "name": "Игрок60",
-    "refId": 3,
-    "clickPerOne": 1,
-    "showBoosts": 1,
-    "boosts": [
-      {
-        "id": 1,
-        "price": 100,
-        "level": 0
-      },
-      {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
-        "price": 5000000,
-        "level": 0
-      },
-      {
-        "id": 6,
-        "price": 15000000,
-        "level": 0
-      }
-    ],
-    "scoresFromRef": []
-  },
-  {
-    "clickAmount": 259,
-    "id": "61",
-    "name": "Игрок61",
+    "name": "Игрок3",
+    "tg_id": 4044,
+    "tg_username": "none",
     "refId": 0,
     "clickPerOne": 1,
     "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
     "boosts": [
       {
-        "id": 1,
         "price": 100,
         "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
         "price": 15000000,
         "level": 0
       }
@@ -2618,40 +122,37 @@
     "scoresFromRef": []
   },
   {
-    "clickAmount": 249,
-    "id": "62",
-    "name": "Игрок62",
-    "refId": 18,
-    "clickPerOne": 3,
-    "showBoosts": 2,
+    "clickAmount": 1770986,
+    "name": "Nomto ",
+    "tg_id": 403521818,
+    "tg_username": "dithmaa",
+    "refId": 0,
+    "clickPerOne": 737,
+    "showBoosts": 5,
+    "isCompletedMiss": true,
+    "isCompletedMission": true,
     "boosts": [
       {
-        "id": 1,
-        "price": 121,
+        "price": 63175,
+        "level": 68
+      },
+      {
+        "price": 59185,
+        "level": 21
+      },
+      {
+        "price": 252711,
+        "level": 17
+      },
+      {
+        "price": 1210000,
         "level": 2
       },
       {
-        "id": 2,
-        "price": 8000,
-        "level": 0
-      },
-      {
-        "id": 3,
-        "price": 50000,
-        "level": 0
-      },
-      {
-        "id": 4,
-        "price": 1000000,
-        "level": 0
-      },
-      {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
         "price": 15000000,
         "level": 0
       }
@@ -2659,40 +160,151 @@
     "scoresFromRef": []
   },
   {
-    "clickAmount": 2247725,
-    "id": "63",
-    "name": "Игрок63",
+    "clickAmount": 90,
+    "name": "Nomto",
+    "tg_id": 888888888888,
+    "tg_username": "none",
     "refId": 0,
-    "clickPerOne": 600,
-    "showBoosts": 7,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
     "boosts": [
       {
-        "id": 1,
-        "price": 596,
-        "level": 19
+        "price": 100,
+        "level": 0
       },
       {
-        "id": 2,
-        "price": 20746,
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1252119,
+    "name": "@manaxer3",
+    "tg_id": 6594964343,
+    "tg_username": "InvestorBitochka",
+    "refId": 0,
+    "clickPerOne": 1100,
+    "showBoosts": 4,
+    "isCompletedMiss": true,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 871,
+        "level": 23
+      },
+      {
+        "price": 12883,
+        "level": 5
+      },
+      {
+        "price": 107177,
+        "level": 8
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 2151987,
+    "name": "testest",
+    "tg_username": "none",
+    "tg_id": 40432,
+    "refId": 0,
+    "clickPerOne": 308,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 281,
+        "level": 11
+      },
+      {
+        "price": 25102,
+        "level": 12
+      },
+      {
+        "price": 129683,
         "level": 10
       },
       {
-        "id": 3,
-        "price": 88577,
-        "level": 6
+        "price": 1000000,
+        "level": 0
       },
       {
-        "id": 4,
-        "price": 1100000,
-        "level": 1
+        "price": 5000000,
+        "level": 0
       },
       {
-        "id": 5,
-        "price": 5500000,
-        "level": 1
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 100006562,
+    "name": "ПАШОК",
+    "tg_id": 748984277,
+    "tg_username": "sizer_11",
+    "refId": 0,
+    "clickPerOne": 10000,
+    "showBoosts": 7,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 123107,
+        "level": 75
       },
       {
-        "id": 6,
+        "price": 115331,
+        "level": 28
+      },
+      {
+        "price": 721009,
+        "level": 28
+      },
+      {
+        "price": 5559908,
+        "level": 18
+      },
+      {
+        "price": 15692139,
+        "level": 12
+      },
+      {
         "price": 16500000,
         "level": 1
       }
@@ -2700,40 +312,37 @@
     "scoresFromRef": []
   },
   {
-    "clickAmount": 1752215,
-    "id": "64",
-    "name": "Игрок64",
+    "clickAmount": 1000104,
+    "name": "Игрок9",
+    "tg_username": "none",
+    "tg_id": 454105483,
     "refId": 0,
-    "clickPerOne": 112,
-    "showBoosts": 4,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
     "boosts": [
       {
-        "id": 1,
-        "price": 193,
-        "level": 7
+        "price": 100,
+        "level": 0
       },
       {
-        "id": 2,
-        "price": 10648,
-        "level": 3
+        "price": 8000,
+        "level": 0
       },
       {
-        "id": 3,
-        "price": 73205,
-        "level": 4
+        "price": 50000,
+        "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
         "price": 15000000,
         "level": 0
       }
@@ -2741,40 +350,151 @@
     "scoresFromRef": []
   },
   {
-    "clickAmount": 1000004,
-    "id": "65",
-    "name": "Игрок65",
+    "clickAmount": 949940,
+    "name": "Игрок10",
+    "tg_id": 984922090,
+    "tg_username": "none",
     "refId": 0,
-    "clickPerOne": 1,
-    "showBoosts": 1,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
     "boosts": [
       {
-        "id": 1,
-        "price": 100,
-        "level": 0
+        "price": 110,
+        "level": 1
       },
       {
-        "id": 2,
-        "price": 8000,
-        "level": 0
+        "price": 8800,
+        "level": 1
       },
       {
-        "id": 3,
-        "price": 50000,
-        "level": 0
+        "price": 55000,
+        "level": 1
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 52,
+    "name": "Игрок11",
+    "tg_id": 6711472538,
+    "tg_username": "none",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 129,
+    "name": "Игрок12",
+    "tg_id": 6421987328,
+    "tg_username": "none",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 140,
+    "name": "Игрок13",
+    "tg_id": 5868409502,
+    "tg_username": "none",
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
         "price": 15000000,
         "level": 0
       }
@@ -2783,39 +503,340 @@
   },
   {
     "clickAmount": 77,
-    "id": "66",
-    "name": "Игрок66",
+    "name": "Игрок14",
+    "tg_id": 5295847910,
+    "tg_username": "maximtakahuli",
     "refId": 0,
     "clickPerOne": 1,
     "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
     "boosts": [
       {
-        "id": 1,
         "price": 100,
         "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1000480,
+    "name": "Игрок15",
+    "tg_username": "nomtoxxy",
+    "tg_id": 6067229782,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMiss": true,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 82,
+    "name": "Игрок16",
+    "tg_username": "vladkhursal",
+    "tg_id": 1389759515,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1833350,
+    "name": "Игрок17",
+    "tg_username": "XXX_XXX152",
+    "tg_id": 1099688271,
+    "refId": 0,
+    "clickPerOne": 70,
+    "showBoosts": 4,
+    "isCompletedMiss": true,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 66550,
+        "level": 3
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 231532,
+    "name": "LAVACHIK",
+    "tg_username": "lavachik",
+    "tg_id": 773917321,
+    "refId": 0,
+    "clickPerOne": 357,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 29473,
+        "level": 60
+      },
+      {
+        "price": 65103,
+        "level": 22
+      },
+      {
+        "price": 88577,
+        "level": 6
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 945057,
+    "name": "Игрок19",
+    "tg_username": "Nnnn64i",
+    "tg_id": 6373935636,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 951990,
+    "name": "Игрок20",
+    "tg_username": "DENJl_SK",
+    "tg_id": 6995381919,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 99,
+    "name": "Игрок21",
+    "tg_username": "Nazirkulov27",
+    "tg_id": 1224005287,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 5162,
+    "name": "Игрок22",
+    "tg_username": "Vertumn80",
+    "tg_id": 6089705736,
+    "refId": 0,
+    "clickPerOne": 43,
+    "showBoosts": 3,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 256,
+        "level": 10
+      },
+      {
+        "price": 11712,
+        "level": 4
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
         "price": 15000000,
         "level": 0
       }
@@ -2824,39 +845,36 @@
   },
   {
     "clickAmount": 0,
-    "id": "67",
-    "name": "Игрок67",
+    "name": "Игрок22",
+    "tg_username": "Vertumn80",
+    "tg_id": 6089705736,
     "refId": 0,
     "clickPerOne": 1,
     "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
     "boosts": [
       {
-        "id": 1,
         "price": 100,
         "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
         "price": 15000000,
         "level": 0
       }
@@ -2864,40 +882,1367 @@
     "scoresFromRef": []
   },
   {
-    "clickAmount": 565,
-    "id": "68",
-    "name": "Sergei",
+    "clickAmount": 1000000,
+    "name": "Игрок24",
+    "tg_username": "ihatepinkcolor",
+    "tg_id": 5206028527,
     "refId": 0,
-    "clickPerOne": 2,
-    "showBoosts": 2,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
     "boosts": [
       {
-        "id": 1,
-        "price": 110,
-        "level": 1
+        "price": 100,
+        "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 883672,
+    "name": "Игрок25",
+    "tg_username": "none",
+    "tg_id": 5339551130,
+    "refId": 0,
+    "clickPerOne": 66,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "price": 60500,
+        "level": 2
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 198,
+    "name": "Игрок26",
+    "tg_username": "DmitriyV2020",
+    "tg_id": 491542534,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 759809,
+    "name": "Игрок27",
+    "tg_username": "OlgaUrevna85",
+    "tg_id": 1926679118,
+    "refId": 0,
+    "clickPerOne": 91,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 121,
+        "level": 2
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 73205,
+        "level": 4
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 943790,
+    "name": "марьюшка ",
+    "tg_username": "dbnskff",
+    "tg_id": 1261133748,
+    "refId": 0,
+    "clickPerOne": 34,
+    "showBoosts": 4,
+    "isCompletedMiss": true,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 160,
+        "level": 5
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 50,
+    "name": "Игрок29",
+    "tg_username": "XPrCSdGUh",
+    "tg_id": 6623213767,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1992529,
+    "name": "Игрок30",
+    "tg_username": "wwqqwwqq",
+    "tg_id": 5228988515,
+    "refId": 0,
+    "clickPerOne": 12,
+    "showBoosts": 3,
+    "isCompletedMiss": true,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 133,
+        "level": 3
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1010870,
+    "name": "Никита",
+    "tg_username": "nkmoaw",
+    "tg_id": 5117376232,
+    "refId": 0,
+    "clickPerOne": 37,
+    "showBoosts": 3,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 309,
+        "level": 12
+      },
+      {
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 59,
+    "name": "Игрок32",
+    "tg_username": "bogdan_garmaev",
+    "tg_id": 841160200,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 195,
+    "name": "Игрок33",
+    "tg_username": "none",
+    "tg_id": 381211221,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 942976,
+    "name": "нита ",
+    "tg_username": "tishina_nnn",
+    "tg_id": 1688820244,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 945501,
+    "name": "Игрок34",
+    "tg_username": "Geo_Politician",
+    "tg_id": 769532787,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 95,
+    "name": "Игрок36",
+    "tg_username": "Phantom22_15",
+    "tg_id": 5693555854,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 287,
+    "name": "Игрок37",
+    "tg_username": "MotyaZefir4ik",
+    "tg_id": 5497494585,
+    "refId": 0,
+    "clickPerOne": 3,
+    "showBoosts": 2,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 121,
+        "level": 2
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 58,
+    "name": "Игрок38",
+    "tg_username": "S_DiM0_n",
+    "tg_id": 283642761,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 110371,
+    "name": "Boris",
+    "tg_username": "Boris51",
+    "tg_id": 323679077,
+    "refId": 0,
+    "clickPerOne": 60,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 871,
+        "level": 23
+      },
+      {
+        "price": 9680,
+        "level": 2
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 59,
+    "name": "Игрок40",
+    "tg_username": "none",
+    "tg_id": 5237582341,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 69329,
+    "name": "Игрок41",
+    "tg_username": "LAIFCKA",
+    "tg_id": 5001763277,
+    "refId": 0,
+    "clickPerOne": 230,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 142651,
+        "level": 11
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 943435,
+    "name": "Игрок42",
+    "tg_username": "RMAtim",
+    "tg_id": 836182368,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 960788,
+    "name": "Игрок43",
+    "tg_username": "Osemenitel_v_shoke",
+    "tg_id": 663865201,
+    "refId": 0,
+    "clickPerOne": 32,
+    "showBoosts": 4,
+    "isCompletedMiss": false,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 133,
+        "level": 3
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 38,
+    "name": "Игрок44",
+    "tg_username": "none",
+    "tg_id": 7039606788,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 638646,
+    "name": "Игрок45",
+    "tg_username": "Byjibqp1",
+    "tg_id": 5716289248,
+    "refId": 0,
+    "clickPerOne": 317,
+    "showBoosts": 5,
+    "isCompletedMiss": true,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 309,
+        "level": 12
+      },
+      {
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "price": 129683,
+        "level": 10
+      },
+      {
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 98,
+    "name": "Игрок46",
+    "tg_username": "Yrso_G",
+    "tg_id": 849713733,
+    "refId": 0,
+    "clickPerOne": 3,
+    "showBoosts": 2,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 121,
+        "level": 2
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 259508,
+    "name": "Игрок47",
+    "tg_username": "none",
+    "tg_id": 5555231009,
+    "refId": 0,
+    "clickPerOne": 358,
+    "showBoosts": 5,
+    "isCompletedMiss": true,
+    "isCompletedMission": true,
+    "boosts": [
+      {
+        "price": 1053,
+        "level": 25
+      },
+      {
+        "price": 11712,
+        "level": 4
+      },
+      {
+        "price": 142651,
+        "level": 11
+      },
+      {
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 27,
+    "name": "Игрок48",
+    "tg_username": "alexeishmat",
+    "tg_id": 871263583,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 11,
+    "name": "Игрок49",
+    "tg_username": "Fantasy345324",
+    "tg_id": 1823514490,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 210,
+    "name": "Игрок50",
+    "tg_username": "none",
+    "tg_id": 5590830822,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMiss": false,
+    "isCompletedMission": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 146,
+    "name": "Игрок51",
+    "tg_username": "sadovolya",
+    "tg_id": 773533554,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 15007,
+    "name": "Игрок52",
+    "tg_username": "imya_polzovatelya_02",
+    "tg_id": 1271120472,
+    "refId": 0,
+    "clickPerOne": 375,
+    "showBoosts": 5,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 1158,
+        "level": 26
+      },
+      {
+        "price": 14171,
+        "level": 6
+      },
+      {
+        "price": 142651,
+        "level": 11
+      },
+      {
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 108443,
+    "name": "Игрок53",
+    "tg_username": "none",
+    "tg_id": 6795879212,
+    "refId": 0,
+    "clickPerOne": 286,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 720,
+        "level": 21
+      },
+      {
+        "price": 17146,
+        "level": 8
+      },
+      {
+        "price": 129683,
+        "level": 10
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1374780,
+    "name": "Вh",
+    "tg_username": "none",
+    "tg_id": 7054548515,
+    "refId": 0,
+    "clickPerOne": 350,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 4823,
+        "level": 41
+      },
+      {
+        "price": 22820,
+        "level": 11
+      },
+      {
+        "price": 142651,
+        "level": 11
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 58,
+    "name": "Игрок55",
+    "tg_username": "aanasteezi",
+    "tg_id": 964500182,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 973266,
+    "name": "Игрок56",
+    "tg_username": "none",
+    "tg_id": 384805992,
+    "refId": 0,
+    "clickPerOne": 28,
+    "showBoosts": 3,
+    "isCompletedMission": true,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 133,
+        "level": 3
+      },
+      {
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 610197,
+    "name": "Игрок57",
+    "tg_username": "none",
+    "tg_id": 6991429989,
+    "refId": 0,
+    "clickPerOne": 139,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 121,
+        "level": 2
+      },
+      {
+        "price": 9680,
+        "level": 2
+      },
+      {
+        "price": 88577,
+        "level": 6
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1000072,
+    "name": "Игрок58",
+    "tg_username": "Mirk_qw",
+    "tg_id": 1067011293,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 74,
+    "name": "Игрок59",
+    "tg_username": "none",
+    "tg_id": 7097556655,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
         "price": 15000000,
         "level": 0
       }
@@ -2906,39 +2251,36 @@
   },
   {
     "clickAmount": 92,
-    "id": "69",
-    "name": "Игрок69",
+    "name": "Игрок60",
+    "tg_username": "Blackvud",
+    "tg_id": 571681536,
     "refId": 0,
     "clickPerOne": 1,
     "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
     "boosts": [
       {
-        "id": 1,
         "price": 100,
         "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
         "price": 15000000,
         "level": 0
       }
@@ -2946,40 +2288,1519 @@
     "scoresFromRef": []
   },
   {
-    "clickAmount": 5,
-    "id": "70",
-    "name": "Игрок70",
+    "clickAmount": 89,
+    "name": "Игрок61",
+    "tg_username": "Asq55",
+    "tg_id": 469300212,
     "refId": 0,
     "clickPerOne": 1,
     "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
     "boosts": [
       {
-        "id": 1,
         "price": 100,
         "level": 0
       },
       {
-        "id": 2,
         "price": 8000,
         "level": 0
       },
       {
-        "id": 3,
         "price": 50000,
         "level": 0
       },
       {
-        "id": 4,
         "price": 1000000,
         "level": 0
       },
       {
-        "id": 5,
         "price": 5000000,
         "level": 0
       },
       {
-        "id": 6,
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 38,
+    "name": "Игрок62",
+    "tg_username": "AATMahi",
+    "tg_id": 1963234823,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1000048,
+    "name": "Игрок63",
+    "tg_username": "DamiraILSCHATOVNA",
+    "tg_id": 5230990908,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": true,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 82,
+    "name": "Игрок64",
+    "tg_username": "Tema271104",
+    "tg_id": 5868810850,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 207,
+    "name": "ЕвгенияМал",
+    "tg_username": "denisenko0709",
+    "tg_id": 1509593774,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 675847168,
+    "name": "...",
+    "tg_username": "Trimatrixc",
+    "tg_id": 6520857524,
+    "refId": 0,
+    "clickPerOne": 2800,
+    "showBoosts": 7,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 26794,
+        "level": 59
+      },
+      {
+        "price": 53805,
+        "level": 20
+      },
+      {
+        "price": 252711,
+        "level": 17
+      },
+      {
+        "price": 1331000,
+        "level": 3
+      },
+      {
+        "price": 6050000,
+        "level": 2
+      },
+      {
+        "price": 35369214,
+        "level": 9
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 91,
+    "name": "Игрок67",
+    "tg_username": "Rostik_2828",
+    "tg_id": 699397028,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 829725,
+    "name": "Игрок68",
+    "tg_username": "Tut_nichigo_net",
+    "tg_id": 5088264582,
+    "refId": 0,
+    "clickPerOne": 70,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 66550,
+        "level": 3
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 47520,
+    "name": "Никита ",
+    "tg_username": "BNikita93",
+    "tg_id": 581018413,
+    "refId": 0,
+    "clickPerOne": 351,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 1694,
+        "level": 30
+      },
+      {
+        "price": 53805,
+        "level": 20
+      },
+      {
+        "price": 107177,
+        "level": 8
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 954032,
+    "name": "Игрок70",
+    "tg_username": "Mifin_Bl",
+    "tg_id": 914429217,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 684384,
+    "name": "Игрок71",
+    "tg_username": "yarik3119",
+    "tg_id": 5218231824,
+    "refId": 0,
+    "clickPerOne": 161,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 958,
+        "level": 24
+      },
+      {
+        "price": 15588,
+        "level": 7
+      },
+      {
+        "price": 73205,
+        "level": 4
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 39,
+    "name": "Игрок72",
+    "tg_username": "x40020",
+    "tg_id": 6883307310,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 257,
+    "name": " Dvinch",
+    "tg_username": "CodeAp",
+    "tg_id": 793692524,
+    "refId": 0,
+    "clickPerOne": 37,
+    "showBoosts": 3,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 655,
+        "level": 20
+      },
+      {
+        "price": 9680,
+        "level": 2
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 67,
+    "name": "Игрок74",
+    "tg_username": "Magic5rpcom",
+    "tg_id": 7168149191,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 967,
+    "name": "Игрок75",
+    "tg_username": "none",
+    "tg_id": 6767161179,
+    "refId": 0,
+    "clickPerOne": 5,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 146,
+        "level": 4
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 73,
+    "name": "Игрок76",
+    "tg_username": "Janiegomofob",
+    "tg_id": 5774203345,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1239584,
+    "name": "Игрок77",
+    "tg_username": "TOYOTA7888",
+    "tg_id": 1001746305,
+    "refId": 0,
+    "clickPerOne": 210,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 129683,
+        "level": 10
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 320,
+    "name": "Игрок78",
+    "tg_username": "xyJliga_nka",
+    "tg_id": 5108716351,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 12,
+    "name": "Игрок79",
+    "tg_username": "buy_million",
+    "tg_id": 6965255606,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 4,
+    "name": "Игрок80",
+    "tg_username": "an_gelilina",
+    "tg_id": 980341680,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1001084,
+    "name": "Игрок81",
+    "tg_username": "Respectsq",
+    "tg_id": 6616006244,
+    "refId": 0,
+    "clickPerOne": 110,
+    "showBoosts": 5,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 10,
+    "name": "Игрок82",
+    "tg_username": "none",
+    "tg_id": 1941712472,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 188,
+    "name": "Буба ",
+    "tg_username": "Bulat250",
+    "tg_id": 6084181297,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 941912,
+    "name": "Игрок84",
+    "tg_username": "closedelias",
+    "tg_id": 388981800,
+    "refId": 0,
+    "clickPerOne": 30,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 20198,
+    "name": "Игрок85",
+    "tg_username": "none",
+    "tg_id": 950610945,
+    "refId": 0,
+    "clickPerOne": 340,
+    "showBoosts": 5,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 281,
+        "level": 11
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 156916,
+        "level": 12
+      },
+      {
+        "price": 1100000,
+        "level": 1
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 97,
+    "name": "Игрок86",
+    "tg_username": "dhshhsjssusu",
+    "tg_id": 5935937216,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 172773,
+    "name": "Игрок87",
+    "tg_username": "bavoyaika_1",
+    "tg_id": 1971883674,
+    "refId": 0,
+    "clickPerOne": 450,
+    "showBoosts": 4,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 95316,
+        "level": 26
+      },
+      {
+        "price": 156916,
+        "level": 12
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 348,
+    "name": "Игрок88",
+    "tg_username": "none",
+    "tg_id": 2062615886,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 1000094,
+    "name": "Игрок89",
+    "tg_username": "none",
+    "tg_id": 5762070630,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": true,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 479,
+    "name": "Игрок90",
+    "tg_username": "none",
+    "tg_id": 5881532910,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 922,
+    "name": "Игрок91",
+    "tg_username": "best49y",
+    "tg_id": 5409274127,
+    "refId": 0,
+    "clickPerOne": 55,
+    "showBoosts": 4,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 1158,
+        "level": 26
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 11830,
+    "name": "горик",
+    "tg_username": "Danik4567890",
+    "tg_id": 6378535521,
+    "refId": 0,
+    "clickPerOne": 73,
+    "showBoosts": 4,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 1400,
+        "level": 28
+      },
+      {
+        "price": 10648,
+        "level": 3
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 218,
+    "name": "Игрок93",
+    "tg_username": "none",
+    "tg_id": 5929258082,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 2000440,
+    "name": "Hhgghv",
+    "tg_username": "none",
+    "tg_id": 7145694955,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMission": true,
+    "isCompletedMiss": true,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "name": "Игрок95",
+    "tg_username": "none",
+    "tg_id": 7145694955,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 32706,
+    "name": "Игрок96",
+    "tg_username": "Godcommunists",
+    "tg_id": 6689900329,
+    "refId": 0,
+    "clickPerOne": 59,
+    "showBoosts": 4,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 792,
+        "level": 22
+      },
+      {
+        "price": 9680,
+        "level": 2
+      },
+      {
+        "price": 55000,
+        "level": 1
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 6,
+    "name": "Игрок97",
+    "tg_username": "semull00",
+    "tg_id": 6809648719,
+    "refId": 0,
+    "clickPerOne": 2,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 110,
+        "level": 1
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 547,
+    "name": "Игрок98",
+    "tg_username": "none",
+    "tg_id": 6673803320,
+    "refId": 0,
+    "clickPerOne": 32,
+    "showBoosts": 3,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 871,
+        "level": 23
+      },
+      {
+        "price": 8800,
+        "level": 1
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 0,
+    "name": "Игрок99",
+    "tg_username": "mit98436",
+    "tg_id": 7068278467,
+    "refId": 0,
+    "clickPerOne": 1,
+    "showBoosts": 1,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 100,
+        "level": 0
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
+        "price": 15000000,
+        "level": 0
+      }
+    ],
+    "scoresFromRef": []
+  },
+  {
+    "clickAmount": 552,
+    "name": "Игрок100",
+    "tg_username": "Mi_Santo_10",
+    "tg_id": 5943595968,
+    "refId": 0,
+    "clickPerOne": 3,
+    "showBoosts": 2,
+    "isCompletedMission": false,
+    "isCompletedMiss": false,
+    "boosts": [
+      {
+        "price": 121,
+        "level": 2
+      },
+      {
+        "price": 8000,
+        "level": 0
+      },
+      {
+        "price": 50000,
+        "level": 0
+      },
+      {
+        "price": 1000000,
+        "level": 0
+      },
+      {
+        "price": 5000000,
+        "level": 0
+      },
+      {
         "price": 15000000,
         "level": 0
       }
