@@ -135,11 +135,14 @@ function Signup({ isLoadeds }) {
           if (refIdUrl != 0 || refIdUrl) {
             notifyInviter(narana);
           }
+          setTimeout(() => {
+            window.location.reload();
+          }, 2800);
+        })
+        .catch((err) => {
+          alert("База данных полностью заполнена");
         });
     }, 0);
-    setTimeout(() => {
-      window.location.reload();
-    }, 2800);
   };
 
   return (
