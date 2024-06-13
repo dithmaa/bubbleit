@@ -39,6 +39,7 @@ function App() {
           alert("err", err);
           setTimeout(() => {
             setLoaded(1);
+            alert("isLoaded", isLoaded);
           }, 1200);
         });
     }
