@@ -100,6 +100,7 @@ function Signup({ isLoadeds }) {
           });
   };
   const handleSubmit = (narana) => {
+    alert("handleSubmit");
     // e.preventDefault();
     const newUserId = Number(narana) + 1;
 
