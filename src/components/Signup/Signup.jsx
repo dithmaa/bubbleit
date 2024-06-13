@@ -124,9 +124,9 @@ function Signup({ isLoadeds }) {
       axios
         .post("http://localhost:9999/users", newUser)
         .then(() => {
-          if (refIdUrl != 0 || refIdUrl) {
-            notifyInviter(narana);
-          }
+          // if (refIdUrl != 0 || refIdUrl) {
+          //   notifyInviter(narana);
+          // }
           setTimeout(() => {
             window.location.reload();
           }, 2800);
