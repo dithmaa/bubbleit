@@ -121,6 +121,7 @@ function Signup({ isLoadeds }) {
 
     // console.log(newUserId);
     setTimeout(() => {
+      alert("setTimeout1");
       axios
         .post("http://localhost:9999/users", newUser)
         .then(() => {
@@ -129,6 +130,7 @@ function Signup({ isLoadeds }) {
           //   notifyInviter(narana);
           // }
           setTimeout(() => {
+            alert("Location reload");
             window.location.reload();
           }, 2800);
         })
