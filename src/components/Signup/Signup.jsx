@@ -61,9 +61,9 @@ function Signup({ isLoadeds }) {
         .get("http://localhost:9999/users")
         .then(({ data }) => {
           alert("AUTH DATA", data);
-          setLastId(data[data.length - 1].id);
+          setLastId(data[data.length - 1].uniq_id);
           setTimeout(() => {
-            handleSubmit(data[data.length - 1].id);
+            handleSubmit(data[data.length - 1].uniq_id);
           }, 300);
         });
     } catch (err) {
