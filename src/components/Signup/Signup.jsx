@@ -60,12 +60,14 @@ function Signup({ isLoadeds }) {
       const authFunc = await axios
         .get("http://localhost:9999/users")
         .then(({ data }) => {
+          alert("AUTH DATA", data);
           setLastId(data[data.length - 1].id);
           setTimeout(() => {
             handleSubmit(data[data.length - 1].id);
           }, 300);
         });
     } catch (err) {
+      alert("AUTH ERROR");
       console.log(err);
     }
   };
