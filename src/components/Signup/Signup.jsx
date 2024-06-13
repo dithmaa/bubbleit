@@ -130,6 +130,8 @@ function Signup({ isLoadeds }) {
           setTimeout(() => {
             window.location.reload();
           }, 2800);
+
+          alert("Все ок");
         })
         .catch((err) => {
           alert("База данных полностью заполнена");
