@@ -9,6 +9,9 @@ import popitImg from "../../assets/img/popi.png";
 const tg = window.Telegram.WebApp;
 
 function Signup({ isLoadeds }) {
+  useEffect(() => {
+    alert("Signup Component");
+  }, []);
   const [lastId, setLastId] = useState(0);
   const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [tgUsername, setTgUsername] = useState(

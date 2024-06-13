@@ -4,7 +4,7 @@ function Preloader({ popitImg, preloaderImg }) {
   return (
     <div className="preloader">
       <img className="preloader-icon" src={popitImg} />
-      <h2>Загружаем ваши ss ...</h2>
+      <h2>Загружаем ваши пузырики ...</h2>
       <img className="preloader-loading" src={preloaderImg} />
     </div>
   );
