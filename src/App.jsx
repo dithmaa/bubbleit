@@ -12,41 +12,31 @@ const tg = window.Telegram.WebApp;
 function App() {
   const [isAuth, setIsAuth] = useState();
   const [uniqID, setUniqID] = useState(0);
-  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 4042);
-
-  console.log("uniqID", uniqID);
+  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 92929);
 
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
-  console.log("currentID", currentID);
   useEffect(() => {
     if (authId != 0) {
       axios
         .get(`http://localhost:9999/users?tg_id=${authId}`)
         .then(({ data }) => {
+          console.log("data", data);
           setIsAuth(true);
-          // console.log("data.id", data[0].id);
           if (Number(data[0].clickAmount) >= 1000000) {
             document.querySelector("body").classList.add("green");
           }
           setTimeout(() => {
             console.log("app js", data[0]._id);
-
             setUniqID(data[0].uniq_id);
             setCurrentID(data[0]._id);
             setTimeout(() => {
               setLoaded(1);
             }, 1200);
-
-            // console.log("Прелоадер скрыт");
           }, 0);
         })
         .catch((err) => {
-          // console.log(err);
-          // console.log(
-          //   "Ваш ID не был найден в базе. Но вы можете зарегистрироваться"
-          // );
-          // setIsAuth(false);
+          console.log("err", err);
           setTimeout(() => {
             setLoaded(1);
           }, 1200);
