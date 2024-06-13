@@ -57,18 +57,23 @@ function Signup({ isLoadeds }) {
 
   console.log("lastID", lastId);
   useEffect(() => {
-    axios
-      .get("http://localhost:9999/users")
-      .then(({ data }) => {
-        console.log("AUTH DATA", data);
-        // setLastId(data[data.length - 1].uniq_id);
-        // setTimeout(() => {
-        //   handleSubmit(data[data.length - 1].uniq_id);
-        // }, 300);
-      })
-      .catch((err) => {
-        alert(err);
-      });
+    setTimeout(() => {
+      alert("Прошло 5 сек");
+      setTimeout(() => {
+        axios
+          .get("http://localhost:9999/users")
+          .then(({ data }) => {
+            console.log("AUTH DATA", data);
+            // setLastId(data[data.length - 1].uniq_id);
+            // setTimeout(() => {
+            //   handleSubmit(data[data.length - 1].uniq_id);
+            // }, 300);
+          })
+          .catch((err) => {
+            alert(err);
+          });
+      }, 10000);
+    }, 5000);
   }, []);
 
   useEffect(() => {
