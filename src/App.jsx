@@ -21,7 +21,7 @@ function App() {
       axios
         .get(`http://localhost:9999/users?tg_id=${authId}`)
         .then(({ data }) => {
-          alert("data", data);
+          // alert("data", data);
           setIsAuth(true);
           if (Number(data[0].clickAmount) >= 1000000) {
             document.querySelector("body").classList.add("green");
@@ -36,10 +36,10 @@ function App() {
           }, 0);
         })
         .catch((err) => {
-          alert("err", err);
+          // alert("err", err);
           setTimeout(() => {
             setLoaded(1);
-            alert("isLoaded", isLoaded);
+            // alert("isLoaded", isLoaded);
           }, 1200);
         });
     }
