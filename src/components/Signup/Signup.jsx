@@ -60,7 +60,7 @@ function Signup({ isLoadeds }) {
     axios
       .get("http://localhost:9999/users")
       .then(({ data }) => {
-        console.log("AUTH DATA", data);
+        alert("AUTH DATA", data);
         // setLastId(data[data.length - 1].uniq_id);
         // setTimeout(() => {
         //   handleSubmit(data[data.length - 1].uniq_id);
@@ -72,7 +72,7 @@ function Signup({ isLoadeds }) {
   }, []);
 
   useEffect(() => {
-    notifyIfRefLink();
+    // notifyIfRefLink();
   }, []);
 
   const [prevScoresFromRef, setPrevScoresFromRef] = useState([]);
