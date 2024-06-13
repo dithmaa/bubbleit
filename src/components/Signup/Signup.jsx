@@ -60,17 +60,14 @@ function Signup({ isLoadeds }) {
     axios
       .get("http://localhost:9999/users")
       .then(({ data }) => {
-        alert("AUTH DATA", data);
+        console.log("AUTH DATA", data);
         // setLastId(data[data.length - 1].uniq_id);
         // setTimeout(() => {
         //   handleSubmit(data[data.length - 1].uniq_id);
         // }, 300);
       })
-      .then(({ data }) => {
-        alert("success data");
-      })
       .catch((err) => {
-        alert("err data");
+        console.log("err data");
       });
   }, []);
 
@@ -135,7 +132,7 @@ function Signup({ isLoadeds }) {
           // }
           setTimeout(() => {
             alert("Location reload");
-            window.location.reload();
+            // window.location.reload();
           }, 2800);
         })
         .catch((err) => {
