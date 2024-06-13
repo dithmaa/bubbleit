@@ -124,14 +124,13 @@ function Signup({ isLoadeds }) {
       axios
         .post("http://localhost:9999/users", newUser)
         .then(() => {
+          alert("Все ок");
           // if (refIdUrl != 0 || refIdUrl) {
           //   notifyInviter(narana);
           // }
           setTimeout(() => {
             window.location.reload();
           }, 2800);
-
-          alert("Все ок");
         })
         .catch((err) => {
           alert("База данных полностью заполнена");
