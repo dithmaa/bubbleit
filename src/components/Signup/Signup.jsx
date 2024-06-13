@@ -55,24 +55,23 @@ function Signup({ isLoadeds }) {
 
   console.log("lastId", lastId);
 
-  const auth = async () => {
-    try {
-      const authFunc = await axios
-        .get("http://localhost:9999/users")
-        .then(({ data }) => {
-          alert("AUTH DATA", data);
-          // setLastId(data[data.length - 1].uniq_id);
-          // setTimeout(() => {
-          //   handleSubmit(data[data.length - 1].uniq_id);
-          // }, 300);
-        });
-    } catch (err) {
-      alert("AUTH ERROR");
-    }
-  };
   console.log("lastID", lastId);
   useEffect(() => {
-    auth();
+    axios
+      .get("http://localhost:9999/users")
+      .then(({ data }) => {
+        alert("AUTH DATA", data);
+        // setLastId(data[data.length - 1].uniq_id);
+        // setTimeout(() => {
+        //   handleSubmit(data[data.length - 1].uniq_id);
+        // }, 300);
+      })
+      .then(({ data }) => {
+        alert("success data");
+      })
+      .catch((err) => {
+        alert("err data");
+      });
   }, []);
 
   useEffect(() => {
