@@ -22,7 +22,7 @@ import Challenges from "./Challenges/Challenges";
 
 const tg = window.Telegram.WebApp;
 
-function Game({ authId, currentID = 1 }) {
+function Game({ authId, currentID = 99, uniqID }) {
   const [showBoosts, setShowBoosts] = useState(1);
   const [friendsList, setFriendsList] = useState(1);
   const [currentScore, setScore] = useState(0);
@@ -63,12 +63,9 @@ function Game({ authId, currentID = 1 }) {
   const increaseCount = useCallback(
     //click increase on backend
     debounce((num) => {
-      axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`,
-        {
-          clickAmount: num,
-        }
-      );
+      axios.put(`http://localhost:9999/users/${userID}`, {
+        clickAmount: num,
+      });
     }, 1400),
     []
   );
@@ -85,13 +82,10 @@ function Game({ authId, currentID = 1 }) {
       itemToUpdate.score = 0;
     }
     // console.log("NEWNEWNEW", friendsList);
-    axios.put(
-      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`,
-      {
-        clickAmount: newV,
-        scoresFromRef: friendsList,
-      }
-    );
+    axios.put(`http://localhost:9999/users/${userID}`, {
+      clickAmount: newV,
+      scoresFromRef: friendsList,
+    });
     //clear from friends list
   };
 
@@ -105,16 +99,14 @@ function Game({ authId, currentID = 1 }) {
 
   const buyBoost = useCallback(
     debounce((newBoostVal, newBoostLists, newScore, newShowBoosts) => {
-      // console.log(newScore);
-      axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`,
-        {
-          clickPerOne: newBoostVal,
-          clickAmount: newScore,
-          boosts: newBoostLists,
-          showBoosts: newShowBoosts,
-        }
-      );
+      console.log("newBoostLists", newBoostLists);
+      console.log("is boosting...");
+      // axios.put(`http://localhost:9999/users/${userID}`, {
+      //   clickPerOne: newBoostVal,
+      //   clickAmount: newScore,
+      //   boosts: newBoostLists,
+      //   showBoosts: newShowBoosts,
+      // });
     }, 200),
     []
   );
@@ -145,9 +137,7 @@ function Game({ authId, currentID = 1 }) {
   const getFriends = async () => {
     // console.log("INVITER-ID / Хозяин / Тот кто пригласил", inviterId);
     await axios
-      .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?id=${inviterId}`
-      )
+      .get(`http://localhost:9999/users/?id=${inviterId}`)
       .then(({ data }) => {
         setInviterFriendsList(data[0].scoresFromRef);
       });
@@ -174,12 +164,9 @@ function Game({ authId, currentID = 1 }) {
 
         // console.log(inviterFriendsList);
         // console.log("dd", inviterId);
-        await axios.put(
-          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${inviterId}`,
-          {
-            scoresFromRef: inviterFriendsList,
-          }
-        );
+        await axios.put(`http://localhost:9999/users/${inviterId}`, {
+          scoresFromRef: inviterFriendsList,
+        });
       };
 
       updateFriendsList();
@@ -289,7 +276,7 @@ function Game({ authId, currentID = 1 }) {
 
   useEffect(() => {
     axios
-      .get(`https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${userID}`)
+      .get(`http://localhost:9999/users/${userID}`)
       .then(({ data }) => {
         setScore(data.clickAmount);
         setClickPerOne(data.clickPerOne);
@@ -320,7 +307,11 @@ function Game({ authId, currentID = 1 }) {
         ""
       )}
       {isShowRating ? (
-        <RatingPage currentID={currentID} closeRating={closeRating} />
+        <RatingPage
+          uniqID={uniqID}
+          currentID={currentID}
+          closeRating={closeRating}
+        />
       ) : (
         ""
       )}

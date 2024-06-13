@@ -11,7 +11,10 @@ const tg = window.Telegram.WebApp;
 
 function App() {
   const [isAuth, setIsAuth] = useState();
-  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 40432);
+  const [uniqID, setUniqID] = useState(0);
+  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 4042);
+
+  console.log("uniqID", uniqID);
 
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
@@ -19,9 +22,7 @@ function App() {
   useEffect(() => {
     if (authId != 0) {
       axios
-        .get(
-          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?tg_id=${authId}`
-        )
+        .get(`http://localhost:9999/users?tg_id=${authId}`)
         .then(({ data }) => {
           setIsAuth(true);
           // console.log("data.id", data[0].id);
@@ -29,7 +30,10 @@ function App() {
             document.querySelector("body").classList.add("green");
           }
           setTimeout(() => {
-            setCurrentID(data[0].id);
+            console.log("app js", data[0]._id);
+
+            setUniqID(data[0].uniq_id);
+            setCurrentID(data[0]._id);
             setTimeout(() => {
               setLoaded(1);
             }, 1200);
@@ -83,7 +87,7 @@ function App() {
             path="/"
             element={
               isAuth ? (
-                <Game currentID={currentID} authId={authId} />
+                <Game uniqID={uniqID} currentID={currentID} authId={authId} />
               ) : (
                 <Signup isLoaded={isLoaded} />
               )

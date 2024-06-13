@@ -9,7 +9,7 @@ import RatingSkeletton from "./RatingSkeletton/RatingSkeletton";
 
 const tg = window.Telegram.WebApp;
 
-function RatingPage({ closeRating, currentID }) {
+function RatingPage({ closeRating, currentID, uniqID }) {
   const [users, setUsers] = useState([]);
   const [newName, setNewName] = useState("");
   const [isUsersLoaded, setUsersLoad] = useState(false);
@@ -22,12 +22,9 @@ function RatingPage({ closeRating, currentID }) {
     console.log("sended");
     localStorage.setItem("isChangedName", true);
     axios
-      .put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
-        {
-          name: newName,
-        }
-      )
+      .put(`http://localhost:9999/users/${currentID}`, {
+        name: newName,
+      })
       .then(() => {
         // setHideForm(true);
         setTimeout(() => {
@@ -37,9 +34,7 @@ function RatingPage({ closeRating, currentID }) {
   };
   useEffect(() => {
     axios
-      .get(
-        "https://65eafaa243ce16418932f611.mockapi.io/popit/popit?sortBy=clickAmount&order=desc"
-      )
+      .get("http://localhost:9999/users?sortBy=clickAmount&order=desc")
       .then(({ data }) => {
         setUsers(data);
         setTimeout(() => {
@@ -85,6 +80,7 @@ function RatingPage({ closeRating, currentID }) {
                     currentID={currentID}
                     user={user}
                     styles={styles}
+                    uniqID={uniqID}
                   />
                 );
               })

@@ -16,15 +16,11 @@ export default function Challenges({ closePresent, currentID }) {
   const [alreadyCompleted2, setAlreadyCompleted2] = useState(0);
   const [clickAmountUser, setClickAmountUser] = useState(0);
   useEffect(() => {
-    axios
-      .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`
-      )
-      .then(({ data }) => {
-        setAlreadyCompleted(data.isCompletedMission);
-        setAlreadyCompleted2(data.isCompletedMiss);
-        setClickAmountUser(data.clickAmount);
-      });
+    axios.get(`http://localhost:9999/users/${currentID}`).then(({ data }) => {
+      setAlreadyCompleted(data.isCompletedMission);
+      setAlreadyCompleted2(data.isCompletedMiss);
+      setClickAmountUser(data.clickAmount);
+    });
   }, []);
   console.log("alreadyCompleted2", alreadyCompleted2);
   const handleCheckSub = (e) => {
@@ -37,13 +33,10 @@ export default function Challenges({ closePresent, currentID }) {
     }, 500);
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
-      axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
-        {
-          isCompletedMission: true,
-          clickAmount: newClickAmount,
-        }
-      );
+      axios.put(`http://localhost:9999/users/${currentID}`, {
+        isCompletedMission: true,
+        clickAmount: newClickAmount,
+      });
     }, 17000);
     setTimeout(() => {
       setCompleted(1);
@@ -63,13 +56,10 @@ export default function Challenges({ closePresent, currentID }) {
     }, 500);
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
-      axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
-        {
-          isCompletedMiss: true,
-          clickAmount: newClickAmount,
-        }
-      );
+      axios.put(`http://localhost:9999/users/${currentID}`, {
+        isCompletedMiss: true,
+        clickAmount: newClickAmount,
+      });
     }, 17000);
     setTimeout(() => {
       setCompleted2(1);
