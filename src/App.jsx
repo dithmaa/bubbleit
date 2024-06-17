@@ -24,6 +24,7 @@ function App() {
         .get(`http://192.168.0.15:9999/users?tg_id=${authId}`)
         .then(({ data }) => {
           // alert("data", data);
+          alert("http://192.168.0.15:9999/users?tg_id=403521818");
           setIsAuth(true);
           alert(isAuth);
           alert(authId);
@@ -40,7 +41,7 @@ function App() {
           }, 0);
         })
         .catch((err) => {
-          alert(err);
+          alert("http://192.168.0.15:9999/users?tg_id=403521818");
           // alert("err", err);
           // alert("error");
           alert("not auth");
