@@ -42,7 +42,7 @@ function App() {
         .catch((err) => {
           // alert("err", err);
           // alert("error");
-          console.log("not auth");
+          alert("not auth");
           setTimeout(() => {
             setLoaded(1);
             // alert("isLoaded", isLoaded);
