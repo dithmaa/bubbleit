@@ -23,6 +23,7 @@ function App() {
         .then(({ data }) => {
           // alert("data", data);
           setIsAuth(true);
+          console.log(isAuth);
           if (Number(data[0].clickAmount) >= 1000000) {
             document.querySelector("body").classList.add("green");
           }
