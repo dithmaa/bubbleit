@@ -12,7 +12,9 @@ const tg = window.Telegram.WebApp;
 function App() {
   const [isAuth, setIsAuth] = useState();
   const [uniqID, setUniqID] = useState(0);
-  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 92929);
+  const [authId, setAuthId] = useState(
+    tg.initDataUnsafe?.user?.id || 403521818
+  );
 
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
@@ -23,7 +25,8 @@ function App() {
         .then(({ data }) => {
           // alert("data", data);
           setIsAuth(true);
-          console.log(isAuth);
+          alert(isAuth);
+          alert(authId);
           if (Number(data[0].clickAmount) >= 1000000) {
             document.querySelector("body").classList.add("green");
           }
@@ -39,6 +42,7 @@ function App() {
         .catch((err) => {
           // alert("err", err);
           // alert("error");
+          console.log("not auth");
           setTimeout(() => {
             setLoaded(1);
             // alert("isLoaded", isLoaded);
