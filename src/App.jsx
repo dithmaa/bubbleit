@@ -37,7 +37,7 @@ function App() {
         })
         .catch((err) => {
           // alert("err", err);
-          alert("error");
+          // alert("error");
           setTimeout(() => {
             setLoaded(1);
             // alert("isLoaded", isLoaded);
