@@ -10,7 +10,7 @@ const tg = window.Telegram.WebApp;
 
 function Signup({ isLoadeds }) {
   useEffect(() => {
-    alert("Signup Component");
+    // alert("Signup Component");
   }, []);
   const [lastId, setLastId] = useState(0);
   const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
@@ -67,7 +67,7 @@ function Signup({ isLoadeds }) {
         // }, 300);
       })
       .catch((err) => {
-        alert(err);
+        alert("error2");
       });
   }, []);
 
