@@ -22,7 +22,7 @@ function RatingPage({ closeRating, currentID, uniqID }) {
     console.log("sended");
     localStorage.setItem("isChangedName", true);
     axios
-      .put(`http://localhost:9999/users/${currentID}`, {
+      .put(`http://192.168.0.15:9999/users/${currentID}`, {
         name: newName,
       })
       .then(() => {
@@ -34,7 +34,7 @@ function RatingPage({ closeRating, currentID, uniqID }) {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:9999/users?sortBy=clickAmount&order=desc")
+      .get("http://192.168.0.15:9999/users?sortBy=clickAmount&order=desc")
       .then(({ data }) => {
         setUsers(data);
         setTimeout(() => {

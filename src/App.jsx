@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     if (authId != 0) {
       axios
-        .get(`http://localhost:9999/users?tg_id=${authId}`)
+        .get(`http://192.168.0.15:9999/users?tg_id=${authId}`)
         .then(({ data }) => {
           // alert("data", data);
           setIsAuth(true);

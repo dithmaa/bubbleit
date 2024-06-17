@@ -11,7 +11,7 @@ function RatingBar({ onClick }) {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:9999/users?sortBy=clickAmount&order=desc&limit=1&page=1"
+        "http://192.168.0.15:9999/users?sortBy=clickAmount&order=desc&limit=1&page=1"
       )
       .then(({ data }) => {
         setFirstUser(data);

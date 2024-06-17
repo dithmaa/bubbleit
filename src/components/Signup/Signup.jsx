@@ -58,7 +58,7 @@ function Signup({ isLoadeds }) {
   console.log("lastID", lastId);
   useEffect(() => {
     axios
-      .get("http://localhost:9999/users")
+      .get("http://192.168.0.15:9999/users")
       .then(({ data }) => {
         alert("AUTH DATA", data);
         // setLastId(data[data.length - 1].uniq_id);
@@ -85,7 +85,7 @@ function Signup({ isLoadeds }) {
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
     // console.log(prevScoresFromRef);
-    axios.put(`http://localhost:9999/users/${refIdUrl}`, {
+    axios.put(`http://192.168.0.15:9999/users/${refIdUrl}`, {
       scoresFromRef: prevScoresFromRef,
     });
   };
@@ -94,7 +94,7 @@ function Signup({ isLoadeds }) {
     refIdUrl == 0
       ? console.log() // no ref link
       : axios
-          .get(`http://localhost:9999/users/${refIdUrl}`)
+          .get(`http://192.168.0.15:9999/users/${refIdUrl}`)
           .then(({ data }) => {
             setPrevScoresFromRef(data.scoresFromRef);
           });
@@ -124,7 +124,7 @@ function Signup({ isLoadeds }) {
     setTimeout(() => {
       alert("setTimeout1");
       axios
-        .post("http://localhost:9999/users", newUser)
+        .post("http://192.168.0.15:9999/users", newUser)
         .then(() => {
           alert("Все ок");
           // if (refIdUrl != 0 || refIdUrl) {

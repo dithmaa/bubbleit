@@ -63,7 +63,7 @@ function Game({ authId, currentID = 99, uniqID }) {
   const increaseCount = useCallback(
     //click increase on backend
     debounce((num) => {
-      axios.put(`http://localhost:9999/users/${userID}`, {
+      axios.put(`http://192.168.0.15:9999/users/${userID}`, {
         clickAmount: num,
       });
     }, 1400),
@@ -82,7 +82,7 @@ function Game({ authId, currentID = 99, uniqID }) {
       itemToUpdate.score = 0;
     }
     // console.log("NEWNEWNEW", friendsList);
-    axios.put(`http://localhost:9999/users/${userID}`, {
+    axios.put(`http://192.168.0.15:9999/users/${userID}`, {
       clickAmount: newV,
       scoresFromRef: friendsList,
     });
@@ -101,7 +101,7 @@ function Game({ authId, currentID = 99, uniqID }) {
     debounce((newBoostVal, newBoostLists, newScore, newShowBoosts) => {
       console.log("newBoostLists", newBoostLists);
       console.log("is boosting...");
-      // axios.put(`http://localhost:9999/users/${userID}`, {
+      // axios.put(`http://192.168.0.15:9999/users/${userID}`, {
       //   clickPerOne: newBoostVal,
       //   clickAmount: newScore,
       //   boosts: newBoostLists,
@@ -137,7 +137,7 @@ function Game({ authId, currentID = 99, uniqID }) {
   const getFriends = async () => {
     // console.log("INVITER-ID / Хозяин / Тот кто пригласил", inviterId);
     await axios
-      .get(`http://localhost:9999/users/?id=${inviterId}`)
+      .get(`http://192.168.0.15:9999/users/?id=${inviterId}`)
       .then(({ data }) => {
         setInviterFriendsList(data[0].scoresFromRef);
       });
@@ -164,7 +164,7 @@ function Game({ authId, currentID = 99, uniqID }) {
 
         // console.log(inviterFriendsList);
         // console.log("dd", inviterId);
-        await axios.put(`http://localhost:9999/users/${inviterId}`, {
+        await axios.put(`http://192.168.0.15:9999/users/${inviterId}`, {
           scoresFromRef: inviterFriendsList,
         });
       };
@@ -276,7 +276,7 @@ function Game({ authId, currentID = 99, uniqID }) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:9999/users/${userID}`)
+      .get(`http://192.168.0.15:9999/users/${userID}`)
       .then(({ data }) => {
         setScore(data.clickAmount);
         setClickPerOne(data.clickPerOne);
