@@ -67,7 +67,7 @@ function Signup({ isLoadeds }) {
         // }, 300);
       })
       .catch((err) => {
-        alert("error2");
+        // alert("error2");
       });
   }, []);
 
