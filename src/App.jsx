@@ -10,7 +10,7 @@ import Preloader from "./components/Game/Preloader/Preloader";
 const tg = window.Telegram.WebApp;
 
 function App() {
-  const [isAuth, setIsAuth] = useState();
+  const [isAuth, setIsAuth] = useState(0);
   const [uniqID, setUniqID] = useState(0);
   const [authId, setAuthId] = useState(
     tg.initDataUnsafe?.user?.id || 403521818
