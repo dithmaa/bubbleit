@@ -40,6 +40,7 @@ function App() {
           }, 0);
         })
         .catch((err) => {
+          alert(err);
           // alert("err", err);
           // alert("error");
           alert("not auth");
