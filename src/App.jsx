@@ -43,6 +43,7 @@ function App() {
           // alert("err", err);
           // alert("error");
           alert("not auth");
+          alert(authId);
           setTimeout(() => {
             setLoaded(1);
             // alert("isLoaded", isLoaded);
