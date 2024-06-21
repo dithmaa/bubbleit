@@ -56,7 +56,7 @@ function Signup({ isLoadeds }) {
   console.log("lastId", lastId);
 
   useEffect(() => {
-    alert(tg.initDataUnsafe?.user?.id);
+    alert("успешно получен", tg.initDataUnsafe?.user?.id);
     axios
       .get("http://62.197.48.173:9999/users")
       .then(({ data }) => {
@@ -65,12 +65,16 @@ function Signup({ isLoadeds }) {
         // alert("AUTH DATA", data);
         setLastId(data[data.length - 1].uniq_id);
         console.log(data[data.length - 1].uniq_id);
+
+        alert("Зарегистрирован");
         setTimeout(() => {
+          alert("Зарегистрирован2");
           handleSubmit(data[data.length - 1].uniq_id);
         }, 300);
       })
       .catch((err) => {
         // alert("error2");
+        alert("Ошибка получения");
       });
   }, []);
 
