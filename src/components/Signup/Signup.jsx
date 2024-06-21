@@ -13,7 +13,7 @@ function Signup({ isLoadeds }) {
     // alert("Signup Component");
   }, []);
   const [lastId, setLastId] = useState(0);
-  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 4939494393);
+  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 77777);
   const [tgUsername, setTgUsername] = useState(
     tg.initDataUnsafe?.user?.username || "none"
   );
