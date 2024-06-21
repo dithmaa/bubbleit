@@ -17,7 +17,7 @@ export default function Challenges({ closePresent, currentID }) {
   const [clickAmountUser, setClickAmountUser] = useState(0);
   useEffect(() => {
     axios
-      .get(`http://192.168.0.15:9999/users/${currentID}`)
+      .get(`http://62.197.48.173:9999/users/${currentID}`)
       .then(({ data }) => {
         setAlreadyCompleted(data.isCompletedMission);
         setAlreadyCompleted2(data.isCompletedMiss);
@@ -35,7 +35,7 @@ export default function Challenges({ closePresent, currentID }) {
     }, 500);
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
-      axios.put(`http://192.168.0.15:9999/users/${currentID}`, {
+      axios.put(`http://62.197.48.173:9999/users/${currentID}`, {
         isCompletedMission: true,
         clickAmount: newClickAmount,
       });
@@ -58,7 +58,7 @@ export default function Challenges({ closePresent, currentID }) {
     }, 500);
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
-      axios.put(`http://192.168.0.15:9999/users/${currentID}`, {
+      axios.put(`http://62.197.48.173:9999/users/${currentID}`, {
         isCompletedMiss: true,
         clickAmount: newClickAmount,
       });

@@ -12,22 +12,20 @@ const tg = window.Telegram.WebApp;
 function App() {
   const [isAuth, setIsAuth] = useState(0);
   const [uniqID, setUniqID] = useState(0);
-  const [authId, setAuthId] = useState(
-    tg.initDataUnsafe?.user?.id || 403521818
-  );
+  const [authId, setAuthId] = useState(tg.initDataUnsafe?.user?.id || 54);
 
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
   useEffect(() => {
     if (authId != 0) {
       axios
-        .get(`http://192.168.0.15:9999/users?tg_id=${authId}`)
+        .get(`http://62.197.48.173:9999/users?tg_id=${authId}`)
         .then(({ data }) => {
           // alert("data", data);
-          alert("http://192.168.0.15:9999/users?tg_id=403521818");
+          // alert("http://62.197.48.173:9999/users?tg_id=403521818");
           setIsAuth(true);
-          alert(isAuth);
-          alert(authId);
+          // alert(isAuth);
+          // alert(authId);
           if (Number(data[0].clickAmount) >= 1000000) {
             document.querySelector("body").classList.add("green");
           }
@@ -41,11 +39,11 @@ function App() {
           }, 0);
         })
         .catch((err) => {
-          alert("http://192.168.0.15:9999/users?tg_id=403521818");
+          // alert("http://62.197.48.173:9999/users?tg_id=403521818");
           // alert("err", err);
           // alert("error");
-          alert("not auth");
-          alert(authId);
+          // alert("not auth");
+          // alert(authId);
           setTimeout(() => {
             setLoaded(1);
             // alert("isLoaded", isLoaded);

@@ -13,7 +13,7 @@ function Signup({ isLoadeds }) {
     // alert("Signup Component");
   }, []);
   const [lastId, setLastId] = useState(0);
-  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
+  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 54);
   const [tgUsername, setTgUsername] = useState(
     tg.initDataUnsafe?.user?.username || "none"
   );
@@ -55,16 +55,18 @@ function Signup({ isLoadeds }) {
 
   console.log("lastId", lastId);
 
-  console.log("lastID", lastId);
   useEffect(() => {
     axios
-      .get("http://192.168.0.15:9999/users")
+      .get("http://62.197.48.173:9999/users")
       .then(({ data }) => {
-        alert("AUTH DATA", data);
-        // setLastId(data[data.length - 1].uniq_id);
-        // setTimeout(() => {
-        //   handleSubmit(data[data.length - 1].uniq_id);
-        // }, 300);
+        console.log(data);
+        // console.log(data[data.length - 1].uniq_id);
+        // alert("AUTH DATA", data);
+        setLastId(data[data.length - 1].uniq_id);
+        console.log(data[data.length - 1].uniq_id);
+        setTimeout(() => {
+          handleSubmit(data[data.length - 1].uniq_id);
+        }, 300);
       })
       .catch((err) => {
         // alert("error2");
@@ -85,7 +87,7 @@ function Signup({ isLoadeds }) {
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
     // console.log(prevScoresFromRef);
-    axios.put(`http://192.168.0.15:9999/users/${refIdUrl}`, {
+    axios.put(`http://62.197.48.173:9999/users/${refIdUrl}`, {
       scoresFromRef: prevScoresFromRef,
     });
   };
@@ -94,13 +96,13 @@ function Signup({ isLoadeds }) {
     refIdUrl == 0
       ? console.log() // no ref link
       : axios
-          .get(`http://192.168.0.15:9999/users/${refIdUrl}`)
+          .get(`http://62.197.48.173:9999/users/${refIdUrl}`)
           .then(({ data }) => {
             setPrevScoresFromRef(data.scoresFromRef);
           });
   };
   const handleSubmit = (narana) => {
-    alert("handleSubmit");
+    // alert("handleSubmit");
     // e.preventDefault();
     const newUserId = Number(narana) + 1;
 
@@ -117,22 +119,23 @@ function Signup({ isLoadeds }) {
       isCompletedMiss: false,
       boosts: boostsInitial,
       scoresFromRef: [],
+      uniq_id: newUserId,
     };
     setDisabled(!isDisabledNow);
 
     // console.log(newUserId);
     setTimeout(() => {
-      alert("setTimeout1");
+      // alert("setTimeout1");
       axios
-        .post("http://192.168.0.15:9999/users", newUser)
+        .post("http://62.197.48.173:9999/users", newUser)
         .then(() => {
-          alert("Все ок");
+          // alert("Все ок");
           // if (refIdUrl != 0 || refIdUrl) {
           //   notifyInviter(narana);
           // }
           setTimeout(() => {
-            alert("Location reload");
-            // window.location.reload();
+            // alert("Location reload");
+            window.location.reload();
           }, 2800);
         })
         .catch((err) => {
