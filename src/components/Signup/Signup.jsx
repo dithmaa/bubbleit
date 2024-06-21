@@ -13,7 +13,7 @@ function Signup({ isLoadeds }) {
     // alert("Signup Component");
   }, []);
   const [lastId, setLastId] = useState(0);
-  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 54);
+  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 4939494393);
   const [tgUsername, setTgUsername] = useState(
     tg.initDataUnsafe?.user?.username || "none"
   );
@@ -56,6 +56,7 @@ function Signup({ isLoadeds }) {
   console.log("lastId", lastId);
 
   useEffect(() => {
+    alert(tg.initDataUnsafe?.user?.id);
     axios
       .get("http://62.197.48.173:9999/users")
       .then(({ data }) => {
