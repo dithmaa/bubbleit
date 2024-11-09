@@ -16,9 +16,7 @@ export default function Challenges({ closePresent, currentID }) {
   const [clickAmountUser, setClickAmountUser] = useState(0);
   useEffect(() => {
     axios
-      .get(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`
-      )
+      .get(`${process.env.REACT_APP_API_URL}/${currentID}`)
       .then(({ data }) => {
         setAlreadyCompleted(data.isCompletedMission);
         setAlreadyCompleted2(data.isCompletedMiss);
@@ -34,13 +32,10 @@ export default function Challenges({ closePresent, currentID }) {
     }, 500);
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
-      axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
-        {
-          isCompletedMission: true,
-          clickAmount: newClickAmount,
-        }
-      );
+      axios.put(`${process.env.REACT_APP_API_URL}/${currentID}`, {
+        isCompletedMission: true,
+        clickAmount: newClickAmount,
+      });
     }, 17000);
     setTimeout(() => {
       setCompleted(1);
@@ -58,13 +53,10 @@ export default function Challenges({ closePresent, currentID }) {
     }, 500);
     const newClickAmount = clickAmountUser + 1000000;
     setTimeout(() => {
-      axios.put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
-        {
-          isCompletedMiss: true,
-          clickAmount: newClickAmount,
-        }
-      );
+      axios.put(`${process.env.REACT_APP_API_URL}/${currentID}`, {
+        isCompletedMiss: true,
+        clickAmount: newClickAmount,
+      });
     }, 17000);
     setTimeout(() => {
       setCompleted2(1);

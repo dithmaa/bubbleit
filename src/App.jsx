@@ -17,11 +17,11 @@ function App() {
   const [currentID, setCurrentID] = useState(0);
   console.log("currentID", currentID);
   useEffect(() => {
+    console.log(process.env);
+
     if (authId != 0) {
       axios
-        .get(
-          `https://65eafaa243ce16418932f611.mockapi.io/popit/popit?tg_id=${authId}`
-        )
+        .get(`${process.env.REACT_APP_API_URL}?tg_id=${authId}`)
         .then(({ data }) => {
           setIsAuth(true);
           // console.log("data.id", data[0].id);

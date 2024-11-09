@@ -22,12 +22,9 @@ function RatingPage({ closeRating, currentID }) {
     console.log("sended");
     localStorage.setItem("isChangedName", true);
     axios
-      .put(
-        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
-        {
-          name: newName,
-        }
-      )
+      .put(`${process.env.REACT_APP_API_URL}/${currentID}`, {
+        name: newName,
+      })
       .then(() => {
         // setHideForm(true);
         setTimeout(() => {
@@ -37,9 +34,7 @@ function RatingPage({ closeRating, currentID }) {
   };
   useEffect(() => {
     axios
-      .get(
-        "https://65eafaa243ce16418932f611.mockapi.io/popit/popit?sortBy=clickAmount&order=desc"
-      )
+      .get(`${process.env.REACT_APP_API_URL}?sortBy=clickAmount&order=desc`)
       .then(({ data }) => {
         setUsers(data);
         setTimeout(() => {

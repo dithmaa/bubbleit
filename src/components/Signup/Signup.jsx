@@ -55,7 +55,7 @@ function Signup({ isLoadeds }) {
   const auth = async () => {
     try {
       const authFunc = await axios
-        .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
+        .get(`${process.env.REACT_APP_API_URL}`)
         .then(({ data }) => {
           setLastId(data[data.length - 1].id);
           setTimeout(() => {
@@ -85,21 +85,16 @@ function Signup({ isLoadeds }) {
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
     // console.log(prevScoresFromRef);
-    axios.put(
-      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`,
-      {
-        scoresFromRef: prevScoresFromRef,
-      }
-    );
+    axios.put(`${process.env.REACT_APP_API_URL}/${refIdUrl}`, {
+      scoresFromRef: prevScoresFromRef,
+    });
   };
 
   const notifyIfRefLink = () => {
     refIdUrl == 0
       ? console.log() // no ref link
       : axios
-          .get(
-            `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`
-          )
+          .get(`${process.env.REACT_APP_API_URL}/${refIdUrl}`)
           .then(({ data }) => {
             setPrevScoresFromRef(data.scoresFromRef);
           });
@@ -126,16 +121,11 @@ function Signup({ isLoadeds }) {
 
     // console.log(newUserId);
     setTimeout(() => {
-      axios
-        .post(
-          "https://65eafaa243ce16418932f611.mockapi.io/popit/popit/",
-          newUser
-        )
-        .then(() => {
-          if (refIdUrl != 0 || refIdUrl) {
-            notifyInviter(narana);
-          }
-        });
+      axios.post(`${process.env.REACT_APP_API_URL}`, newUser).then(() => {
+        if (refIdUrl != 0 || refIdUrl) {
+          notifyInviter(narana);
+        }
+      });
     }, 0);
     setTimeout(() => {
       window.location.reload();

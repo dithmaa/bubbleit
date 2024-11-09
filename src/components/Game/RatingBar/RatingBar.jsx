@@ -11,7 +11,7 @@ function RatingBar({ onClick }) {
   useEffect(() => {
     axios
       .get(
-        "https://65eafaa243ce16418932f611.mockapi.io/popit/popit?sortBy=clickAmount&order=desc&limit=1&page=1"
+        `${process.env.REACT_APP_API_URL}?sortBy=clickAmount&order=desc&limit=1&page=1`
       )
       .then(({ data }) => {
         setFirstUser(data);
