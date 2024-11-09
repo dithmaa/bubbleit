@@ -8,15 +8,9 @@ function RatingItem({
   goldCup,
   currentID,
   user,
-  uniqID = 1,
 }) {
-  // console.log("user.uniq_id ", user.uniq_id);
-  console.log("uniqID", uniqID);
   return (
-    <li
-      key={ukey + "d832"}
-      className={uniqID == user.uniq_id ? styles.you : ""}
-    >
+    <li key={ukey + "d832"} className={currentID == user.id ? styles.you : ""}>
       <span className={ukey >= 3 ? styles.num : styles.win}>
         {ukey == 0 ? (
           <img style={{ width: "24px" }} src={goldCup} />

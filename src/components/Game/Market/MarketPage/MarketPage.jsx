@@ -51,17 +51,16 @@ function MarketPage({
                       images={images}
                       frontEndBoosts={frontEndBoosts}
                       currentScore={currentScore}
-                      key={index}
                     />
                   );
                 })
               : ""
             : Array(10)
                 .fill(5)
-                .map((item, index) => {
+                .map((item) => {
                   return (
                     <div style={{ margin: "5px 0" }}>
-                      <BoostSkeletton key={index} />
+                      <BoostSkeletton />
                     </div>
                   );
                 })}

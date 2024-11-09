@@ -9,11 +9,8 @@ import popitImg from "../../assets/img/popi.png";
 const tg = window.Telegram.WebApp;
 
 function Signup({ isLoadeds }) {
-  useEffect(() => {
-    // alert("Signup Component");
-  }, []);
   const [lastId, setLastId] = useState(0);
-  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 77777);
+  const [tgID, setTgID] = useState(tg.initDataUnsafe?.user?.id || 40432);
   const [tgUsername, setTgUsername] = useState(
     tg.initDataUnsafe?.user?.username || "none"
   );
@@ -53,29 +50,29 @@ function Signup({ isLoadeds }) {
   const refIdUrl = Number(window.location.search.replace("?", "").slice(4));
   // console.log("refIdUrl", refIdUrl);
 
-  // console.log("lastId", lastId);
+  console.log("lastId", lastId);
 
+  const auth = async () => {
+    try {
+      const authFunc = await axios
+        .get("https://65eafaa243ce16418932f611.mockapi.io/popit/popit")
+        .then(({ data }) => {
+          setLastId(data[data.length - 1].id);
+          setTimeout(() => {
+            handleSubmit(data[data.length - 1].id);
+          }, 300);
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  console.log("lastID", lastId);
   useEffect(() => {
-    axios
-      .get("http://62.197.48.173:9999/users")
-      .then(({ data }) => {
-        console.log("data", data);
-
-        setLastId(data[data.length - 1].uniq_id);
-        console.log(data[data.length - 1].uniq_id);
-
-        setTimeout(() => {
-          handleSubmit(data[data.length - 1].uniq_id);
-        }, 300);
-      })
-      .catch((err) => {
-        // alert("Ошибка получения");
-        console.log("Ошибка");
-      });
+    auth();
   }, []);
 
   useEffect(() => {
-    // notifyIfRefLink();
+    notifyIfRefLink();
   }, []);
 
   const [prevScoresFromRef, setPrevScoresFromRef] = useState([]);
@@ -88,22 +85,26 @@ function Signup({ isLoadeds }) {
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
     // console.log(prevScoresFromRef);
-    axios.put(`http://62.197.48.173:9999/users/${refIdUrl}`, {
-      scoresFromRef: prevScoresFromRef,
-    });
+    axios.put(
+      `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`,
+      {
+        scoresFromRef: prevScoresFromRef,
+      }
+    );
   };
 
   const notifyIfRefLink = () => {
     refIdUrl == 0
       ? console.log() // no ref link
       : axios
-          .get(`http://62.197.48.173:9999/users/${refIdUrl}`)
+          .get(
+            `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${refIdUrl}`
+          )
           .then(({ data }) => {
             setPrevScoresFromRef(data.scoresFromRef);
           });
   };
   const handleSubmit = (narana) => {
-    // alert("handleSubmit");
     // e.preventDefault();
     const newUserId = Number(narana) + 1;
 
@@ -120,29 +121,25 @@ function Signup({ isLoadeds }) {
       isCompletedMiss: false,
       boosts: boostsInitial,
       scoresFromRef: [],
-      uniq_id: newUserId,
     };
     setDisabled(!isDisabledNow);
 
     // console.log(newUserId);
     setTimeout(() => {
-      // alert("setTimeout1");
       axios
-        .post("http://62.197.48.173:9999/users", newUser)
+        .post(
+          "https://65eafaa243ce16418932f611.mockapi.io/popit/popit/",
+          newUser
+        )
         .then(() => {
-          // alert("Все ок");
-          // if (refIdUrl != 0 || refIdUrl) {
-          //   notifyInviter(narana);
-          // }
-          setTimeout(() => {
-            // alert("Location reload");
-            window.location.reload();
-          }, 2800);
-        })
-        .catch((err) => {
-          alert("База данных полностью заполнена");
+          if (refIdUrl != 0 || refIdUrl) {
+            notifyInviter(narana);
+          }
         });
     }, 0);
+    setTimeout(() => {
+      window.location.reload();
+    }, 2800);
   };
 
   return (

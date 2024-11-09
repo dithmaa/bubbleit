@@ -9,7 +9,7 @@ import RatingSkeletton from "./RatingSkeletton/RatingSkeletton";
 
 const tg = window.Telegram.WebApp;
 
-function RatingPage({ closeRating, currentID, uniqID }) {
+function RatingPage({ closeRating, currentID }) {
   const [users, setUsers] = useState([]);
   const [newName, setNewName] = useState("");
   const [isUsersLoaded, setUsersLoad] = useState(false);
@@ -22,9 +22,12 @@ function RatingPage({ closeRating, currentID, uniqID }) {
     console.log("sended");
     localStorage.setItem("isChangedName", true);
     axios
-      .put(`http://62.197.48.173:9999/users/${currentID}`, {
-        name: newName,
-      })
+      .put(
+        `https://65eafaa243ce16418932f611.mockapi.io/popit/popit/${currentID}`,
+        {
+          name: newName,
+        }
+      )
       .then(() => {
         // setHideForm(true);
         setTimeout(() => {
@@ -34,7 +37,9 @@ function RatingPage({ closeRating, currentID, uniqID }) {
   };
   useEffect(() => {
     axios
-      .get("http://62.197.48.173:9999/users?sortBy=clickAmount&order=desc")
+      .get(
+        "https://65eafaa243ce16418932f611.mockapi.io/popit/popit?sortBy=clickAmount&order=desc"
+      )
       .then(({ data }) => {
         setUsers(data);
         setTimeout(() => {
@@ -80,7 +85,6 @@ function RatingPage({ closeRating, currentID, uniqID }) {
                     currentID={currentID}
                     user={user}
                     styles={styles}
-                    uniqID={uniqID}
                   />
                 );
               })

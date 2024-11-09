@@ -80,70 +80,35 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.popit,
-.clickPlace {
+.popit {
   transform: scale(0.9);
   margin-top: -2vh;
+  // background: url("../images/popi.png");
   width: 400px;
   height: 400px;
   background-size: 100%;
   background-position: center center;
+  // margin: 30px;
+  /* display: flex;
+    flex-wrap: wrap; */
   position: relative;
-  // overflow: hidden;
-  color: #fff;
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 13px; */
+  // transform: scale(0.8);
 }
-
-.clickPlace {
-  background-color: rgba(255, 0, 0, 0.139);
-  position: absolute;
-  z-index: 9999999;
-  opacity: 0.9;
-  border-radius: 20px;
-  pointer-events: none;
-  // transform: scale(0.81);
-}
-
-body,
-html {
-  overflow-x: hidden;
-}
-.click-number {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 26px;
-  color: #fff;
-  background-color: transparent;
-  pointer-events: none;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.click-number.active {
-  opacity: 1;
-  animation: fadeUp 0.5s forwards 1;
-}
-
-@keyframes fadeUp {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-  75% {
-    // opacity: 0.7;
-    transform: translate(-50%, -180%);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -180%);
-  }
-}
-
 .cell {
+  /* visibility: hidden; */
   width: 57px;
   height: 60px;
+  /* outline: 1px solid orange; */
   cursor: pointer;
+  // background: url("../images/button.png");
+  /* background-repeat: no-repeat; */
   background-size: 107%;
   background-position: center center;
+  /* opacity: 0; */
   border-radius: 10px;
   opacity: 0;
 }

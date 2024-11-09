@@ -9,12 +9,11 @@ function BoostItem({
   images,
   frontEndBoosts,
   currentScore,
-  key,
 }) {
   return (
     <div
-      key={index}
       className={index >= showBoosts ? "option disabled" : "option"}
+      key={index + "d8dew"}
       onClick={() => handleShowBoostPage(index)}
     >
       <div className="option-img">
