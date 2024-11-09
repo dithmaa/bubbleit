@@ -79,9 +79,9 @@ function Signup({ isLoadeds }) {
 
   // console.log("prevScoresFromRef ", prevScoresFromRef);
 
-  const notifyInviter = (narana) => {
+  const notifyInviter = (arnabaka) => {
     // console.log("s", prevScoresFromRef);
-    const newUserId = Number(narana) + 1;
+    const newUserId = Number(arnabaka) + 1;
 
     prevScoresFromRef.push({ id: newUserId, score: 0 });
     // console.log(prevScoresFromRef);
@@ -99,9 +99,9 @@ function Signup({ isLoadeds }) {
             setPrevScoresFromRef(data.scoresFromRef);
           });
   };
-  const handleSubmit = (narana) => {
+  const handleSubmit = (arnabaka) => {
     // e.preventDefault();
-    const newUserId = Number(narana) + 1;
+    const newUserId = Number(arnabaka) + 1;
 
     const newName = "Игрок" + newUserId;
     const newUser = {
@@ -123,7 +123,7 @@ function Signup({ isLoadeds }) {
     setTimeout(() => {
       axios.post(`${process.env.REACT_APP_API_URL}`, newUser).then(() => {
         if (refIdUrl != 0 || refIdUrl) {
-          notifyInviter(narana);
+          notifyInviter(arnabaka);
         }
       });
     }, 0);

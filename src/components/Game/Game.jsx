@@ -42,7 +42,7 @@ function Game({ authId, currentID = 1 }) {
   const [inviterFriendsList, setInviterFriendsList] = useState(0);
   const [totalRefScore, setTotalRefScore] = useState(0);
 
-  // console.log("Naranaa", currentID);
+  // console.log("arnabakaa", currentID);
   // const [usID, setUsID] = useState(0);
 
   // console.log("totalRefScore", totalRefScore);
