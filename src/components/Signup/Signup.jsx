@@ -83,7 +83,6 @@ function Signup({ isLoadeds }) {
       isCompletedMission: false,
       isCompletedMiss: false,
       boosts: boostsInitial,
-      scoresFromRef: [],
     };
     setDisabled(!isDisabledNow);
 
