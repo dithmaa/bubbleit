@@ -47,8 +47,6 @@ function Signup({ isLoadeds }) {
       level: 0,
     },
   ];
-  const refIdUrl = Number(window.location.search.replace("?", "").slice(4));
-  // console.log("refIdUrl", refIdUrl);
 
   console.log("lastId", lastId);
 
@@ -71,36 +69,7 @@ function Signup({ isLoadeds }) {
     auth();
   }, []);
 
-  useEffect(() => {
-    notifyIfRefLink();
-  }, []);
-
-  const [prevScoresFromRef, setPrevScoresFromRef] = useState([]);
-
-  // console.log("prevScoresFromRef ", prevScoresFromRef);
-
-  const notifyInviter = (arnabaka) => {
-    // console.log("s", prevScoresFromRef);
-    const newUserId = Number(arnabaka) + 1;
-
-    prevScoresFromRef.push({ id: newUserId, score: 0 });
-    // console.log(prevScoresFromRef);
-    axios.put(`${process.env.REACT_APP_API_URL}/${refIdUrl}`, {
-      scoresFromRef: prevScoresFromRef,
-    });
-  };
-
-  const notifyIfRefLink = () => {
-    refIdUrl == 0
-      ? console.log() // no ref link
-      : axios
-          .get(`${process.env.REACT_APP_API_URL}/${refIdUrl}`)
-          .then(({ data }) => {
-            setPrevScoresFromRef(data.scoresFromRef);
-          });
-  };
   const handleSubmit = (arnabaka) => {
-    // e.preventDefault();
     const newUserId = Number(arnabaka) + 1;
 
     const newName = "Игрок" + newUserId;
@@ -108,7 +77,6 @@ function Signup({ isLoadeds }) {
       name: newName,
       tg_username: tgUsername,
       tg_id: tgID,
-      refId: refIdUrl, // тот кто пригласил
       clickAmount: 0,
       clickPerOne: 1,
       showBoosts: 1,
@@ -119,12 +87,9 @@ function Signup({ isLoadeds }) {
     };
     setDisabled(!isDisabledNow);
 
-    // console.log(newUserId);
     setTimeout(() => {
       axios.post(`${process.env.REACT_APP_API_URL}`, newUser).then(() => {
-        if (refIdUrl != 0 || refIdUrl) {
-          notifyInviter(arnabaka);
-        }
+        // console.log("success");
       });
     }, 0);
     setTimeout(() => {

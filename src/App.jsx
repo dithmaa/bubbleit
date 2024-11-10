@@ -15,10 +15,7 @@ function App() {
 
   const [isLoaded, setLoaded] = useState(0);
   const [currentID, setCurrentID] = useState(0);
-  console.log("currentID", currentID);
   useEffect(() => {
-    console.log(process.env);
-
     if (authId != 0) {
       axios
         .get(`${process.env.REACT_APP_API_URL}?tg_id=${authId}`)
@@ -33,16 +30,9 @@ function App() {
             setTimeout(() => {
               setLoaded(1);
             }, 1200);
-
-            // console.log("Прелоадер скрыт");
           }, 0);
         })
         .catch((err) => {
-          // console.log(err);
-          // console.log(
-          //   "Ваш ID не был найден в базе. Но вы можете зарегистрироваться"
-          // );
-          // setIsAuth(false);
           setTimeout(() => {
             setLoaded(1);
           }, 1200);

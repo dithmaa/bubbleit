@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import EnergyBar from "../EnergyBar/EnergyBar";
-import { useCallback } from "react";
-import debounce from "lodash.debounce";
 import RatingBar from "../RatingBar/RatingBar";
-import Friends from "../Friends/Friends";
+
+import presentIcon from "../../../assets/img/present.png";
+import boostImg1 from "../../../assets/img/icon-boost-1.png";
+import popitImg from "../../../assets/img/popi.png";
 
 function GamePage({
   isShowMarket,
-  boostImg1,
   shownScore,
   toShort,
   bubbleStates,
-  popitImg,
   isShowMenu,
   handleShowMarket,
   marketIcon,
@@ -24,24 +23,11 @@ function GamePage({
   clickPerOne,
   setShownRating,
   currentScore,
-  handleShowFriends,
-  friendIcon,
-  friendsList,
-  isShowFriends,
-  closeFriends,
-  harvestRef,
-  authId,
-  copyIcon,
-  isShowPresent,
-  presentIcon,
   handleShowPresent,
-  currentID,
 }) {
-  const sFunc = () => {
-    // console.log("percent", percent);
+  const energyStaminaFunc = () => {
     if (percent > 50.1) {
       setTimeout(() => {
-        // console.log("handle percent");
         handlePercent(100);
       }, 3000);
     } else if (percent < 50.1) {
@@ -55,7 +41,7 @@ function GamePage({
   };
   useEffect(() => {
     if (percent <= 100 || !energyWait) {
-      sFunc();
+      energyStaminaFunc();
     }
   }, [energyWait]);
 
@@ -64,20 +50,6 @@ function GamePage({
       {!isShowMarket ? (
         <div className="game-page">
           <RatingBar onClick={() => setShownRating(true)} />
-
-          {isShowFriends ? (
-            <Friends
-              currentScore={currentScore}
-              closeFriends={closeFriends}
-              friendsList={friendsList}
-              harvestRef={harvestRef}
-              authId={authId}
-              copyIcon={copyIcon}
-              currentID={currentID}
-            />
-          ) : (
-            ""
-          )}
 
           <div
             className="res"
@@ -129,10 +101,6 @@ function GamePage({
           <EnergyBar setPercent={setPercent} percent={percent} />
           {isShowMenu ? (
             <nav className="menu">
-              {/* <button className="menu__item" onClick={handleShowFriends}>
-                <img src={friendIcon} alt="Friend Icon" />
-                <span>Друзья</span>
-              </button> */}
               <button className="menu__item" onClick={handleShowPresent}>
                 <img src={presentIcon} alt="Present Icon" />
                 <span>Задания</span>
