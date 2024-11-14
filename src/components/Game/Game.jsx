@@ -100,21 +100,6 @@ function Game({ currentID = 1 }) {
     }
   };
 
-  const handleMultiTouch = (rowIndex, colIndex, event) => {
-    event.preventDefault(); // Предотвращаем стандартное поведение
-
-    // Проверяем, что event.touches существует и имеет элементы
-    if (event.touches && event.touches.length > 0) {
-      // Перебираем все касания
-      for (let i = 0; i < event.touches.length; i++) {
-        handleBubbleClick(rowIndex, colIndex, setBubbleStates); // Вызываем функцию для каждого касания
-      }
-    } else {
-      // Если event.touches не существует, обрабатываем как одиночное касание
-      handleBubbleClick(rowIndex, colIndex, setBubbleStates);
-    }
-  };
-
   const handleBoosting = () => {
     const boostELem = boostsLists[currentOpenedBoost];
     const pricePercent = boostELem.price * 0.1;
@@ -238,8 +223,7 @@ function Game({ currentID = 1 }) {
           shownScore={shownScore}
           toShort={toShort}
           bubbleStates={bubbleStates}
-          // handleBubbleClick={handleBubbleClick}
-          handleMultiTouch={handleMultiTouch}
+          handleBubbleClick={handleBubbleClick}
           isShowMenu={isShowMenu}
           handleShowMarket={handleShowMarket}
           setBubbleStates={setBubbleStates}

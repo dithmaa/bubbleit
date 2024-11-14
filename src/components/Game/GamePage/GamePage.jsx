@@ -14,8 +14,8 @@ function GamePage({
   bubbleStates,
   isShowMenu,
   handleShowMarket,
-  // handleBubbleClick,
-  handleMultiTouch,
+  setBubbleStates,
+  handleBubbleClick,
   energyWait,
   percent,
   setPercent,
@@ -85,7 +85,12 @@ function GamePage({
                       key={colIndex}
                       className={`cell ${active ? "active" : ""}`}
                       onClick={(event) =>
-                        handleMultiTouch(rowIndex, colIndex, event)
+                        handleBubbleClick(
+                          rowIndex,
+                          colIndex,
+                          setBubbleStates,
+                          event
+                        )
                       }
                     ></div>
                   ))}
