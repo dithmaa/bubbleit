@@ -1,21 +1,15 @@
 import React, { useCallback, useEffect, useState } from "react";
-import boostImg1 from "../../assets/img/icon-boost-1.png";
-import popitImg from "../../assets/img/popi.png";
-import marketIcon from "../../assets/img/market_icon.png";
-import friendIcon from "../../assets/img/friend_icon.png";
-
-import preloaderImg from "../../assets/img/loading.gif";
-
 import axios from "axios";
 import debounce from "lodash.debounce";
 
-import { frontEndBoosts } from "./frontEndBoosts";
 import Market from "./Market/Market";
 import GamePage from "./GamePage/GamePage";
-import Preloader from "./Preloader/Preloader";
-import { animateScore, toShort } from "./handleCount";
-import RatingPage from "./RatingBar/RatingPage/RatingPage";
 import Challenges from "./Challenges/Challenges";
+import Preloader from "./Preloader/Preloader";
+import RatingPage from "./RatingBar/RatingPage/RatingPage";
+
+import { animateScore, toShort } from "./handleCount";
+import { frontEndBoosts } from "./frontEndBoosts";
 
 const tg = window.Telegram.WebApp;
 
@@ -23,7 +17,7 @@ function Game({ currentID = 1 }) {
   // Loading Info
   const [isLoadedApp, setLoaded] = useState(false);
 
-  // Auth Info
+  // // Auth Info
   const userID = currentID;
 
   // Получаем пользователя из БД и сохраняем его данные в FrontEnd часть
@@ -103,6 +97,21 @@ function Game({ currentID = 1 }) {
       });
     } else {
       setPercent(0);
+    }
+  };
+
+  const handleMultiTouch = (rowIndex, colIndex, event) => {
+    event.preventDefault(); // Предотвращаем стандартное поведение
+
+    // Проверяем, что event.touches существует и имеет элементы
+    if (event.touches && event.touches.length > 0) {
+      // Перебираем все касания
+      for (let i = 0; i < event.touches.length; i++) {
+        handleBubbleClick(rowIndex, colIndex, setBubbleStates); // Вызываем функцию для каждого касания
+      }
+    } else {
+      // Если event.touches не существует, обрабатываем как одиночное касание
+      handleBubbleClick(rowIndex, colIndex, setBubbleStates);
     }
   };
 
@@ -208,7 +217,6 @@ function Game({ currentID = 1 }) {
           handleBoosting={handleBoosting}
           clickPerOne={clickPerOne}
           boostsLists={boostsLists}
-          setShownMenu={setShowMenu}
           setShownMarket={setShownMarket}
           shownScore={shownScore}
           currentOpenedBoost={currentOpenedBoost}
@@ -216,7 +224,6 @@ function Game({ currentID = 1 }) {
           frontEndBoosts={frontEndBoosts}
           showBoosts={showBoosts}
           isNowBoosting={isNowBoosting}
-          boostImg1={boostImg1}
           setShowMenu={setShowMenu}
         />
       ) : (
@@ -230,12 +237,11 @@ function Game({ currentID = 1 }) {
           isShowMarket={isShowMarket}
           shownScore={shownScore}
           toShort={toShort}
-          popitImg={popitImg}
           bubbleStates={bubbleStates}
-          handleBubbleClick={handleBubbleClick}
+          // handleBubbleClick={handleBubbleClick}
+          handleMultiTouch={handleMultiTouch}
           isShowMenu={isShowMenu}
           handleShowMarket={handleShowMarket}
-          marketIcon={marketIcon}
           setBubbleStates={setBubbleStates}
           increaseCount={increaseCount}
           setShown={setShown}
@@ -248,7 +254,7 @@ function Game({ currentID = 1 }) {
           currentScore={currentScore}
         />
       ) : (
-        <Preloader popitImg={popitImg} preloaderImg={preloaderImg} />
+        <Preloader />
       )}
     </>
   );

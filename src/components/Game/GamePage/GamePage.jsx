@@ -5,6 +5,7 @@ import RatingBar from "../RatingBar/RatingBar";
 import presentIcon from "../../../assets/img/present.png";
 import boostImg1 from "../../../assets/img/icon-boost-1.png";
 import popitImg from "../../../assets/img/popi.png";
+import marketIcon from "../../../assets/img/market_icon.png";
 
 function GamePage({
   isShowMarket,
@@ -13,9 +14,8 @@ function GamePage({
   bubbleStates,
   isShowMenu,
   handleShowMarket,
-  marketIcon,
-  setBubbleStates,
-  handleBubbleClick,
+  // handleBubbleClick,
+  handleMultiTouch,
   energyWait,
   percent,
   setPercent,
@@ -85,12 +85,7 @@ function GamePage({
                       key={colIndex}
                       className={`cell ${active ? "active" : ""}`}
                       onClick={(event) =>
-                        handleBubbleClick(
-                          rowIndex,
-                          colIndex,
-                          setBubbleStates,
-                          event
-                        )
+                        handleMultiTouch(rowIndex, colIndex, event)
                       }
                     ></div>
                   ))}

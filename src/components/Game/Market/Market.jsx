@@ -11,6 +11,7 @@ import boostImage4 from "../../../assets/img/boosts/4.png";
 import boostImage5 from "../../../assets/img/boosts/5.png";
 import boostImage6 from "../../../assets/img/boosts/6.png";
 import boostImage7 from "../../../assets/img/boosts/7.png";
+import boostImg1 from "../../../assets/img/icon-boost-1.png";
 
 function Market({
   toShort,
@@ -25,15 +26,12 @@ function Market({
   frontEndBoosts,
   showBoosts,
   isNowBoosting,
-  boostImg1,
 }) {
   const [isShowBoostPage, setShowBoostPage] = useState(0);
 
   const handleShowBoostPage = (currentPage) => {
     setShowBoostPage(true);
     setCurrentOpenedBoost(currentPage);
-
-    // setShownMarket(false);
   };
   const handleBackMarket = () => {
     if (Number(currentScore) >= 1000000) {
