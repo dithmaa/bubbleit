@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { FC, useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import debounce from "lodash.debounce";
 
 import Market from "./Market/Market";
 import GamePage from "./GamePage/GamePage";
 import Challenges from "./Challenges/Challenges";
-import Preloader from "./Preloader/Preloader";
+import { Preloader } from "../../widgets/Preloader/";
 import RatingPage from "./RatingBar/RatingPage/RatingPage";
 
 import { animateScore, toShort } from "./handleCount";
@@ -13,7 +13,14 @@ import { frontEndBoosts } from "./frontEndBoosts";
 
 const tg = window.Telegram.WebApp;
 
-function Game({ currentID = 1 }) {
+type GameProps = {
+  currentID: number;
+  authId: number;
+};
+
+export const Game: FC<GameProps> = (props) => {
+  const { currentID = 1 } = props;
+
   // Loading Info
   const [isLoadedApp, setLoaded] = useState(false);
 
@@ -242,6 +249,4 @@ function Game({ currentID = 1 }) {
       )}
     </>
   );
-}
-
-export default Game;
+};

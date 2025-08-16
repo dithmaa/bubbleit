@@ -1,0 +1,3 @@
+export const DEFAULT_TIMEOUT_TRESHOLD = 1200;
+export const SHORT_TIMEOUT_TRESHOLD = 200;
+export const NO_TRESHOLD = 0;
