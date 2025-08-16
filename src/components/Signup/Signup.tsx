@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Signup.module.scss";
 import axios from "axios";
-import Preloader from "../Game/Preloader/Preloader";
+import Preloader from "../../widgets/Preloader/Preloader";
 
 import preloaderImg from "../../assets/img/loading.gif";
 import popitImg from "../../assets/img/popi.png";
