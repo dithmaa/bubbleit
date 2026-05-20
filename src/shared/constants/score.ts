@@ -1,0 +1,1 @@
+export const NEW_LEVEL_TRESHOLD = 1000000;

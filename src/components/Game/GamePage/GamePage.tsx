@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import EnergyBar from "../EnergyBar/EnergyBar";
+import EnergyBar from "../EnergyBar/EnergyBar.sx";
 import RatingBar from "../RatingBar/RatingBar";
 
 import presentIcon from "../../../assets/img/present.png";
