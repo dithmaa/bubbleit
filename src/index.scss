@@ -56,16 +56,10 @@ body {
     rgba(89, 13, 106, 1) 0%,
     rgba(31, 0, 34, 1) 100%
   );
-  &.green {
-    background-color: rgb(16 161 22);
-    background: radial-gradient(circle, rgb(24 255 39) 0%, rgb(7 38 0) 100%);
-  }
+
 }
 .App {
-  &.green {
-    background-color: rgb(16 161 22);
-    background: radial-gradient(circle, rgb(24 255 39) 0%, rgb(7 38 0) 100%);
-  }
+
 }
 .grid {
   position: absolute;
@@ -139,6 +133,7 @@ body {
 }
 .game-page {
   padding-top: 3vh;
+  max-width: 400px;
 }
 .res {
   // margin-top: 10vh;

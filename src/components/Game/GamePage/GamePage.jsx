@@ -74,7 +74,7 @@ function GamePage({
             className="popit"
             style={{
               backgroundImage: `url(${popitImg})`,
-              filter: currentScore >= 1000000 ? "invert(1)" : "",
+              filter: currentScore >= 1000000 ? "invert(0)" : "",
             }}
           >
             <div className="grid">
@@ -89,7 +89,7 @@ function GamePage({
                           rowIndex,
                           colIndex,
                           setBubbleStates,
-                          event
+                          event,
                         )
                       }
                     ></div>
